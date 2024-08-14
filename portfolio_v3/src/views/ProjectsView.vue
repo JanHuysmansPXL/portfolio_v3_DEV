@@ -3,6 +3,18 @@
 import NavbarComponent from "@/components/NavbarComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
 
+// Import your images
+import coverImage from '@/public/images/covers/coverimage.png';
+import coverImage1 from '@/public/images/covers/coverimage-1.png';
+import coverImage2 from '@/public/images/covers/coverimage-2.png';
+import coverImage3 from '@/public/images/covers/coverimage-3.png';
+import coverImage4 from '@/public/images/covers/coverimage-4.png';
+import coverImage5 from '@/public/images/covers/coverimage-5.png';
+import coverImage6 from '@/public/images/covers/coverimage-6.png';
+import coverImage7 from '@/public/images/covers/coverimage-7.png';
+import coverImage8 from '@/public/images/covers/coverimage-8.png';
+import coverImage9 from '@/public/images/covers/coverimage-9.png';
+
 
 export default {
   data() {
@@ -10,61 +22,61 @@ export default {
       projects: [
         {
           title: "Made Digital Brand Book",
-          image: require('@/assets/images/covers/coverimage.png'),
+          image: coverImage,
           icon: null,
           description: "How I defined, designed and delivered an interactive online brand guide for the new Made brand identity.",
         },
         {
         title: "Kronolith",
-        image: require('@/assets/images/covers/coverimage-1.png'),          
+        image: coverImage1,          
         icon: "../src/assets/images/square-dont.png",
         description: "Design and 3D-animation of a wall-mounted clock.",
         },
         {
           title: "Buildr",
-          image: "../src/assets/images/covers/coverimage-2.png",
+          image: coverImage2,           
           icon: null,
           description: "Guiding a group of young designers to design and develop an accesible job matching platform.",
         },
         {
           title: "Auro",
-          image: "../src/assets/images/covers/coverimage-3.png",
+          image: coverImage3,           
           icon: null,
           description: "Webdesign and development for an imaginative wearables brand, powered by Midjourney.",
         },
         {
           title: "Tiny House",
-          image: "../src/assets/images/covers/coverimage-4.png",
+          image: coverImage4,           
           icon: null,
           description: "Branding a joyful brand for a compact lifestyle.",
         },
         {
           title: "Holy Cow!",
-          image: "../src/assets/images/covers/coverimage-5.png",
+          image: coverImage5,           
           icon: null,
           description: "How I designed an offbeat burger chain brand and app.",
         },
         {
           title: "Transit",
-          image: "../src/assets/images/covers/coverimage-6.png",
+          image: coverImage6,           
           icon: null,
           description: "3D-sculptures for Transit, a techno/house-event with headliners like Mall Grab.",
         },
         {
           title: "Onyx",
-          image: "../src/assets/images/covers/coverimage-7.png",
+          image: coverImage7,           
           icon: null,
           description: "A handmade font that rocks.",
         },
         {
           title: "Collider",
-          image: "../src/assets/images/covers/coverimage-8.png",
+          image: coverImage8,           
           icon: null,
           description: "A collection of handmade drawings and Axidraw prints.",
         },
         {
           title: "Line Drawings",
-          image: "../src/assets/images/covers/coverimage-9.png",
+          image: coverImage9,           
           icon: null,
           description: "A collection of intricate ballpoint drawings and colour studies.",
         },
