@@ -27,7 +27,7 @@
       line-height: 115%; /* 1.62581rem */
       letter-spacing: 0.02825rem;
       text-transform: uppercase;
-      color: #F3F5F5;
+      color: $color-neutral--100;
       transition: color 0.3s ease, transform 0.3s ease;
     }
     .navbar-center {
@@ -50,7 +50,7 @@
             text-decoration: none;
             font-size: 1rem;
             transition: color 0.3s ease;
-            color: #F3F5F5;
+            color: $color-neutral--10;
             &:hover {
                 border-bottom: 1px solid #F3F5F5;
             }
@@ -62,7 +62,7 @@
     .menu-toggle {
       background: none;
       border: none;
-      color: #F3F5F5;
+      color: $color-neutral--100;
       font-size: 1rem;
       padding: 0;
       margin: 0;
@@ -73,13 +73,13 @@
     
     &.dark-text {
       .jan, .menu-toggle, .navbar-link {
-        color: black;
+        color: $color-neutral--100;
       }
     }
     
     &.light-text {
       .jan, .menu-toggle, .navbar-link {
-        color: white;
+        color: $color-neutral--10;
       }
     }
     

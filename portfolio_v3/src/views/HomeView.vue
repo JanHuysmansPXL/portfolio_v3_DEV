@@ -1,7 +1,5 @@
 <script>
-import NavbarComponent from '@/components/NavbarComponent.vue';
 import FooterComponent from '@/components/FooterComponent.vue';
-
 
     export default {
     data() {
@@ -22,7 +20,6 @@ import FooterComponent from '@/components/FooterComponent.vue';
         },
         components: {
             FooterComponent,
-            NavbarComponent
         },
     }
 </script>
@@ -40,7 +37,6 @@ import FooterComponent from '@/components/FooterComponent.vue';
     THIS IS THE PAGE WRAPPER THAT CONTAINS THE SIDEBAR AND THE MAIN CONTENT, NOT THE HEADER. -->
     <div id="pagewrapper">
         <!-- THIS IS THE MAIN BODY -> RIGHT SIDE -- FILLS 100% WIDTH -->
-        <NavbarComponent/>
 
         <main class="maintest pt-lg">
 

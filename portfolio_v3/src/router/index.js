@@ -4,17 +4,17 @@ import ProjectsView from '@/views/ProjectsView.vue'
 
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
     },
     {
-      path: '/projects',
-      name: 'projects',
-      component: ProjectsView
+      path: '/work',
+      name: 'ProjectsView',
+      component: ProjectsView,
     },
   ]
 })
