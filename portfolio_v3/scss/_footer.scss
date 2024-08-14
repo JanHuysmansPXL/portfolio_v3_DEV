@@ -12,7 +12,7 @@
     justify-content: space-between;
     background-color: $color-neutral--100;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    margin-top: 0;
     @include mediaquery (tablet) {
     padding-top: $padding-sm;
     padding-bottom: $padding-xs;

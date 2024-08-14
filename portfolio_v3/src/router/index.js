@@ -4,7 +4,7 @@ import ProjectsView from '@/views/ProjectsView.vue'
 
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
@@ -16,7 +16,16 @@ const router = createRouter({
       name: 'ProjectsView',
       component: ProjectsView,
     },
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        selector: to.hash,
+        behavior: 'smooth',
+      };
+    }
+    return { x: 0, y: 0 };
+  },
 })
 
 export default router

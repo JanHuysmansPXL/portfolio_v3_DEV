@@ -1,7 +1,5 @@
 <template>
   <div id="pagewrapper">
-    <NavbarComponent />
-
     <main class="maintest pt-lg">
       <section class="mt-md">
         <div class="projects-grid-gallery mt-sm">
@@ -15,14 +13,23 @@
         </div>
       </section>
 
+      <div class="next-project-bar mt-lg">
+        <router-link to="/" class="next-project-link">
+            <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right-purple.png" /></span>Suggestion
+          </router-link>
+      </div>
+
+
+
+      <MarqueeBar/>
       <FooterComponent />
     </main>
   </div>
 </template>
 
 <script>
-import NavbarComponent from "@/components/NavbarComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
+import MarqueeBar from "@/components/MarqueeBar.vue";
 
 export default {
   data() {
@@ -47,46 +54,46 @@ export default {
           description: "Guiding a group of young designers to design and develop an accessible job matching platform.",
         },
         {
-          title: "Made Digital Brand Book",
+          title: "Auro",
           image: '/assets/images/covers/coverimage-3.png',
           icon: null,
-          description: "How I defined, designed and delivered an interactive online brand guide for the new Made brand identity.",
+          description: "Webdesign and development for an imaginative wearables brand, powered by Midjourney.",
         },
         {
-          title: "Kronolith",
+          title: "Tiny House",
           image: '/assets/images/covers/coverimage-4.png',
           icon: '/assets/images/square-dont.png',
-          description: "Design and 3D-animation of a wall-mounted clock.",
+          description: "Inspiring people to live smaller trough joyful branding.",
         },
         {
-          title: "Buildr",
+          title: "Holy Cow!",
           image: '/assets/images/covers/coverimage-5.png',
           icon: null,
-          description: "Guiding a group of young designers to design and develop an accessible job matching platform.",
+          description: "How I designed an offbeat burger chain brand and app.",
         },
         {
-          title: "Made Digital Brand Book",
+          title: "Transit",
           image: '/assets/images/covers/coverimage-6.png',
           icon: null,
-          description: "How I defined, designed and delivered an interactive online brand guide for the new Made brand identity.",
+          description: "3D-sculptures for Transit, a techno/house-event with headliners like Mall Grab.",
         },
         {
-          title: "Kronolith",
+          title: "Onyx",
           image: '/assets/images/covers/coverimage-7.png',
           icon: '/assets/images/square-dont.png',
-          description: "Design and 3D-animation of a wall-mounted clock.",
+          description: "A handmade font that rocks.",
         },
         {
-          title: "Buildr",
+          title: "Collider",
           image: '/assets/images/covers/coverimage-8.png',
           icon: null,
-          description: "Guiding a group of young designers to design and develop an accessible job matching platform.",
+          description: "A collection of handmade drawings and Axidraw prints.",
         },
         {
-          title: "Buildr",
+          title: "Line Drawings",
           image: '/assets/images/covers/coverimage-9.png',
           icon: null,
-          description: "Guiding a group of young designers to design and develop an accessible job matching platform.",
+          description: "A collection of intricate ballpoint drawings and colour studies.",
         },
         // Add more projects as needed...
       ],
@@ -94,7 +101,64 @@ export default {
   },
   components: {
     FooterComponent,
-    NavbarComponent,
+    MarqueeBar,
   },
 };
 </script>
+
+<style lang="scss">
+.next-project-bar {
+  display: flex;
+  width: 100%;
+  padding: 2rem 2rem;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid #212323;
+  border-bottom: 0px solid #212323;
+  background:  #C1C1E5;
+  .next-project-link {
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #663DF9;
+    font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+    font-family: "Degular Variable";
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 650;
+    line-height: 85%; /* 6.8rem */
+    letter-spacing: -0.08rem;
+   /* @include mediaquery(tablet) {
+      font-size: 3rem;
+      align-items: flex-end;
+    } */
+    &:hover > span .link-arrow {
+      margin-right: 24px;
+    }
+    .arrow-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    .link-arrow {
+      max-height: 80px;
+      width: auto;
+      margin-right: 16px;
+      transition-property: margin;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
+    /*  @include mediaquery(tablet) {
+          max-height: 32px;
+          width: auto;
+          margin-right: 16px;
+          transition-property: margin;
+          transition-duration: 0.2s;
+          transition-timing-function: ease-in-out;
+        } */
+    }}
+  }
+}
+
+</style>
