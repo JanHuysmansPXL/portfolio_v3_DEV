@@ -3,21 +3,22 @@
 import NavbarComponent from "@/components/NavbarComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
 
+
 export default {
   data() {
     return {
       projects: [
         {
           title: "Made Digital Brand Book",
-          image: "../src/assets/images/covers/coverimage.png",
+          image: require('@/assets/images/covers/coverimage.png'),
           icon: null,
           description: "How I defined, designed and delivered an interactive online brand guide for the new Made brand identity.",
         },
         {
         title: "Kronolith",
-          image: "../src/assets/images/covers/coverimage-1.png",
-          icon: "../src/assets/images/square-dont.png",
-          description: "Design and 3D-animation of a wall-mounted clock.",
+        image: require('@/assets/images/covers/coverimage-1.png'),          
+        icon: "../src/assets/images/square-dont.png",
+        description: "Design and 3D-animation of a wall-mounted clock.",
         },
         {
           title: "Buildr",
