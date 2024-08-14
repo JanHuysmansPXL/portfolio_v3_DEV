@@ -69,32 +69,33 @@ import FooterComponent from '@/components/FooterComponent.vue';
             </section> -->
 
             <!-- INTRO TEXT + CTA BUTTONS -->
-            <section class="story-block">
-                <div class="story-title-bar ps-md">
-                    <h3 class="txt-ss-h3">Jan Huysmans is a digital designer & artist living in the diamond city
+            <section class="home-intro-block">
+                <div class="home-intro-title-bar ps-md">
+                    <h3 class="home-intro-title">Jan Huysmans is a digital designer & artist living in the diamond city
                         of Antwerp.</h3>
                 </div>
-                <div class="story-box mt-md">
-                    <div class="story-column-left">
-                        <h4 class="quote-block-text txt-ss-h5 mt-lg">I love building brands, user interfaces or any design
+                <div class="home-intro-box mt-md">
+                    <div class="home-intro-column-left">
+                        <h4 class="quote-block-text mt-md">I love building brands, user interfaces or any design
                             oriënted system. I'm a designer who likes to create new experiences, products or websites.</h4>
-                        <h4 class="quote-block-text txt-ss-h5 mt-md">I strongly believe design is a democratic force of change.
+                        <h4 class="quote-block-text">I strongly believe design is a democratic force of change.
                             Finding solutions to user needs is something I value a lot.</h4>
-                        <h4 class="quote-block-text txt-ss-h5 mt-md">Sometimes I dabble in art. My artistic work is based on
+                        <h4 class="quote-block-text">Sometimes I dabble in art. My artistic work is based on
                             studies of rhythm, color and pattern. Mostly on themes like repetition, modularity and automation.
                         </h4>
-                        <div class="links-wrapper container-fluid no-x-padding">
-                        <div class="downloads-buttonbar">
-                            <a href="#" target="_blank"
-                                download="made-logo-package"><button class="downloads-button"><span class="link-arrow">&rarr;</span>Get in touch</button></a>
-                            <a href="#"
-                                target="_blank"><button class="downloads-button"><span class="link-arrow">&rarr;</span>Read my story</button></a>
+
+                        <!-- CTA BUTTONS -->
+                        <div class="cta-wrapper container-fluid no-x-padding">
+                        <div class="cta-buttonbar">
+                            <a href="#" target="_blank"><button class="cta-button"><span><img class="link-arrow" src="/assets/arrow-right-link.png"></span>Get in touch</button></a>
+                            <a href="#" target="_blank"><button class="cta-button"><span><img class="link-arrow" src="/assets/arrow-right-link.png"></span>Read my story</button></a>
                         </div>
+                        
                     </div>
                     </div>
-                    <div class="story-column-right mt-xl ms-md">
-                        <img class="story-column-right-img--sm mt-xxl img-fluid"
-                            src="../assets/portrait.png"
+                    <div class="home-intro-column-right mt-xl ms-md">
+                        <img class="home-intro-img mt-xxl img-fluid"
+                            src="/assets/portrait.png"
                             alt="The right kind of difficult - Man looking at whiteboard">
                     </div>
                 </div>

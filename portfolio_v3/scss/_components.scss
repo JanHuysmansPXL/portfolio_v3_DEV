@@ -46,6 +46,87 @@
     }
 }
 
+/* RESPONSIVE CTA BLOCK WITH BUTTONS */
+.cta-wrapper {
+    width: 100%;
+    padding: $padding-md $padding-md;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    @include mediaquery (tablet){
+        padding: $padding-sm;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    &.no-x-padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .cta-title {
+        margin-bottom: $margin-sm;
+    }
+    .cta-buttonbar {
+        width: 100%;
+        .cta-button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-family: $font-display;
+            font-size: 1.41375rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 0; /* 1.62581rem */
+            letter-spacing: 0.01413rem;
+            background-color: $color-white;
+            color: $color-neutral--100;
+            padding: .75rem 1rem;
+            margin-right: 0.625rem;
+            border: 1.5px solid $color-neutral--100;
+            border-radius: 62.4375rem;
+            cursor: pointer;
+            @include mediaquery (tablet){
+                margin-top: $margin-xs;
+            }
+            &:hover {
+                background-color: $color-neutral--10;
+                .link-arrow {
+                    max-height: 16px;
+                    width: auto;
+                    margin-right: 8px;
+                    margin-top: 4px;
+                    box-sizing: border-box;
+                    transition-property: margin-right;
+                    transition-duration: 0.3s;
+                    transition-timing-function: cubic-bezier(0.56,0.25,0.33,0.75);
+                    @include mediaquery(tablet) {
+                      box-sizing: border-box;
+                      max-height: 12px;
+                      width: auto;
+                      margin-right: 8px;
+                      margin-top: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.link-arrow {
+    /* Button Default */
+    font-family: 'degular-display', arial, sans-serif;
+    font-size: 1.41375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%; /* 1.62581rem */
+    letter-spacing: 0.01413rem;
+    margin-right: .5rem;
+    transition: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    transition-property: margin;
+    text-decoration: none;
+}
 
 /* PAGE TITLE BLOCK WITH TEXT */
 .page-title-block {
@@ -127,102 +208,7 @@
     }
 }
 
-/* COUNTDOWN COMPONENT */
-
-.countdown {
-    text-align: center;
-    margin-top: $margin-lg;
-
-    .countdown-wrap {
-        width: 30vw;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        .countdown-data {
-            text-align: center;
-            width: 25%;
-
-            .countdown-number {
-                color: $color-neutral--100;
-                font-size: 28px;
-                line-height: 36px;
-                font-weight: 500;
-            }
-
-            .countdown-label {
-                color: $color-green--50;
-            }
-        }
-
-        .countdown-dot {
-            color: $color-neutral--60;
-            font-weight: 500;
-            font-size: 48px;
-            margin-bottom: 48px;
-        }
-    }
-}
-.skill-bar span {
-    animation: w70 1s ease forwards;
-}
-.skill-bar .w70 {
-    width: 70%;
-}
-
-/* PROGRESS BAR NOT IN USE
-/* PROGRESS BAR COMPONENT */ 
-
-#progressbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 85%;
-    height: 80px;
-    background-color: $color-purple--30;
-}
-#progress-fill {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    //Use width to change progress volume.
-    width: 30%;
-    height: 100%;
-    background-color: $color-purple--80;
-    text-align: center;
-    line-height: 64px;
-    color: $color-purple--30;
-    animation: progress 1.5s cubic-bezier(0.77, 0.3, 0.18, 1) forwards;
-    @keyframes progress {
-        from {width: 17%;}
-        to {width: 22%;}
-    }
-}
-.fill-text--left {
-    color: $color-neutral--10;
-    display: inline-block;
-    margin-left: $margin-md;
-}
-.fill-text--right {
-    color: $color-neutral--10;
-    display: inline-block;
-    margin-right: $margin-md;
-}
-.progress-text {
-    color: $color-purple--80;
-    display: inline-block;
-    margin-right: $margin-md;
-}
-
-// METRICS COMPONTENT
+// METRICS COMPONTENT -- For Home & Blog Pages
 .metrics-box {
     display: flex;
     gap: 16px;
@@ -253,7 +239,7 @@
     }
 }
 
-/*  AWARDS BLOCK  */
+//  AWARDS BLOCK -- For Home ? Has centered blocks.
 .awards-box {
     display: flex;
     flex-direction: row;
@@ -280,7 +266,7 @@
     }
 }
 
-/* QUOTE BLOCK WITH TEXT */
+// QUOTE BLOCK WITH TEXT -- Has a text quote block with or without indent.
 .quote-block {
     padding-top: $padding-xl;
     padding-left: $padding-md;
@@ -381,6 +367,85 @@
         }
     }
 }
+
+/* HOME INTRO - The intro for the home page. */
+
+
+/* REGULAR STORY BLOCK -- STYLING  */
+
+.home-intro-block {
+    width: 100%;
+    margin: 80 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 32px;
+    @include mediaquery(tablet) {
+        margin: 40 auto;
+        padding: 0 16px;
+    }
+    .home-intro-title {
+        font-family: $font-display;
+        font-size: 5.656rem;
+        font-weight: 700;
+        line-height: 95%;
+        letter-spacing: -0.05656rem;
+        font-feature-settings: 'salt' on, 'rvrn' on, 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+        font-style: normal;
+        max-width: 75%;
+        @include mediaquery(tablet) {
+            font-size: 4rem;
+            max-width: 100%;
+        }
+    }
+    .home-intro-box {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        .home-intro-column-left {
+            width: 66%;
+            margin-right: 16px;
+            @include mediaquery(tablet) {
+                width: 100%;
+                margin-right: 16px;
+            }
+            .quote-block-text {
+                font-family: $font-display;
+                font-size: 2.828rem;
+                font-weight: 700;
+                line-height: 95%;
+                letter-spacing: -0.05656rem;
+                font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+                font-style: normal;
+                margin-top: 24px;
+                @include mediaquery(tablet) {
+                    font-size: 2rem;
+                    margin-top: 16px;
+                }
+            }
+        }
+        .home-intro-column-right {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            width: 33%;
+            margin-right: $margin-md;
+            @include mediaquery(tablet) {
+                width: 0px;
+                display: none;
+            }
+            .home-intro-img {
+                width: calc(100% - 32px);
+                max-width: 320px;
+                min-width: 160px;
+                overflow: auto;
+                align-self: flex-end;
+            }
+        }
+    }
+}
+
 
 /* REGULAR STORY BLOCK -- STYLING  */
 
@@ -1356,68 +1421,6 @@
     }
 }
 
-.links-wrapper {
-    width: 100%;
-    padding: $padding-md $padding-md;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    @include mediaquery (tablet){
-        padding: $padding-sm;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-    &.no-x-padding {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .downloads-title {
-        margin-bottom: $margin-sm;
-    }
-    .downloads-buttonbar {
-        width: 100%;
-        .downloads-button {
-            font-family: $font-display;
-            font-size: 1.41375rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 115%; /* 1.62581rem */
-            letter-spacing: 0.01413rem;
-            background-color: $color-white;
-            color: $color-neutral--100;
-            padding: .75rem 1rem;
-            margin-right: 0.625rem;
-            border: 1.5px solid $color-neutral--100;
-            border-radius: 62.4375rem;
-            cursor: pointer;
-            @include mediaquery (tablet){
-                margin-top: $margin-xs;
-            }
-            &:hover {
-                background-color: $color-neutral--10;
-                .link-arrow {
-                    margin-right: .75rem;
-                }
-            }
-        }
-    }
-}
-
-.link-arrow {
-    /* Button Default */
-    font-family: 'degular-display', arial, sans-serif;
-    font-size: 1.41375rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 115%; /* 1.62581rem */
-    letter-spacing: 0.01413rem;
-    margin-right: .5rem;
-    transition: all;
-    transition-duration: .3s;
-    transition-timing-function: ease-in-out;
-    transition-property: margin;
-}
 
 .tooltip {
     font-family: $font-text;

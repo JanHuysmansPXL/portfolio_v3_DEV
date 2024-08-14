@@ -1,6 +1,28 @@
 <template>
   <div id="pagewrapper">
     <main class="maintest pt-lg">
+
+
+
+      <div class="projects-head ms-md">
+            <div class="projects-bar-top">
+                <h4 class="txt-ss-h3 txt-width-60">Projects</h4>
+            </div>
+            <div class="projects-bar-bottom">
+                <ul class="projects-filter-list">
+                    <li><a href="#" class="txt-ss-sub2 filter-link">All</a></li>
+                    <li><a href="#" class="txt-ss-sub2  filter-link">Digital</a></li>
+                    <li><a href="#" class="txt-ss-sub2  filter-link">Branding</a></li>
+                    <li><a href="#" class="txt-ss-sub2  filter-link">Art</a></li>
+                </ul>
+                <button class="view-button-box">
+                    <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+                    <a class="link-text" href="#">View List</a>
+                </button>
+            </div>
+            <div class="divider"></div>
+        </div>
+
       <section class="mt-md">
         <div class="projects-grid-gallery mt-sm">
           <router-link to="/" class="projects-grid-card" v-for="(project, index) in projects" :key="index">
@@ -13,8 +35,8 @@
         </div>
       </section>
 
-      <div class="next-project-bar mt-lg">
-        <router-link to="/" class="next-project-link">
+      <div class="suggestion-bar mt-lg">
+        <router-link to="/" class="suggestion-link">
             <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right-purple.png" /></span>Suggestion
           </router-link>
       </div>
@@ -107,58 +129,6 @@ export default {
 </script>
 
 <style lang="scss">
-.next-project-bar {
-  display: flex;
-  width: 100%;
-  padding: 2rem 2rem;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 1rem;
-  border-top: 1px solid #212323;
-  border-bottom: 0px solid #212323;
-  background:  #C1C1E5;
-  .next-project-link {
-    text-decoration: none;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    color: #663DF9;
-    font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
-    font-family: "Degular Variable";
-    font-size: 8rem;
-    font-style: normal;
-    font-weight: 650;
-    line-height: 85%; /* 6.8rem */
-    letter-spacing: -0.08rem;
-   /* @include mediaquery(tablet) {
-      font-size: 3rem;
-      align-items: flex-end;
-    } */
-    &:hover > span .link-arrow {
-      margin-right: 24px;
-    }
-    .arrow-box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    .link-arrow {
-      max-height: 80px;
-      width: auto;
-      margin-right: 16px;
-      transition-property: margin;
-      transition-duration: 0.2s;
-      transition-timing-function: ease-in-out;
-    /*  @include mediaquery(tablet) {
-          max-height: 32px;
-          width: auto;
-          margin-right: 16px;
-          transition-property: margin;
-          transition-duration: 0.2s;
-          transition-timing-function: ease-in-out;
-        } */
-    }}
-  }
-}
+
 
 </style>
