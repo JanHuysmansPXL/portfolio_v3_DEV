@@ -1,0 +1,105 @@
+<template>
+    <div>
+      <header class="navbar">
+
+      <!-- Replace with router-link and use ref with slot-scope to access the internal <a> tag -->
+        <router-link to="/" class="jan" v-slot="{ href, navigate, isActive, isExactActive }">
+        <a class="jan" :href="href" @click="navigate" ref="jan">JAN HUYSMANS</a>
+      </router-link>
+      
+      <nav class="navbar-center">
+          <ul class="navbar-menu">
+            <li class="navbar-listitem"><router-link to="/projects" class="navbar-link">{{ linkProjectsText }}</router-link></li>
+            <li class="navbar-listitem"><a class="navbar-link" href="#about">About</a></li>
+            <li class="navbar-listitem"><a class="navbar-link" href="#careers">Archive</a></li>
+            <li class="navbar-listitem"><a class="navbar-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Menu Toggle Button (visible on both mobile and desktop) -->
+        <a class="menu-toggle" @click="toggleMenu">
+          {{ isMenuOpen ? 'Close' : 'Menu' }}
+        </a>
+      </header>
+  
+      <SlideMenuComponent :isOpen="isMenuOpen" @close="closeMenu" />
+    </div>
+  </template>
+  
+  <script>
+  import SlideMenuComponent from './SlideMenuComponent.vue';
+  
+  export default {
+    components: {
+      SlideMenuComponent,
+    },
+    data() {
+      return {
+        isMenuOpen: false,
+        linkProjectsText: 'Work',
+      };
+    },
+    methods: {
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+    this.updateNavbarVisibility();
+  },
+  closeMenu() {
+    this.isMenuOpen = false;
+    this.updateNavbarVisibility();
+  },
+  updateNavbarVisibility() {
+    const navbarCenter = document.querySelector('.navbar-center');
+    if (navbarCenter) {
+      if (this.isMenuOpen || window.scrollY > 0) {
+        navbarCenter.classList.add('hidden');
+      } else {
+        navbarCenter.classList.remove('hidden');
+      }
+    }
+  },
+  adjustNavbarTextColor() {
+    const navbar = document.querySelector('.navbar');
+    const navbarStyle = getComputedStyle(navbar);
+    const bgColor = navbarStyle.backgroundColor;
+
+    const [r, g, b] = bgColor.match(/\d+/g).map(Number);
+    const luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b; // Formula for luminance
+
+    if (luminance > 128) { // Light background
+      navbar.classList.add('dark-text');
+      navbar.classList.remove('light-text');
+    } else { // Dark background
+      navbar.classList.add('light-text');
+      navbar.classList.remove('dark-text');
+    }
+  },
+  updateText(e) {
+    const jan = this.$refs.jan;
+    const multiplierWidth = e.offsetX / window.innerWidth;
+    const multiplierHeight = e.offsetY / window.innerHeight;
+
+    // Adjust to valid ranges
+    const randomWeight = Math.min(Math.max(multiplierWidth * (650 - 300) + 300, 100), 650);
+    const randomItal = Math.min(Math.max(multiplierHeight * (1 - 0) + 0, 0), 1);
+
+    // Apply the font variation settings to the logo
+    jan.style.fontVariationSettings = `"wght" ${randomWeight}, "ital" ${randomItal}`;
+  }
+},
+mounted() {
+  this.adjustNavbarTextColor();
+  window.addEventListener('scroll', this.updateNavbarVisibility);
+  window.addEventListener('mousemove', this.updateText);
+},
+beforeDestroy() {
+  window.removeEventListener('scroll', this.updateNavbarVisibility);
+  window.removeEventListener('mousemove', this.updateText);
+},
+
+  };
+  </script>
+  
+  <style scoped lang="scss">
+  
+  </style>
+  

@@ -1,0 +1,96 @@
+@use "base" as *;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent; /* Transparent background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+    z-index: 1001;
+    background: inherit;
+    mix-blend-mode: difference;
+    isolation: isolate;
+    color: black;
+    @include mediaquery(tablet) {
+        padding: 1rem;
+    }
+    .jan {
+      text-decoration: none;
+      font-family: 'degular-variable', Arial, sans-serif;
+      font-size: 1.41375rem;
+      font-variation-settings: "wght" 700, "ital" 0;
+      line-height: 115%; /* 1.62581rem */
+      letter-spacing: 0.02825rem;
+      text-transform: uppercase;
+      color: #F3F5F5;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .navbar-center {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      order: 2;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      &.hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .navbar-menu {
+        display: flex;
+        gap: 1rem;
+        margin-right: 1rem;
+        .navbar-listitem {
+          list-style: none;
+          .navbar-link {
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            color: #F3F5F5;
+            &:hover {
+                border-bottom: 1px solid #F3F5F5;
+            }
+          }
+        }
+      }
+    }
+    
+    .menu-toggle {
+      background: none;
+      border: none;
+      color: #F3F5F5;
+      font-size: 1rem;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      transition: color 0.3s ease;
+      order: 3;
+    }
+    
+    &.dark-text {
+      .jan, .menu-toggle, .navbar-link {
+        color: black;
+      }
+    }
+    
+    &.light-text {
+      .jan, .menu-toggle, .navbar-link {
+        color: white;
+      }
+    }
+    
+    @media (max-width: 900px) {
+      .navbar-center {
+        display: none; /* Hide menu list on mobile */
+      }
+    
+      .menu-toggle {
+        order: 2; /* Center align the toggle button */
+      }
+    }
+  }
+  

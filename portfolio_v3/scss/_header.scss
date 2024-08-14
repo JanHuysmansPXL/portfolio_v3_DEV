@@ -1,0 +1,191 @@
+@use "base" as *;
+
+
+/* NAVBAR SECTIE --> QUICK STYLING */
+#header {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.25)), url("../src/assets/images/header_img_running.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-title-block {
+    color: $color-white;
+}
+
+/* NAVBAR SECTIE --> QUICK STYLING */
+.brightheader {
+    width: 100%;
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-color: $color-white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    @include mediaquery(tablet) {
+        min-height: 320px;
+        padding: $padding-md;
+    }
+    .b-header-title-block {
+        color: $color-neutral--10;
+    }
+    .header-icon img {
+        max-height: 92px;
+        @include mediaquery(tablet) {
+            max-height: 54px;
+        } 
+    }
+}
+
+/* SECTION SETTINGS ? */
+.section-block {
+    padding-top: $padding-md;
+    padding-left: $padding-md;
+}
+.section-heading {
+    color: $color-neutral--60;
+}
+
+/* COVER */
+// Cover-image is now obsolete - I've put it in the header BG!
+.cover-image {
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99;
+}
+
+
+/* HEADER DARK -- FOR BRAND ELEMENTS - HAS ANCHOR NAV LINKS */
+.dark-header {
+    width: 100%;
+    min-height: 45vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: $color-neutral--100;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+
+    @include mediaquery(mobile) {
+        min-height: 25vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding: none;
+    }
+
+    .d-header-subjects-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 248px;
+        color: $color-green--30;
+        list-style: none;
+        .d-header-subject-list {
+            list-style-type: none;
+            text-decoration: none;
+            color: $color-green--30;
+            list-style: none;
+            .d-header-subject-line {
+                list-style-type: none;
+                text-decoration: none;
+                color: $color-green--30;
+                list-style: none;
+            }
+        }
+    }
+
+    .d-header-title-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: auto;
+
+        .d-header-title {
+            font-family: $font-display;
+            font-size: 77px;
+            line-height: 120%;
+            font-weight: 500;
+
+            @include mediaquery(tablet) {
+                font-family: $font-display;
+                font-size: 36px;
+                line-height: 120%;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+/* *** OBSOLETE *** NAVBAR / HEADER TOP - HAS PAGE NAV LINKS 
+
+.navbar {
+    background-color: $color-transparant;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    .navbar-brand a {
+        text-decoration: none;
+        color: $color-neutral--10;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .navbar-list {
+        list-style-type: none;
+        text-decoration: none;
+        .navbar-listitem {
+            display: inline-block;
+            margin-right: $margin-lg;
+            font-weight: 300;
+        }
+        .navbar-listitem:last-of-type {
+            margin-right: 0;
+        }
+    }
+    .navbar-link {
+        text-decoration: none;
+        color: $color-neutral--10;
+        &:hover {
+            color: $color-purple--75;
+        }
+    }
+    .contact-button {
+        font-family: $font-text;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        background-color: $color-purple--80;
+        color: $color-neutral--10;
+        border: none;
+        padding: 10px 20px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $color-purple--75;
+        }
+    }
+}
+
+*/

@@ -1,0 +1,465 @@
+/* BASE -- GENERAL DISPLAY SETTINGS */
+/* MEDIA QUARY MIXIN - SET BREAKPOINTS AND LOOP FOR EACH DISPLAY WIDTH VARIABLE */
+$bp : (
+  mobile : 320px,
+  tablet : 768px,
+  desktop : 1440px,
+);
+
+@mixin mediaquery($display){
+    @each $key, $value in $bp {
+      
+      //  als mediaquery = mobile / tablet / desktop -> Geeft MAX waarde terug.
+      @if ($display == $key){
+        @media (max-width: $value){@content;}
+      }
+    }
+  }
+
+/* FONTS AND IMPORTS */
+/*
+@font-face {
+    font-family: GT Sectra;
+    src: url("../src/assets/fonts/GT-Sectra-Display-Regular-Italic.ttf");
+    src: url("../src//assets/fonts/GT-Sectra-Display-Regular-Italic.woff");
+    src: url("../src//assets/fonts/GT-Sectra-Display-Regular-Italic.woff2");
+  }
+  @font-face {
+    font-family: Made Sans;
+    src: url("../src//assets/fonts/MadeSans-Medium.ttf");
+    src: url("../src//assets/fonts/MadeSans-Medium.woff");
+    src: url("../src//assets/fonts/MadeSans-Medium.woff2");
+  }
+  @font-face {
+    font-family: Piazzolla;
+    src: url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@1,8..30,300&display=swap');
+  }
+*/
+
+$font-text: 'degular-text', Arial, Helvetica;
+$font-display: 'degular-display', Arial, Helvetica;
+$font-variable: 'degular-variable', Arial, Helvetica;
+$font-piazzolla-italic: 'degular', serif, Helvetica;
+
+/* MAIN HTML + BODY PAGE + SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-text;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+#pagewrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.maintest {
+    padding: 0;
+    max-width: 100%;
+    width: auto;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+/* BASIC DISPLAY */ 
+
+.container-fluid {
+    width: 100%;
+    margin: 0 auto;
+}
+.container-xxl {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.d-none {
+    display: none;
+}
+.d-block {
+    display: block;
+}
+.d-inline {
+    display: inline;
+}
+
+/* UTILITY CLASSES FOR STYLES  */
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.strict-container {
+    max-width: 240px;
+    height: 320px;
+}
+
+.img-pagewidth {
+    min-width: 100%;
+    min-height: 40vh;
+    max-height: 50vh;
+    object-fit: cover;
+    &.banner {
+        max-height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+/* PADDING / MARGIN - SETUP */
+$margin-xs: 8px;
+$margin-sm: 16px;
+$margin-md: 32px;
+$margin-lg: 64px;
+$margin-xl: 80px;
+$margin-xxl: 160px;
+
+$padding-xs: 8px;
+$padding-sm: 16px;
+$padding-md: 32px;
+$padding-lg: 64px;
+$padding-xl: 80px;
+$padding-xxl: 160px;
+
+/* BASE COLORS */
+$color-white: #FFFFFF;
+$color-neutral--10: #F3F5F5;
+$color-neutral--15: #DAE3E3;
+$color-neutral--60: #444F4F;
+$color-neutral--100: #212323;
+
+$color-green--30: #B6C6C6;
+$color-green--50: #6F8484;
+$color-green--80: #243838;
+
+$color-purple--30: #C1C1E5;
+$color-purple--50: #7777AA;
+$color-purple--75: #7137F6;
+$color-purple--80: #6224F3;
+
+$color-red--50: #F56F0E;
+
+$color-transparant: rgba(255,255,255,0.02);
+
+/* MARGIN / PADDING - UTILITY CLASSES */
+.mx-auto { margin: 0 auto }
+
+.mt-0 { margin-top: 0}
+.mt-xs { margin-top: $margin-xs;}
+.mt-sm { margin-top: $margin-sm;}
+.mt-md { margin-top: $margin-md;}
+.mt-lg { margin-top: $margin-lg;}
+.mt-xl { margin-top: $margin-xl;}
+.mt-xxl { margin-top: $margin-xxl;}
+
+.mb-0 { margin-bottom: 0}
+.mb-xs { margin-bottom: $margin-xs;}
+.mb-sm { margin-bottom: $margin-sm;}
+.mb-md { margin-bottom: $margin-md;}
+.mb-lg { margin-bottom: $margin-lg;}
+.mb-xl { margin-bottom: $margin-xl;}
+.mb-xxl { margin-bottom: $margin-xxl;}
+
+.ms-0 { margin-top: 0}
+.ms-xs { margin-left: $margin-xs;}
+.ms-sm { margin-left: $margin-sm;}
+.ms-md { margin-left: $margin-md;}
+.ms-lg { margin-left: $margin-lg;}
+.ms-xl { margin-left: $margin-xl;}
+.ms-xxl { margin-left: $margin-xxl;}
+
+.me-0 { margin-right: 0}
+.me-xs { margin-right: $margin-xs;}
+.me-sm { margin-right: $margin-sm;}
+.me-md { margin-right: $margin-md;}
+.me-lg { margin-right: $margin-lg;}
+.me-xl { margin-right: $margin-xl;}
+.me-xxl { margin-right: $margin-xxl;}
+
+.p-0 { padding: 0}
+.p-xs { padding: $padding-xs;}
+.p-sm { padding: $padding-sm;}
+.p-md { padding: $padding-md;}
+.p-lg { padding: $padding-lg;}
+.p-xl { padding: $padding-xl;}
+.p-xxl { padding: $padding-xxl;}
+
+.pt-0 { padding-top: 0}
+.pt-xs { padding-top: $padding-xs;}
+.pt-sm { padding-top: $padding-sm;}
+.pt-md { padding-top: $padding-md;}
+.pt-lg { padding-top: $padding-lg;}
+.pt-xl { padding-top: $padding-xl;}
+.pt-xxl { padding-top: $padding-xxl;}
+
+.pb-0 { padding-bottom: 0}
+.pb-xs { padding-bottom: $padding-xs;}
+.pb-sm { padding-bottom: $padding-sm;}
+.pb-md { padding-bottom: $padding-md;}
+.pb-lg { padding-bottom: $padding-lg;}
+.pb-xl { padding-bottom: $padding-xl;}
+.pb-xxl { padding-bottom: $padding-xxl;}
+
+.py-0 { padding-bottom: 0}
+.py-xs { padding-bottom: $padding-xs; padding-top: $padding-xs; }
+.py-sm { padding-bottom: $padding-sm; padding-top: $padding-sm; }
+.py-md { padding-bottom: $padding-md; padding-top: $padding-md; }
+.py-lg { padding-bottom: $padding-lg; padding-top: $padding-lg; }
+.py-xl { padding-bottom: $padding-xl; padding-top: $padding-xl; }
+.py-xxl { padding-bottom: $padding-xxl; padding-top: $padding-xxl; }
+
+
+/* SANS SERIF - MADE SANS WEBSCALE */
+
+.txt-ss-h0 {
+    font-family: $font-display;
+    font-kerning: auto;
+    font-size: 11.3125rem;
+    font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 95%; /* 42.986px */
+    letter-spacing: -0.16rem;
+    @include mediaquery(tablet) {
+        font-size: 77px;
+    }
+}
+
+.txt-ss-h1 {
+    font-family: $font-display;
+    font-kerning: auto;
+    font-size: 11.3125rem;
+    font-weight: 700;
+    line-height: 85%; /* 42.986px */
+    letter-spacing: 0rem;
+    font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+    font-style: normal;
+    @include mediaquery(tablet) {
+        font-size: 8rem;
+    }
+}
+.txt-ss-h2 {
+    font-family: $font-variable;
+    font-size: 8rem;
+    font-weight: 650;
+    line-height: 85%; /* 42.986px */
+    letter-spacing: -0.08rem;
+    font-feature-settings: 'salt' on, 'rvrn' on, 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+    font-style: normal;
+    @include mediaquery(tablet) {
+        font-size: 5.656rem;
+    }
+}
+.txt-ss-h3 {
+    font-family: $font-display;
+    font-size: 5.656rem;
+    font-weight: 700;
+    line-height: 95%;
+    letter-spacing: -0.05656rem;
+    font-feature-settings: 'salt' on, 'rvrn' on, 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+    font-style: normal;
+    @include mediaquery(tablet) {
+        font-size: 4rem;
+    }
+}
+
+.txt-ss-h4 {
+    font-family: $font-display;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 95%;
+    letter-spacing: -0.05656rem;
+    font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+    font-style: normal;
+    @include mediaquery(tablet) {
+        font-size: 2.828rem;
+    }
+}
+.txt-ss-h5 {
+    font-family: $font-display;
+    font-size: 2.828rem;
+    font-weight: 700;
+    line-height: 95%;
+    letter-spacing: -0.05656rem;
+    font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+    font-style: normal;
+    @include mediaquery(tablet) {
+        font-size: 2rem;
+    }
+}
+.txt-ss-h6 {
+    font-family: $font-display;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 95%;
+    letter-spacing: -0.05656rem;
+    font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+    font-style: normal;
+    @include mediaquery(tablet) {
+        font-size: 22px;
+    }
+}
+
+.txt-ss-sub1 {
+    font-family: $font-display;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 0.02rem;
+    font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.txt-ss-sub2 {
+    font-family: $font-text;
+    font-family: $font-display;
+    font-size: 1.414rem;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 0.02rem;
+    font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+    font-style: normal;
+    text-transform: uppercase;
+
+}
+.txt-ss-body1 {
+    font-family: $font-text;
+    font-size: 1.414rem;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 135%; /* 1.90888rem */
+    @include mediaquery(tablet) {
+        font-size: 1rem;
+        letter-spacing: -0.01rem;
+    }
+}
+.txt-ss-body1-bold {
+    font-family: $font-text;
+    font-size: 1.414rem;
+    line-height: 24px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 135%; /* 1.90888rem */
+    @include mediaquery(tablet) {
+        font-size: 1rem;
+        letter-spacing: -0.01rem;
+    }
+}
+.txt-ss-body2 {
+    font-family: $font-text;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 125%; /* 1.25rem */
+    letter-spacing: -0.01rem;
+    @include mediaquery(tablet) {
+        font-size: 14px;
+        letter-spacing: -0.01rem;
+    }
+}
+
+/* EXTRA TYPESETTINGS */
+
+.txt-dms-h2 {
+        font-family: $font-variable;
+        font-size: 77px;
+        line-height: 120%;
+        font-weight: 500;
+}
+.txt-piazzolla-it-h2 {
+    font-family: $font-variable;
+    font-size: 77px;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+
+/* TEXT WIDTH OR STANDARD INDENTATION */
+
+.txt-width-90 {
+    max-width: 90%;
+}
+.txt-width-80 {
+    max-width: 80%;
+}
+.txt-width-60 {
+    max-width: 60%;
+}
+.txt-width-30 {
+    max-width: 30%;
+}
+.indent-xxl {
+    text-indent: 160px;
+}
+
+/*  IMAGE FRAME / BORDER */
+.img-frame-15 {
+    border: 1px solid $color-green--30;
+}
+
+/* TEXT COLORS */
+
+.txt-white {color: $color-white;}
+.txt-nt-10 {color: $color-neutral--10;}
+.txt-nt-15 {color: $color-neutral--15;}
+.txt-nt-60 {color: $color-neutral--60;}
+.txt-nt-100 {color: $color-neutral--100;}
+
+.txt-gr-30 {color: $color-green--30;}
+.txt-gr-50 {color: $color-green--50;}
+.txt-gr-80 {color: $color-green--80;}
+
+.txt-pp-30 {color: $color-purple--30;}
+.txt-pp-50 {color: $color-purple--50;}
+.txt-pp-75 {color: $color-purple--75;}
+.txt-pp-80 {color: $color-purple--80;}
+
+/* BACKGROUND COLORS */
+.bg-white {background-color: $color-white;}
+.bg-nt-10 {background-color: $color-neutral--10;}
+.bg-nt-15 {background-color: $color-neutral--15;}
+.bg-nt-60 {background-color: $color-neutral--60;}
+.bg-nt-100 {background-color: $color-neutral--100;}
+
+.bg-gr-30 {background-color: $color-green--30;}
+.bg-gr-50 {background-color: $color-green--50;}
+.bg-gr-80 {background-color: $color-green--80;}
+
+.bg-pp-30 {background-color: $color-purple--30;}
+.bg-pp-50 {background-color: $color-purple--50;}
+.bg-pp-75 {background-color: $color-purple--75;}
+.bg-pp-80 {background-color: $color-purple--80;}
+
+.bg-transparant {background-color: $color-transparant;}
+
+/* BG COLORS - ADDED STYLE FOR ITALIC ACCENT TEXTS */ 
+/* BACKGROUND COLORS */
+.fill-white {fill: $color-white;}
+.fill-nt-10 {fill: $color-neutral--10;}
+.fill-nt-15 {fill: $color-neutral--15;}
+.fill-nt-60 {fill: $color-neutral--60;}
+.fill-nt-100 {fill: $color-neutral--100;}
+
+.fill-gr-30 {fill: $color-green--30;}
+.fill-gr-50 {fill: $color-green--50;}
+.fill-gr-80 {fill: $color-green--80;}
+
+.fill-pp-30 {fill: $color-purple--30;}
+.fill-pp-50 {fill: $color-purple--50;}
+.fill-pp-75 {fill: $color-purple--75;}
+.fill-pp-80 {fill: $color-purple--80;}
+
+
