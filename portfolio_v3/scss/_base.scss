@@ -255,7 +255,7 @@ $color-transparant: rgba(255,255,255,0.02);
     font-size: 8rem;
     font-weight: 650;
     line-height: 85%; /* 42.986px */
-    letter-spacing: -0.08rem;
+    letter-spacing: 0.08rem;
     font-feature-settings: 'salt' on, 'rvrn' on, 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
     font-style: normal;
     @include mediaquery(tablet) {
