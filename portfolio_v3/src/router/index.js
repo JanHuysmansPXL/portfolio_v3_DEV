@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
 import AuroView from '@/views/AuroView.vue'
+import TransitView from '@/views/TransitView.vue'
 
 
 const router = createRouter({
@@ -21,6 +22,11 @@ const router = createRouter({
       path: '/auro',
       name: 'AuroView',
       component: AuroView,
+    },
+    {
+      path: '/transit',
+      name: 'TransitView',
+      component: TransitView,
     },
   ],
   scrollBehavior(to, from, savedPosition) {

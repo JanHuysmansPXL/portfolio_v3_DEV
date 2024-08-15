@@ -146,6 +146,14 @@
     }
 }
     
+.project-heading-vid {
+    min-height: 480px;
+    object-position: 50% 50%;
+    @include mediaquery(tablet) {
+        min-height: 540px;
+        object-position: 25% 50%;
+    }
+}
 // PROJECT TITLE BLOCK WITH ABOUT TEXT AND PROJECT INFORMATION */
 .project-title-block {
     width: 100%;
