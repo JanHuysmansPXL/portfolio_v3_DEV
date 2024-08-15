@@ -185,7 +185,7 @@ export default {
 
       <!-- FULL VIDEO  
       <div class="container-fluid bg-nt-100">
-            <video class="vid-pagewidth padded" autoplay loop>
+            <video class="vid-pagewidth padded" autoplay loop playsinline muted>
               <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
             </video>
       </div>  -->
@@ -202,7 +202,7 @@ export default {
 
       <!-- FULL VIDEO  -->
       <div class="container-fluid bg-white">
-        <video class="vid-pagewidth padded" autoplay loop>
+        <video class="vid-pagewidth padded" autoplay loop playsinline muted>
           <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
         </video>
       </div>
