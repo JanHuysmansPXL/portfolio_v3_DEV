@@ -101,10 +101,10 @@ export default {
       </div>
 
       <!-- TITLE BLOCK  -  1. WORDMARK -->
-      <section id="AuroHead" class="project-title-block bg-nt-10 pb-lg">
-        <h4 class="project-title-block-title txt-ss-h2">Auro</h4>
+      <section id="AuroHead" class="project-title-block bg-nt-10">
+        <h2 class="project-title-block-title">Auro</h2>
         <!-- INFO SECTION -->
-        <div class="project-info-block mt-sm">
+        <div class="project-info-block mt-md">
           <div class="about-block">
             <p class="about-text txt-ss-sub2 txt-gr-50">About</p>
           </div>
@@ -234,7 +234,7 @@ export default {
 
         <!-- SUGGESTION BAR -->
         <div class="suggestion-bar mt-lg">
-          <router-link to="/" class="suggestion-link">
+          <router-link to="/auro" class="suggestion-link">
             <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right-purple.png" /></span>Suggestion
           </router-link>
         </div>
