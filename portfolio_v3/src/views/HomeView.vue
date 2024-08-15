@@ -5,8 +5,8 @@ import FooterComponent from '@/components/FooterComponent.vue';
     data() {
         return {
             /* LIST OF NAVBAR LINKS */
-            linkMissionText: "Mission",
-            linkVoiceText: "Tone of voice",
+            buttonAboutText: "Read my story",
+            buttonContactText: "Get in touch",
             isSidebarOpen: false,
             }
         },
@@ -87,8 +87,14 @@ import FooterComponent from '@/components/FooterComponent.vue';
                         <!-- CTA BUTTONS -->
                         <div class="cta-wrapper container-fluid no-x-padding">
                         <div class="cta-buttonbar">
-                            <a href="#" target="_blank"><button class="cta-button"><span><img class="link-arrow" src="/assets/arrow-right-link.png"></span>Get in touch</button></a>
-                            <a href="#" target="_blank"><button class="cta-button"><span><img class="link-arrow" src="/assets/arrow-right-link.png"></span>Read my story</button></a>
+                            <button class="cta-button">
+                                <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+                                <router-link to="/work" class="link-text">{{ buttonAboutText }}</router-link>                            
+                            </button>
+                            <button class="cta-button">
+                                <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+                                <router-link to="/home" class="link-text">{{ buttonContactText }}</router-link>                            
+                            </button>
                         </div>
                         
                     </div>

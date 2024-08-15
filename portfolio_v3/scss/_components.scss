@@ -7,8 +7,12 @@
     height: 1px;
     margin-top: 4px;
     background-color: $color-neutral--60;
-  }
-
+}
+.divider-thick {
+    width: 100%;
+    height: 2px;
+    background-color: $color-neutral--60;
+}
 /* BASE BUTTON STYLE */
 
 .button {
@@ -63,69 +67,74 @@
         padding-left: 0;
         padding-right: 0;
     }
-    .cta-title {
-        margin-bottom: $margin-sm;
-    }
     .cta-buttonbar {
-        width: 100%;
-        .cta-button {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            font-family: $font-display;
-            font-size: 1.41375rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 0; /* 1.62581rem */
-            letter-spacing: 0.01413rem;
-            background-color: $color-white;
-            color: $color-neutral--100;
-            padding: .75rem 1rem;
-            margin-right: 0.625rem;
-            border: 1.5px solid $color-neutral--100;
-            border-radius: 62.4375rem;
-            cursor: pointer;
-            @include mediaquery (tablet){
-                margin-top: $margin-xs;
-            }
-            &:hover {
-                background-color: $color-neutral--10;
-                .link-arrow {
-                    max-height: 16px;
-                    width: auto;
-                    margin-right: 8px;
-                    margin-top: 4px;
-                    box-sizing: border-box;
-                    transition-property: margin-right;
-                    transition-duration: 0.3s;
-                    transition-timing-function: cubic-bezier(0.56,0.25,0.33,0.75);
-                    @include mediaquery(tablet) {
-                      box-sizing: border-box;
-                      max-height: 12px;
-                      width: auto;
-                      margin-right: 8px;
-                      margin-top: 4px;
-                    }
-                }
-            }
+        width: 100%;   
+        display: flex;
+        flex-direction: row;
+        @include mediaquery (mobile){
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: .5rem;
         }
     }
 }
 
-.link-arrow {
-    /* Button Default */
-    font-family: 'degular-display', arial, sans-serif;
+.cta-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: $font-display;
     font-size: 1.41375rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 115%; /* 1.62581rem */
+    line-height: 0; /* 1.62581rem */
     letter-spacing: 0.01413rem;
-    margin-right: .5rem;
-    transition: all;
-    transition-duration: .3s;
-    transition-timing-function: ease-in-out;
-    transition-property: margin;
-    text-decoration: none;
+    background-color: $color-white;
+    color: $color-neutral--100;
+    padding: .75rem 1rem;
+    margin-right: 0.625rem;
+    border: 1.5px solid $color-neutral--100;
+    border-radius: 62.4375rem;
+    cursor: pointer;
+    @include mediaquery (tablet){
+        margin-top: $margin-xs;
+        padding: .6rem .8rem;
+    }
+    &:hover > .link-arrow{
+        margin-right: 12px;
+    }
+    &:hover {
+        background-color: $color-neutral--10;
+    }
+    .link-arrow {
+        max-height: 16px;
+        width: auto;
+        margin-right: 8px;
+        margin-top: 4px;
+        box-sizing: border-box;
+        transition-property: margin-right;
+        transition-duration: 0.3s;
+        transition-timing-function: cubic-bezier(0.56,0.25,0.33,0.75);
+        @include mediaquery(tablet) {
+            box-sizing: border-box;
+            max-height: 12px;
+            width: auto;
+            margin-right: 8px;
+            margin-top: 4px;
+        }
+    }
+    .link-text {
+        /* Button Default */
+        font-family: "Degular Display", Arial, Helvetica, sans-serif;
+        font-size: 1.41375rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 115%; /* 1.62581rem */
+        letter-spacing: 0.01413rem;
+        text-decoration: none;
+        color: $color-neutral--100;
+    }
 }
 
 /* PAGE TITLE BLOCK WITH TEXT */
@@ -429,8 +438,8 @@
             display: flex;
             flex-direction: row;
             align-items: flex-end;
+            justify-content: flex-end;
             width: 33%;
-            margin-right: $margin-md;
             @include mediaquery(tablet) {
                 width: 0px;
                 display: none;
