@@ -404,10 +404,12 @@
 
 // QUOTE BLOCK WITH TEXT -- Has a text quote block with or without indent.
 .quote-block {
-    padding-top: $padding-xl;
     padding-left: $padding-md;
     padding-right: $padding-md;
-
+    @include mediaquery (tablet) {
+        padding-left: $padding-sm;
+        padding-right: $padding-sm;
+    }
     .quote-block-text {
         max-width: 75%;
     }
@@ -420,6 +422,22 @@
     .quote-block-text-indent {
         max-width: 80%;
         text-indent: 160px;
+    }
+}
+
+/* Mockup BAR */
+
+.mockup-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: $padding-lg;
+    gap: 32px;
+    .mockup-image {
+        max-height: 480px;
+        width: auto;
+        object-fit: cover;
     }
 }
 
@@ -1602,6 +1620,7 @@
       }
     }
   }
+
   .scroll-buttons {
     display: flex;
     flex-direction: row;
@@ -1614,16 +1633,27 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        height: 42px;
-        width: 42px;
-        background-color: $color-purple--80;
-        color: $color-neutral--10;
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: yellow;
+        color: $color-neutral--100;
         border: none;
-        margin-right: $margin-xs;
+        border-radius: 999px;
+        margin-right: $margin-sm;
         cursor: pointer;
         z-index: 10;
+        transition-property: background-color;
+        transition-duration: 0.3s;
+        transition-timing-function: cubic-bezier(0.56,0.25,0.33,0.75);
+        .scroll-arrow {
+            height: 1.5rem;
+            width: auto;
+        }
+        &:first-of-type {
+            rotate: 180deg;
+        }
         &:hover {
-        background-color: $color-purple--75;
+        background-color: $color-neutral--10;
         }
         &.prev {
         left: 0;

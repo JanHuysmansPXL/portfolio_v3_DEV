@@ -15,13 +15,13 @@
         padding: 1rem 1rem;
       }
     .suggestion-link {
+      font-family: $font-variable;
       text-decoration: none;
       font-weight: bold;
       display: flex;
       align-items: center;
       color: #663DF9;
       font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
-      font-family: "Degular Variable";
       font-size: 8rem;
       font-style: normal;
       font-weight: 650;
