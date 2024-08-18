@@ -1,14 +1,12 @@
 <script>
 import FooterComponent from "@/components/FooterComponent.vue";
 import MarqueeBar from "@/components/MarqueeBar.vue";
-import transitVideoImport from '/assets/images/projects/transit/transit_video.mp4';
 
 
 export default {
   data() {
     return {
-      transitVideo: transitVideoImport,
-      vidOne: transitVideoImport,
+      /*transitVideo: transitVideoImport,*/
       buttonWebsiteText: 'Auro Website',
     };
   },
@@ -32,49 +30,44 @@ export default {
     <main class="maintest">
 
 
-      <!-- FULL IMAGE  -->
+ <!-- FULL IMAGE  -->
       <div class="container-fluid">
-        <div class="container-fluid bg-white">
-        <video class=" project-heading-vid vid-pagewidth" autoplay loop playsinline muted>
-          <source :src="transitVideo" type="video/mp4"> Your browser does not support the video tag.
-        </video>
+        <img class="img-fluid project-heading-img" src="/assets/images/projects/onyx/onyx-cover-1.png"
+          alt="An image of the made icon graphic language">
       </div>
-    </div>
        
 
       <!-- TITLE BLOCK  -  1. WORDMARK -->
       <section id="AuroHead" class="project-title-block bg-nt-10">
-        <h2 class="project-title-block-title">Transit</h2>
+        <h2 class="project-title-block-title">Onyx</h2>
         <!-- INFO SECTION -->
         <div class="project-info-block mt-md">
           <div class="about-block">
             <p class="about-text txt-ss-sub2 txt-gr-50">About</p>
           </div>
           <div class="intro-block">
-            <h6 class="intro-title txt-ss-h6">I designed 5 sculptures for Transit, a techno/house-event with headliners like Mall Grab.</h6>
-            <p class="intro-subtitle txt-ss-body1 txt-pp-80">Lorem ipsum dolor sit amet consectetur. At posuere aliquet sit
-              sagittis ornare id cras magna. Pellentesque tincidunt enim aliquam elit .Lorem ipsum dolor sit amet
-              consectetur.</p>
+            <h6 class="intro-title txt-ss-h6">A handmade font that rocks.</h6>
+            <p class="intro-subtitle txt-ss-body1 txt-nt-60">Onyx is the first font I ever made. I crafted each letter as if it were a monolithic block. I made several sketches before developing the letters digitally with Adobe Illustrator and FontForge.</p>
           </div>
           <div class="details-block">
-            <h5 class="details-title txt-ss-sub2">ART / SCULPTURE / 3D</h5>
+            <h5 class="details-title txt-ss-sub2">TYPOGRAPHY</h5>
             <div class="details-wrap">
               <div class="detail-bar">
                 <div class="text-wrap">
                   <p class="bar-text">Year</p>
-                  <p class="bar-text">2020</p>
+                  <p class="bar-text">2023</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Role</p>
-                  <p class="bar-text">Artist / Industrial Designer</p>
+                  <p class="bar-text">Designer</p>
                 </div>
                 <div class="text-wrap">
-                  <p class="bar-text">Cliënt</p>
-                  <p class="bar-text">Transit / Ampere / Chaos</p>
+                  <p class="bar-text">Type</p>
+                  <p class="bar-text">Display Font</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Tools</p>
-                  <a class="bar-text">Rhino, Cinema 4D, Cardboard</a>
+                  <a class="bar-text">Adobe Illustrator, Fontforge</a>
                 </div>
               </div>
             </div>
@@ -141,12 +134,12 @@ export default {
           prompting helped met to further align a total of 20 Auro products.</p>
       </section>
 
-      <!-- FULL VIDEO  -->
+      <!-- FULL VIDEO  
       <div class="container-fluid bg-white">
         <video class="vid-pagewidth padded" autoplay loop>
           <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
         </video>
-      </div>
+      </div> -->
 
       <!-- Info Block - WEBSITE -->
       <section class="quote-block bg-white">

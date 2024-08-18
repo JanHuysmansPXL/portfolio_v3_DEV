@@ -1,14 +1,10 @@
 <script>
 import FooterComponent from "@/components/FooterComponent.vue";
 import MarqueeBar from "@/components/MarqueeBar.vue";
-import transitVideoImport from '/assets/images/projects/transit/transit_video.mp4';
-
 
 export default {
   data() {
     return {
-      transitVideo: transitVideoImport,
-      vidOne: transitVideoImport,
       buttonWebsiteText: 'Auro Website',
     };
   },
@@ -32,26 +28,23 @@ export default {
     <main class="maintest">
 
 
-      <!-- FULL IMAGE  -->
+ <!-- FULL IMAGE  -->
       <div class="container-fluid">
-        <div class="container-fluid bg-white">
-        <video class=" project-heading-vid vid-pagewidth" autoplay loop playsinline muted>
-          <source :src="transitVideo" type="video/mp4"> Your browser does not support the video tag.
-        </video>
+        <img class="img-fluid project-heading-img" src="/assets/images/projects/buildr/buildr_mockupsgrid.png"
+          alt="An image of the made icon graphic language">
       </div>
-    </div>
        
 
       <!-- TITLE BLOCK  -  1. WORDMARK -->
       <section id="AuroHead" class="project-title-block bg-nt-10">
-        <h2 class="project-title-block-title">Transit</h2>
+        <h2 class="project-title-block-title">Buildr</h2>
         <!-- INFO SECTION -->
         <div class="project-info-block mt-md">
           <div class="about-block">
             <p class="about-text txt-ss-sub2 txt-gr-50">About</p>
           </div>
           <div class="intro-block">
-            <h6 class="intro-title txt-ss-h6">I designed 5 sculptures for Transit, a techno/house-event with headliners like Mall Grab.</h6>
+            <h6 class="intro-title txt-ss-h6">WI designed 5 sculptures for Transit, a techno/house-event with headliners like Mall Grab.</h6>
             <p class="intro-subtitle txt-ss-body1 txt-pp-80">Lorem ipsum dolor sit amet consectetur. At posuere aliquet sit
               sagittis ornare id cras magna. Pellentesque tincidunt enim aliquam elit .Lorem ipsum dolor sit amet
               consectetur.</p>

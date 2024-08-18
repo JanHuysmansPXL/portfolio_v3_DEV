@@ -1,14 +1,10 @@
 <script>
 import FooterComponent from "@/components/FooterComponent.vue";
 import MarqueeBar from "@/components/MarqueeBar.vue";
-import transitVideoImport from '/assets/images/projects/transit/transit_video.mp4';
-
 
 export default {
   data() {
     return {
-      transitVideo: transitVideoImport,
-      vidOne: transitVideoImport,
       buttonWebsiteText: 'Auro Website',
     };
   },
@@ -32,49 +28,44 @@ export default {
     <main class="maintest">
 
 
-      <!-- FULL IMAGE  -->
+ <!-- FULL IMAGE  -->
       <div class="container-fluid">
-        <div class="container-fluid bg-white">
-        <video class=" project-heading-vid vid-pagewidth" autoplay loop playsinline muted>
-          <source :src="transitVideo" type="video/mp4"> Your browser does not support the video tag.
-        </video>
+        <img class="img-fluid project-heading-img" src="/assets/images/projects/collider/collider-cover-1.png"
+          alt="An image of the made icon graphic language">
       </div>
-    </div>
        
 
       <!-- TITLE BLOCK  -  1. WORDMARK -->
       <section id="AuroHead" class="project-title-block bg-nt-10">
-        <h2 class="project-title-block-title">Transit</h2>
+        <h2 class="project-title-block-title">Collider</h2>
         <!-- INFO SECTION -->
         <div class="project-info-block mt-md">
           <div class="about-block">
             <p class="about-text txt-ss-sub2 txt-gr-50">About</p>
           </div>
           <div class="intro-block">
-            <h6 class="intro-title txt-ss-h6">I designed 5 sculptures for Transit, a techno/house-event with headliners like Mall Grab.</h6>
-            <p class="intro-subtitle txt-ss-body1 txt-pp-80">Lorem ipsum dolor sit amet consectetur. At posuere aliquet sit
-              sagittis ornare id cras magna. Pellentesque tincidunt enim aliquam elit .Lorem ipsum dolor sit amet
-              consectetur.</p>
+            <h6 class="intro-title txt-ss-h6">Collider is a personal art project. I make prints and drawings based on repetitive patterns.</h6>
+            <p class="intro-subtitle txt-ss-body1 txt-nt-60">Drawings and digital prints I made between 2018 and 2022. Prints were made on a Axidraw V3 drawing robot. Usually my work is based on a number-based approach.</p>
           </div>
           <div class="details-block">
-            <h5 class="details-title txt-ss-sub2">ART / SCULPTURE / 3D</h5>
+            <h5 class="details-title txt-ss-sub2">Art / Drawing</h5>
             <div class="details-wrap">
               <div class="detail-bar">
                 <div class="text-wrap">
                   <p class="bar-text">Year</p>
-                  <p class="bar-text">2020</p>
+                  <p class="bar-text">2018-2022</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Role</p>
-                  <p class="bar-text">Artist / Industrial Designer</p>
+                  <p class="bar-text">Artist</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Cliënt</p>
-                  <p class="bar-text">Transit / Ampere / Chaos</p>
+                  <p class="bar-text">Personal Private collections</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Tools</p>
-                  <a class="bar-text">Rhino, Cinema 4D, Cardboard</a>
+                  <a class="bar-text">Ink, Paper, Axidraw</a>
                 </div>
               </div>
             </div>
@@ -88,17 +79,16 @@ export default {
       <!-- 01 / POSTS  -->
       <div class="mini-title-container bg-nt-100">
         <div class="mini-title-box pt-md">
-          <p class="mini-title-label txt-nt-15">What is Auro ?</p>
+          <p class="mini-title-label txt-nt-15">Process</p>
         </div>
       </div>
 
       <!-- Info Block - Socials -->
       <section class="quote-block bg-nt-100">
         <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
-          Auro is a fictional wearables brand with a futuristic product line.
+          The first drafts of the Kronolith were made with Midjourney and drawn out and animated in Blender.
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">The idea behind the Auro was to create a
-          collection of high-tech wearables to complement contemporary lifestyles.</p>
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">I designed the product to be wall-mounted. The controls are integrated in the rim which rotates 360 degrees. The knurled rim can be pushed, so the user confirm selections. The body design is optimized for grip and sturdyness.</p>
       </section>
 
       <!-- CAROUSEL SLIDER FOR INSTA SLIDES GRID  -->

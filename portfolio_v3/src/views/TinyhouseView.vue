@@ -1,14 +1,13 @@
 <script>
 import FooterComponent from "@/components/FooterComponent.vue";
 import MarqueeBar from "@/components/MarqueeBar.vue";
-import transitVideoImport from '/assets/images/projects/transit/transit_video.mp4';
+import transitVideoImport from '/assets/images/projects/tinyhouse/TinyHouse - Instagram Posts/TinyHouse---Instagram-Story-1080x1920-n2.gif';
 
 
 export default {
   data() {
     return {
       transitVideo: transitVideoImport,
-      vidOne: transitVideoImport,
       buttonWebsiteText: 'Auro Website',
     };
   },
@@ -33,48 +32,45 @@ export default {
 
 
       <!-- FULL IMAGE  -->
-      <div class="container-fluid">
-        <div class="container-fluid bg-white">
-        <video class=" project-heading-vid vid-pagewidth" autoplay loop playsinline muted>
-          <source :src="transitVideo" type="video/mp4"> Your browser does not support the video tag.
-        </video>
+ <!-- FULL IMAGE  -->
+       <div class="container-fluid">
+        <img class="img-fluid project-heading-img" src="/assets/images/projects/tinyhouse/tinyhouse-cover-1.png
+"
+          alt="An image of the made icon graphic language">
       </div>
-    </div>
        
 
       <!-- TITLE BLOCK  -  1. WORDMARK -->
       <section id="AuroHead" class="project-title-block bg-nt-10">
-        <h2 class="project-title-block-title">Transit</h2>
+        <h2 class="project-title-block-title">Tiny House</h2>
         <!-- INFO SECTION -->
         <div class="project-info-block mt-md">
           <div class="about-block">
             <p class="about-text txt-ss-sub2 txt-gr-50">About</p>
           </div>
           <div class="intro-block">
-            <h6 class="intro-title txt-ss-h6">I designed 5 sculptures for Transit, a techno/house-event with headliners like Mall Grab.</h6>
-            <p class="intro-subtitle txt-ss-body1 txt-pp-80">Lorem ipsum dolor sit amet consectetur. At posuere aliquet sit
-              sagittis ornare id cras magna. Pellentesque tincidunt enim aliquam elit .Lorem ipsum dolor sit amet
-              consectetur.</p>
+            <h6 class="intro-title txt-ss-h6">Inspiring people to live smaller trough joyful branding.</h6>
+            <p class="intro-subtitle txt-ss-body1 txt-pp-80">TinyHouse is an ecological brand that brings affordable and durable tiny houses to the masses. For this project I made the logo and brand guide, online banners and Instagram content.</p>
           </div>
           <div class="details-block">
-            <h5 class="details-title txt-ss-sub2">ART / SCULPTURE / 3D</h5>
+            <h5 class="details-title txt-ss-sub2">Branding / SOCIAL MARKETING</h5>
             <div class="details-wrap">
               <div class="detail-bar">
                 <div class="text-wrap">
                   <p class="bar-text">Year</p>
-                  <p class="bar-text">2020</p>
+                  <p class="bar-text">2023</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Role</p>
-                  <p class="bar-text">Artist / Industrial Designer</p>
+                  <p class="bar-text">Digital Designer</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Cliënt</p>
-                  <p class="bar-text">Transit / Ampere / Chaos</p>
+                  <p class="bar-text">PXL*</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Tools</p>
-                  <a class="bar-text">Rhino, Cinema 4D, Cardboard</a>
+                  <a class="bar-text">Adobe Photoshop, Illustrator, XD</a>
                 </div>
               </div>
             </div>
@@ -86,33 +82,29 @@ export default {
 
 
       <!-- 01 / POSTS  -->
-      <div class="mini-title-container bg-nt-100">
+      <div class="mini-title-container bg-nt-10">
         <div class="mini-title-box pt-md">
-          <p class="mini-title-label txt-nt-15">What is Auro ?</p>
+          <p class="mini-title-label txt-gr-50">Mission</p>
         </div>
       </div>
 
       <!-- Info Block - Socials -->
-      <section class="quote-block bg-nt-100">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
-          Auro is a fictional wearables brand with a futuristic product line.
+      <section class="quote-block bg-nt-10">
+        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
+          Living smaller and greener.
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">The idea behind the Auro was to create a
-          collection of high-tech wearables to complement contemporary lifestyles.</p>
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">TinyHouse is about inspiring people to live smaller and greener. For this brand I wanted a fresh and youthful image. I developed the logo, brand guide and social content for the brand.</p>
       </section>
 
       <!-- CAROUSEL SLIDER FOR INSTA SLIDES GRID  -->
 
-      <div class="container-fluid py-xl bg-nt-100">
+      <div class="container-fluid py-xl bg-nt-10">
         <div class="grid-images-wrapper" ref="imageWrapper">
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_poster.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt1.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt2.jpg" alt="">
-          </div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt3.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt4.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_render.jpg" alt="">
-          </div>
+          <div class="grid-box"><img class="grid-image post" src="/assets/images/projects/tinyhouse/TinyHouse - Instagram Posts/TinyHouse---Instagram-PostsPOST-1.png" alt=""></div>
+          <div class="grid-box"><img class="grid-image post" src="/assets/images/projects/tinyhouse/TinyHouse - Instagram Posts/TinyHouse---Instagram-PostsPOST-2.png" alt=""></div>
+          <div class="grid-box"><img class="grid-image post" src="/assets/images/projects/tinyhouse/TinyHouse - Instagram Posts/TinyHouse---Instagram-PostsPOST-3.png" alt=""></div>
+          <div class="grid-box"><img class="grid-image post" src="/assets/images/projects/tinyhouse/TinyHouse - Instagram Posts/TinyHouse---Instagram-PostsPOST-4.png" alt=""></div>
+          <div class="grid-box"><img class="grid-image post" src="/assets/images/projects/tinyhouse/TinyHouse - Instagram Posts/TinyHouse---Instagram-PostsPOST-5.png" alt=""></div>
         </div>
         <div class="scroll-buttons mt-sm">
           <button class="scroll-button prev" @click="scrollPrev">

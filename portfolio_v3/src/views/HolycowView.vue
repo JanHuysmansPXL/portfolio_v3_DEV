@@ -1,14 +1,10 @@
 <script>
 import FooterComponent from "@/components/FooterComponent.vue";
 import MarqueeBar from "@/components/MarqueeBar.vue";
-import transitVideoImport from '/assets/images/projects/transit/transit_video.mp4';
-
 
 export default {
   data() {
     return {
-      transitVideo: transitVideoImport,
-      vidOne: transitVideoImport,
       buttonWebsiteText: 'Auro Website',
     };
   },
@@ -32,49 +28,44 @@ export default {
     <main class="maintest">
 
 
-      <!-- FULL IMAGE  -->
+ <!-- FULL IMAGE  -->
       <div class="container-fluid">
-        <div class="container-fluid bg-white">
-        <video class=" project-heading-vid vid-pagewidth" autoplay loop playsinline muted>
-          <source :src="transitVideo" type="video/mp4"> Your browser does not support the video tag.
-        </video>
+        <img class="img-fluid project-heading-img" src="/assets/images/projects/holycow/holycow-cover-1.png"
+          alt="An image of the made icon graphic language">
       </div>
-    </div>
        
 
       <!-- TITLE BLOCK  -  1. WORDMARK -->
       <section id="AuroHead" class="project-title-block bg-nt-10">
-        <h2 class="project-title-block-title">Transit</h2>
+        <h2 class="project-title-block-title">Holy Cow!</h2>
         <!-- INFO SECTION -->
         <div class="project-info-block mt-md">
           <div class="about-block">
             <p class="about-text txt-ss-sub2 txt-gr-50">About</p>
           </div>
           <div class="intro-block">
-            <h6 class="intro-title txt-ss-h6">I designed 5 sculptures for Transit, a techno/house-event with headliners like Mall Grab.</h6>
-            <p class="intro-subtitle txt-ss-body1 txt-pp-80">Lorem ipsum dolor sit amet consectetur. At posuere aliquet sit
-              sagittis ornare id cras magna. Pellentesque tincidunt enim aliquam elit .Lorem ipsum dolor sit amet
-              consectetur.</p>
+            <h6 class="intro-title txt-ss-h6">Building a kick-ass burger brand with a conscience.</h6>
+            <p class="intro-subtitle txt-ss-body1 txt-pp-80">Lorem ipsum dolor sit amet consectetur. At posuere aliquet sit sagittis ornare id cras magna. Pellentesque tincidunt enim aliquam elit .Lorem ipsum dolor sit amet consectetur.</p>
           </div>
           <div class="details-block">
-            <h5 class="details-title txt-ss-sub2">ART / SCULPTURE / 3D</h5>
+            <h5 class="details-title txt-ss-sub2">BRANDING / SOCIAL MARKETING</h5>
             <div class="details-wrap">
               <div class="detail-bar">
                 <div class="text-wrap">
                   <p class="bar-text">Year</p>
-                  <p class="bar-text">2020</p>
+                  <p class="bar-text">2023</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Role</p>
-                  <p class="bar-text">Artist / Industrial Designer</p>
+                  <p class="bar-text">Digital Designer</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Cliënt</p>
-                  <p class="bar-text">Transit / Ampere / Chaos</p>
+                  <p class="bar-text">PXL*</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Tools</p>
-                  <a class="bar-text">Rhino, Cinema 4D, Cardboard</a>
+                  <a class="bar-text">Adobe Photoshop, Illustrator, XD</a>
                 </div>
               </div>
             </div>
@@ -86,19 +77,18 @@ export default {
 
 
       <!-- 01 / POSTS  -->
-      <div class="mini-title-container bg-nt-100">
+      <div class="mini-title-container bg-white">
         <div class="mini-title-box pt-md">
-          <p class="mini-title-label txt-nt-15">What is Auro ?</p>
+          <p class="mini-title-label txt-nt-100">What’s the brand about?</p>
         </div>
       </div>
 
       <!-- Info Block - Socials -->
-      <section class="quote-block bg-nt-100">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
-          Auro is a fictional wearables brand with a futuristic product line.
+      <section class="quote-block bg-white">
+        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
+          Holy Cow's mission is to create a world where people can enjoy a healthy and guilt-free meal. We want to be the most ecological fastfood-chain in the industry by spearheading innovation. 
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">The idea behind the Auro was to create a
-          collection of high-tech wearables to complement contemporary lifestyles.</p>
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">I designed the product to be wall-mounted. The controls are integrated in the rim which rotates 360 degrees. The knurled rim can be pushed, so the user confirm selections. The body design is optimized for grip and sturdyness.</p>
       </section>
 
       <!-- CAROUSEL SLIDER FOR INSTA SLIDES GRID  -->

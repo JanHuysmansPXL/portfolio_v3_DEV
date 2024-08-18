@@ -8,7 +8,6 @@ export default {
   data() {
     return {
       transitVideo: transitVideoImport,
-      vidOne: transitVideoImport,
       buttonWebsiteText: 'Auro Website',
     };
   },
@@ -32,49 +31,46 @@ export default {
     <main class="maintest">
 
 
-      <!-- FULL IMAGE  -->
+ <!-- FULL IMAGE  -->
       <div class="container-fluid">
-        <div class="container-fluid bg-white">
-        <video class=" project-heading-vid vid-pagewidth" autoplay loop playsinline muted>
-          <source :src="transitVideo" type="video/mp4"> Your browser does not support the video tag.
-        </video>
+        <img class="img-fluid project-heading-img" src="/assets/images/projects/made/made-dbb-cover-1.png"
+          alt="An image of the made icon graphic language">
       </div>
-    </div>
        
 
       <!-- TITLE BLOCK  -  1. WORDMARK -->
       <section id="AuroHead" class="project-title-block bg-nt-10">
-        <h2 class="project-title-block-title">Transit</h2>
+        <h2 class="project-title-block-title">Made<br> Digital Brandbook</h2>
         <!-- INFO SECTION -->
         <div class="project-info-block mt-md">
           <div class="about-block">
             <p class="about-text txt-ss-sub2 txt-gr-50">About</p>
           </div>
           <div class="intro-block">
-            <h6 class="intro-title txt-ss-h6">I designed 5 sculptures for Transit, a techno/house-event with headliners like Mall Grab.</h6>
+            <h6 class="intro-title txt-ss-h6">Webdesign and development of a wearables brand, powered by Midjourney.</h6>
             <p class="intro-subtitle txt-ss-body1 txt-pp-80">Lorem ipsum dolor sit amet consectetur. At posuere aliquet sit
               sagittis ornare id cras magna. Pellentesque tincidunt enim aliquam elit .Lorem ipsum dolor sit amet
               consectetur.</p>
           </div>
           <div class="details-block">
-            <h5 class="details-title txt-ss-sub2">ART / SCULPTURE / 3D</h5>
+            <h5 class="details-title txt-ss-sub2">UI / UX / Webdevelopment</h5>
             <div class="details-wrap">
               <div class="detail-bar">
                 <div class="text-wrap">
                   <p class="bar-text">Year</p>
-                  <p class="bar-text">2020</p>
+                  <p class="bar-text">2024</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Role</p>
-                  <p class="bar-text">Artist / Industrial Designer</p>
+                  <p class="bar-text">UI / UX-designer, Developer</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Cliënt</p>
-                  <p class="bar-text">Transit / Ampere / Chaos</p>
+                  <p class="bar-text">Made</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Tools</p>
-                  <a class="bar-text">Rhino, Cinema 4D, Cardboard</a>
+                  <a class="bar-text">Figma, Adobe, Airtable, Vue.js</a>
                 </div>
               </div>
             </div>
