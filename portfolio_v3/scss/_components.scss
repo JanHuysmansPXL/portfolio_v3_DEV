@@ -1643,12 +1643,13 @@
 
     .grid-box {
       flex: 0 0 auto;
-      margin-right: 1rem;
-      width: auto;
+      max-width: 400px;
       height: auto;
-      margin-left: $margin-md;
+      margin-left: $margin-sm;
+      &:first-of-type {
+        margin-left: $margin-md;
+      }
       @include mediaquery (tablet){
-        margin-right: $margin-sm;
         margin-left: $margin-sm;
       }
       .grid-image {
@@ -1657,9 +1658,13 @@
         height: auto;
         border-radius: 2px;
         &.post {
-            min-width: 480px;
+            width: 480px;
             height: 480px;
-          }
+        }
+        &.tall {
+            width: 360px;
+            height: 720px;
+        }
       }
     }
   }

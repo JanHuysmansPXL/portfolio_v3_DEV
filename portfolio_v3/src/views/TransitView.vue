@@ -18,10 +18,10 @@ export default {
   },
   methods: {
     scrollPrev() {
-            this.$refs.imageWrapper.scrollBy({ left: -316, behavior: 'smooth' });
+            this.$refs.imageWrapper.scrollBy({ left: -376, behavior: 'smooth' });
             },
             scrollNext() {
-            this.$refs.imageWrapper.scrollBy({ left: 316, behavior: 'smooth' });
+            this.$refs.imageWrapper.scrollBy({ left: 376, behavior: 'smooth' });
             },
   }
 };
@@ -105,13 +105,13 @@ export default {
 
       <div class="container-fluid py-xl bg-nt-100">
         <div class="grid-images-wrapper" ref="imageWrapper">
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_poster.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt1.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt2.jpg" alt="">
+          <div class="grid-box"><img class="grid-image tall" src="/assets/images/projects/transit/transit_poster.jpg" alt=""></div>
+          <div class="grid-box"><img class="grid-image tall" src="/assets/images/projects/transit/transit_sculpt1.jpg" alt=""></div>
+          <div class="grid-box"><img class="grid-image tall" src="/assets/images/projects/transit/transit_sculpt2.jpg" alt="">
           </div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt3.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt4.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_render.jpg" alt="">
+          <div class="grid-box"><img class="grid-image tall" src="/assets/images/projects/transit/transit_sculpt3.jpg" alt=""></div>
+          <div class="grid-box"><img class="grid-image tall" src="/assets/images/projects/transit/transit_sculpt4.jpg" alt=""></div>
+          <div class="grid-box"><img class="grid-image tall" src="/assets/images/projects/transit/transit_render.jpg" alt="">
           </div>
         </div>
         <div class="scroll-buttons mt-sm">
