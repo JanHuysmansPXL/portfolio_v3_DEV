@@ -150,10 +150,16 @@
     display: block;
     @include mediaquery(tablet) {
         min-height: 540px;
+        max-height: 640px;
         object-position: 25% 50%;
     }
     &.mid {
         object-position: 50% 50%;
+    }
+    &.auto {
+        min-height: auto;
+        max-height: 720px;
+        height: auto;
     }
 }
 
