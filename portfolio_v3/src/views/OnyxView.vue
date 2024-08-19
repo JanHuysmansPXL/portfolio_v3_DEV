@@ -7,7 +7,7 @@ export default {
   data() {
     return {
       /*transitVideo: transitVideoImport,*/
-      buttonWebsiteText: 'Auro Website',
+      buttonWebsiteText: 'Download font OTF',
     };
   },
   components: {
@@ -15,12 +15,7 @@ export default {
     MarqueeBar,
   },
   methods: {
-    scrollPrev() {
-            this.$refs.imageWrapper.scrollBy({ left: -316, behavior: 'smooth' });
-            },
-            scrollNext() {
-            this.$refs.imageWrapper.scrollBy({ left: 316, behavior: 'smooth' });
-            },
+
   }
 };
 </script>
@@ -30,12 +25,12 @@ export default {
     <main class="maintest">
 
 
- <!-- FULL IMAGE  -->
+      <!-- FULL IMAGE  -->
       <div class="container-fluid">
         <img class="img-fluid project-heading-img" src="/assets/images/projects/onyx/onyx-cover-1.png"
           alt="An image of the made icon graphic language">
       </div>
-       
+
 
       <!-- TITLE BLOCK  -  1. WORDMARK -->
       <section id="AuroHead" class="project-title-block bg-nt-10">
@@ -47,7 +42,9 @@ export default {
           </div>
           <div class="intro-block">
             <h6 class="intro-title txt-ss-h6">A handmade font that rocks.</h6>
-            <p class="intro-subtitle txt-ss-body1 txt-nt-60">Onyx is the first font I ever made. I crafted each letter as if it were a monolithic block. I made several sketches before developing the letters digitally with Adobe Illustrator and FontForge.</p>
+            <p class="intro-subtitle txt-ss-body1 txt-nt-60">Onyx is the first font I ever made. I crafted each letter
+              as if it were a monolithic block. I made several sketches before developing the letters digitally with
+              Adobe Illustrator and FontForge.</p>
           </div>
           <div class="details-block">
             <h5 class="details-title txt-ss-sub2">TYPOGRAPHY</h5>
@@ -75,64 +72,27 @@ export default {
         </div>
       </section>
 
-
-
-
-      <!-- 01 / POSTS  -->
-      <div class="mini-title-container bg-nt-100">
-        <div class="mini-title-box pt-md">
-          <p class="mini-title-label txt-nt-15">What is Auro ?</p>
+      <!-- COPY BLOCK v1 -->
+      <section class="copy-block bg-nt-100 py-md">
+        <h4 class="copy-block-text-half txt-ss-h4 txt-nt-10">Onyx isn't meant to be slick.</h4>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-10 mt-sm">Getting the forms to be legible enough but still
+          slightly wonky was a challenge, but I really loved to complete the puzzle.</p>
+        <div class="images-wrapper mt-md">
+          <img src="/assets/images/projects/onyx/onyx-sketch-1.png" alt="Onyx Sketch 1" class="half-image">
+          <img src="/assets/images/projects/onyx/onyx-sketch-2.png" alt="Onyx Sketch 2" class="half-image">
         </div>
-      </div>
-
-      <!-- Info Block - Socials -->
-      <section class="quote-block bg-nt-100">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
-          Auro is a fictional wearables brand with a futuristic product line.
-        </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">The idea behind the Auro was to create a
-          collection of high-tech wearables to complement contemporary lifestyles.</p>
+        <h4 class="copy-block-text-half txt-ss-h4 txt-nt-10 mt-md">The symbols are based on rough sketches. My aim was to
+          go all solid.</h4>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-10 mt-sm">I experimented with angles and volumes in order see
+          where it got me. Personally I much think faster while drawing. To a certain extent the marks appear a bit
+          crafted.</p>
       </section>
 
-      <!-- CAROUSEL SLIDER FOR INSTA SLIDES GRID  -->
-
-      <div class="container-fluid py-xl bg-nt-100">
-        <div class="grid-images-wrapper" ref="imageWrapper">
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_poster.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt1.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt2.jpg" alt="">
-          </div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt3.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt4.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_render.jpg" alt="">
-          </div>
-        </div>
-        <div class="scroll-buttons mt-sm">
-          <button class="scroll-button prev" @click="scrollPrev">
-            <img class="scroll-arrow" src="../assets/arrow-right-link.png" alt="arrow">
-          </button>
-          <button class="scroll-button next" @click="scrollNext">
-            <img class="scroll-arrow" src="../assets/arrow-right-link.png" alt="arrow">
-          </button>
-        </div>
+      <!-- FULL IMAGE PADDED  -->
+      <div class="container-fluid bg-white">
+        <img class="img-fluid img-pagewidth padded fillheight"
+          src="/assets/images/projects/onyx/onyx_p5.jpg">
       </div>
-
-      <!-- FULL VIDEO  
-      <div class="container-fluid bg-nt-100">
-            <video class="vid-pagewidth padded" autoplay loop>
-              <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
-            </video>
-      </div>  -->
-
-      <!-- Heading Block - II -->
-      <section class="quote-block bg-nt-100 pb-lg">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
-          I used Midjourney to generate a consistent line of products that reflect the Auro philosophy.
-        </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">Midjourney is an AI-tool to generate creative
-          images. To visualise the Auro products I studied the use of advanced Midjourney settings. Experiments with
-          prompting helped met to further align a total of 20 Auro products.</p>
-      </section>
 
       <!-- FULL VIDEO  
       <div class="container-fluid bg-white">
@@ -143,41 +103,67 @@ export default {
 
       <!-- Info Block - WEBSITE -->
       <section class="quote-block bg-white">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
-          To develop the website I used Craft CMS, Vue and Wordpress.
-        </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">This website was made as an exercise mostly. I developed
-          the website three times. Once in Vue, another time with Wordpress and a third time with Craft CMS.</p>
+        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">Solid.</h4>
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">An overview of the glyphs in the typeface. My
+          goal was to have solid glyphs only. The biggest challenge was differentiating between certain marks, like the
+          letters O and D or the letter S and the number 5.</p>
       </section>
 
-      <!-- CTA BUTTONS -->
+
+
+
+
+      <!-- CTA BUTTON -->
       <div class="cta-wrapper container-fluid">
         <div class="cta-buttonbar">
           <button class="cta-button">
             <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
-            <a href="https://auro-future.com/" target="_blank" class="link-text">{{ buttonWebsiteText }}</a>
+            <a href="/assets/images/projects/onyx/Onyx.ttf" target="_blank" type="download" class="link-text">{{ buttonWebsiteText }}</a>
           </button>
         </div>
       </div>
 
-      <div class="container-fluid mockup-center bg-nt-10 mt-md">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-      </div>
+
+      <!-- METRICS Tabs-->
+      <section id="metrics" class="metrics-box container-fluid bg-nt-100">
+        <div class="metric-column">
+          <p class="metric-label txt-ss-sub2 txt-nt-10">Characters</p>
+          <h1 class="metric-number txt-ss-h2 txt-nt-10">40+</h1>
+          <p class="metric-text txt-gr-50">The typeface contains a full set of capitals and some of the most used glyphs.</p>
+        </div>
+        <div class="metric-column">
+          <p class="metric-label txt-ss-sub2 txt-nt-10">Symbols</p>
+          <h1 class="metric-number txt-ss-h2 txt-nt-10">9</h1>
+          <p class="metric-text txt-gr-50">I took part in a few group exhibitions. In some I took part as a co-curator or
+            organiser.</p>
+        </div>
+        <div class="metric-column">
+          <p class="metric-label txt-ss-sub2 txt-nt-10">Weights</p>
+          <h1 class="metric-number txt-ss-h2 txt-nt-10">1</h1>
+          <p class="metric-text txt-gr-50">Only black.</p>
+        </div>
+      </section>
+
+
+      <!-- QUOTE BLOCK "" -->
+      <section class="container-fluid bg-nt-10">
+        <div class="quote-block-wrapper">
+          <h6 class="txt-ss-h5 txt-gr-80">“You can have Onyx in all weights, as long as it’s black.“</h6>
+        </div>
+      </section>
 
       <!-- NEXT PROJECT BAR -->
-      <div class="next-project-bar mt-lg">
+      <div class="next-project-bar">
         <router-link to="/collider" class="next-project-link">
           <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right-dark.png" /></span>Next Project
         </router-link>
       </div>
 
-        <!-- MARQUEE BAR -->
-        <MarqueeBar />
+      <!-- MARQUEE BAR -->
+      <MarqueeBar />
 
-        <!-- FOOTER -->
-        <FooterComponent />
+      <!-- FOOTER -->
+      <FooterComponent />
 
     </main>
   </div>

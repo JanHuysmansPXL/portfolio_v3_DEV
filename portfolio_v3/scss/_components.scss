@@ -97,6 +97,7 @@
     border-radius: 62.4375rem;
     cursor: pointer;
     @include mediaquery (tablet){
+        font-size: 1rem;
         margin-top: $margin-xs;
         padding: .6rem .8rem;
     }
@@ -133,6 +134,9 @@
         letter-spacing: 0.01413rem;
         text-decoration: none;
         color: $color-neutral--100;
+        @include mediaquery (tablet){
+            font-size: 1rem;
+        }
     }
 }
 
@@ -409,10 +413,13 @@
     justify-content: flex-start;
     align-items: baseline;
     padding-top: $padding-xl;
+    padding-bottom: $padding-xl;
     padding-left: $padding-md;
     padding-right: $padding-md;
     @include mediaquery (tablet) {
         flex-direction: column;
+        padding-top: $padding-md;
+        padding-bottom: $padding-md;
         padding-left: $padding-sm;
         padding-right: $padding-sm;
     }
@@ -423,10 +430,18 @@
             margin-top: $margin-md;
         }
         .metric-label {
-            color: $color-neutral--60;
+            display: block;
+        }
+        .metric-number {
+            font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+            font-family: "Degular Variable", Arial, Helvetica, sans-serif;
+            font-size: 5.656rem;
+            font-style: normal;
+            font-weight: 680;
+            line-height: 95%; /* 5.37319rem */
+            letter-spacing: 0.08rem;
         }
         .metric-text {
-            color: $color-neutral--60;
             max-width: 75%;
         }
     }
@@ -478,6 +493,34 @@
     .copy-block-text-indent {
         max-width: 80%;
         text-indent: 160px;
+    }
+    .images-wrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        @include mediaquery (tablet) {
+            gap: 1rem;
+        }
+        @include mediaquery (mobile) {
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .half-image {
+            width: calc(100% / 2 - 16px);
+            height: auto;
+            object-fit: cover;
+            @include mediaquery (mobile) {
+                width: calc(100% / 2 - 8px);
+                height: auto;
+            }
+            @include mediaquery (mobile) {
+                min-width: 100%;
+                height: auto;
+            }
+        }
     }
 }
 
