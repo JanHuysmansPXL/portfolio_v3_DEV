@@ -9,7 +9,7 @@ export default {
     return {
       transitVideo: transitVideoImport,
       vidOne: transitVideoImport,
-      buttonWebsiteText: 'Auro Website',
+      buttonWebsiteText: 'Transit Website',
     };
   },
   components: {
@@ -82,28 +82,17 @@ export default {
         </div>
       </section>
 
-
-
-
-      <!-- 01 / POSTS  -->
-      <div class="mini-title-container bg-nt-100">
-        <div class="mini-title-box pt-md">
-          <p class="mini-title-label txt-nt-15">What is Auro ?</p>
-        </div>
-      </div>
-
-      <!-- Info Block - Socials -->
-      <section class="quote-block bg-nt-100">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
-          Auro is a fictional wearables brand with a futuristic product line.
+      <!-- TRANSIT COPY - INTRO TEXT -->
+      <section class="copy-block bg-white mt-md">
+        <h4 class="copy-block-text-half txt-ss-h4 txt-nt-100">
+          In 2018 I designed five sculptures for Transit, a techno/house-event with headliners like Mall Grab.
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">The idea behind the Auro was to create a
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">The idea behind the Auro was to create a
           collection of high-tech wearables to complement contemporary lifestyles.</p>
       </section>
 
-      <!-- CAROUSEL SLIDER FOR INSTA SLIDES GRID  -->
-
-      <div class="container-fluid py-xl bg-nt-100">
+      <!-- CAROUSEL SLIDER FOR TRANSIT IMAGES  -->
+      <div class="container-fluid py-lg bg-white">
         <div class="grid-images-wrapper" ref="imageWrapper">
           <div class="grid-box"><img class="grid-image tall" src="/assets/images/projects/transit/transit_poster.jpg" alt=""></div>
           <div class="grid-box"><img class="grid-image tall" src="/assets/images/projects/transit/transit_sculpt1.jpg" alt=""></div>
@@ -113,6 +102,10 @@ export default {
           <div class="grid-box"><img class="grid-image tall" src="/assets/images/projects/transit/transit_sculpt4.jpg" alt=""></div>
           <div class="grid-box"><img class="grid-image tall" src="/assets/images/projects/transit/transit_render.jpg" alt="">
           </div>
+        </div>
+        <div class="grid-subtext">
+          <p class="txt-ss-body2 bold txt-gr-50">Sculptures. (Scroll to view more)</p>
+          <p class="txt-ss-body2 txt-gr-50">A few images of the event, the poster, and a 3D-render of one of the sculptures.</p>
         </div>
         <div class="scroll-buttons mt-sm">
           <button class="scroll-button prev" @click="scrollPrev">
@@ -132,49 +125,44 @@ export default {
       </div>  -->
 
       <!-- Heading Block - II -->
-      <section class="quote-block bg-nt-100 pb-lg">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
-          I used Midjourney to generate a consistent line of products that reflect the Auro philosophy.
+      <section class="copy-block bg-white">
+        <h4 class="copy-block-text txt-ss-h4 txt-nt-100">
+          The forms were designed in Cinema 4D, and edited in Rhino to a waffle-grid structure. 
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">Midjourney is an AI-tool to generate creative
-          images. To visualise the Auro products I studied the use of advanced Midjourney settings. Experiments with
-          prompting helped met to further align a total of 20 Auro products.</p>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">The cardboard cut-outs measure about 2.4 meters and were made by a specialised firm in the Netherlands.</p>
       </section>
-
-      <!-- FULL VIDEO  -->
-      <div class="container-fluid bg-white">
-        <video class="vid-pagewidth padded" autoplay loop>
-          <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <!-- Info Block - WEBSITE -->
-      <section class="quote-block bg-white">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
-          To develop the website I used Craft CMS, Vue and Wordpress.
-        </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">This website was made as an exercise mostly. I developed
-          the website three times. Once in Vue, another time with Wordpress and a third time with Craft CMS.</p>
-      </section>
-
       <!-- CTA BUTTONS -->
       <div class="cta-wrapper container-fluid">
         <div class="cta-buttonbar">
           <button class="cta-button">
             <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
-            <a href="https://auro-future.com/" target="_blank" class="link-text">{{ buttonWebsiteText }}</a>
+            <a href="https://transit-festival.com/" target="_blank" class="link-text">{{ buttonWebsiteText }}</a>
           </button>
         </div>
       </div>
 
-      <div class="container-fluid mockup-center bg-nt-10 mt-md">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
+      <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
+      <div class="container-fluid mt-md">
+        <img class="img-fluid project-heading-img mid" src="/assets/images/projects/transit/transit-context-1.png"
+          alt="An image of the made icon graphic language">
       </div>
 
+      <!-- FULL VIDEO 
+      <div class="container-fluid bg-white">
+        <video class="vid-pagewidth padded" autoplay loop>
+          <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
+        </video>
+      </div> -->
+
+    <!-- QUOTE BLOCK "" -->
+    <section class="container-fluid bg-nt-10">
+        <div class="quote-block-wrapper">
+          <h6 class="txt-ss-h5 txt-gr-80">"What started as a small project among friends turned out to become a big-time festival.”</h6>
+        </div>
+      </section>
+
       <!-- NEXT PROJECT BAR -->
-      <div class="next-project-bar mt-lg">
+      <div class="next-project-bar">
         <router-link to="/onyx" class="next-project-link">
           <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right-dark.png" /></span>Next Project
         </router-link>

@@ -147,11 +147,16 @@
     max-height: 480px;
     object-fit: cover;
     object-position: 0% 50%;
+    display: block;
     @include mediaquery(tablet) {
         min-height: 540px;
         object-position: 25% 50%;
     }
+    &.mid {
+        object-position: 50% 50%;
+    }
 }
+
     
 .project-heading-vid {
     min-height: 480px;
@@ -1760,6 +1765,15 @@
     }
   }
 
+  .grid-subtext {
+    margin: 0 $margin-md;
+    max-width: 66%;
+    @include mediaquery (tablet){
+        margin: 0 $margin-sm;
+        max-width: 80%;
+    }
+  }
+
   .scroll-buttons {
     display: flex;
     flex-direction: row;
@@ -1767,6 +1781,9 @@
     bottom: -16px;
     left: 32px;
     transform: translateY(-50%);
+    @include mediaquery (tablet){
+        left: 16px;
+    }
     .scroll-button {
         display: flex;
         flex-direction: row;

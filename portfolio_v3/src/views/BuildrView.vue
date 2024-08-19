@@ -110,7 +110,7 @@ export default {
         </div>
       </section>
 
-      <!-- FULL IMAGE  -->
+      <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
       <div class="container-fluid">
         <img class="img-fluid project-heading-img" src="/assets/images/projects/buildr/buildr-banner-1.png"
           alt="An image of the made icon graphic language">
