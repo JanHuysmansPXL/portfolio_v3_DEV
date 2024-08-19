@@ -190,8 +190,16 @@ export default {
         </div>
       </div>
 
+
+
+      <!-- QUOTE BLOCK "" -->
+      <section class="container-fluid bg-nt-10 mt-md">
+        <div class="quote-block-wrapper">
+          <h6 class="txt-ss-h5 txt-gr-80">“I got a free student upgrade after I needed over 500 elements to place on my boards. — Thank you, Whimsical.”</h6>
+        </div>
+      </section>
       <!-- MOCKUP CENTERED -->
-      <div class="container-fluid mockup-center bg-nt-100 mt-md">
+      <div class="container-fluid mockup-center bg-nt-100">
         <img class="mockup-image" src="/assets/images/projects/buildr/buildr_animated_mock_wire.gif" alt="arrow">
       </div>
 

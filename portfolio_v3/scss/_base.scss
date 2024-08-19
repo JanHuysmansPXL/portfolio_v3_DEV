@@ -129,7 +129,12 @@ body {
         }
     }
     &.fillheight {
-        min-height: auto;
+        object-fit: fill;
+        min-height: min-content;
+        max-height: min-content;
+        @include mediaquery(tablet) {
+            min-height: auto;
+        }
     }
 }
 
