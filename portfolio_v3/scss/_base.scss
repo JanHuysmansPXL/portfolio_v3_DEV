@@ -122,6 +122,15 @@ body {
             padding: 1rem;
         }
     }
+    &.padded-side {
+        padding: 0rem 2rem;
+        @include mediaquery(tablet) {
+            padding: 0rem 1rem;
+        }
+    }
+    &.fillheight {
+        min-height: auto;
+    }
 }
 
 .vid-pagewidth {

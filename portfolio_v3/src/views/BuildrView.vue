@@ -5,7 +5,7 @@ import MarqueeBar from "@/components/MarqueeBar.vue";
 export default {
   data() {
     return {
-      buttonWebsiteText: 'Auro Website',
+      buttonWebsiteText: 'Buildr Website',
     };
   },
   components: {
@@ -13,12 +13,26 @@ export default {
     MarqueeBar,
   },
   methods: {
-    scrollPrev() {
-            this.$refs.imageWrapper.scrollBy({ left: -316, behavior: 'smooth' });
-            },
-            scrollNext() {
-            this.$refs.imageWrapper.scrollBy({ left: 316, behavior: 'smooth' });
-            },
+    getScrollWidth() {
+        // Determine the screen width and return the appropriate scroll width
+        if (window.innerWidth <= 768) {
+          // Mobile size (360px width for mobile)
+          return 376;
+        } else {
+          // Default size (416px for larger screens)
+          return 416;
+        }
+      },
+      scrollPrev() {
+        // Use the calculated scroll width
+        const scrollWidth = this.getScrollWidth();
+        this.$refs.imageWrapper.scrollBy({ left: -scrollWidth, behavior: 'smooth' });
+      },
+      scrollNext() {
+        // Use the calculated scroll width
+        const scrollWidth = this.getScrollWidth();
+        this.$refs.imageWrapper.scrollBy({ left: scrollWidth, behavior: 'smooth' });
+      },
   }
 };
 </script>
@@ -28,12 +42,12 @@ export default {
     <main class="maintest">
 
 
- <!-- FULL IMAGE  -->
+      <!-- FULL IMAGE  -->
       <div class="container-fluid">
         <img class="img-fluid project-heading-img" src="/assets/images/projects/buildr/buildr_mockupsgrid.png"
           alt="An image of the made icon graphic language">
       </div>
-       
+
 
       <!-- TITLE BLOCK  -  1. WORDMARK -->
       <section id="AuroHead" class="project-title-block bg-nt-10">
@@ -44,30 +58,31 @@ export default {
             <p class="about-text txt-ss-sub2 txt-gr-50">About</p>
           </div>
           <div class="intro-block">
-            <h6 class="intro-title txt-ss-h6">WI designed 5 sculptures for Transit, a techno/house-event with headliners like Mall Grab.</h6>
-            <p class="intro-subtitle txt-ss-body1 txt-pp-80">Lorem ipsum dolor sit amet consectetur. At posuere aliquet sit
-              sagittis ornare id cras magna. Pellentesque tincidunt enim aliquam elit .Lorem ipsum dolor sit amet
-              consectetur.</p>
+            <h6 class="intro-title txt-ss-h6">Buildr is a digital solution to help construction workers match with their
+              dream jobs.</h6>
+            <p class="intro-subtitle txt-ss-body1 txt-nt-60">Buildr. is a (fictional) job-matching app for construction,
+              metal and logistics. We did the branding, the interface for mobile and desktop, and developed the website
+              for the product.</p>
           </div>
           <div class="details-block">
-            <h5 class="details-title txt-ss-sub2">ART / SCULPTURE / 3D</h5>
+            <h5 class="details-title txt-ss-sub2">UI / UX / Webdevelopment</h5>
             <div class="details-wrap">
               <div class="detail-bar">
                 <div class="text-wrap">
                   <p class="bar-text">Year</p>
-                  <p class="bar-text">2020</p>
+                  <p class="bar-text">2023</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Role</p>
-                  <p class="bar-text">Artist / Industrial Designer</p>
+                  <p class="bar-text">Digital Designer, Developer</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Cliënt</p>
-                  <p class="bar-text">Transit / Ampere / Chaos</p>
+                  <p class="bar-text">PXL Digital*</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Tools</p>
-                  <a class="bar-text">Rhino, Cinema 4D, Cardboard</a>
+                  <a class="bar-text">Adobe XD, HTML, CSS, JS</a>
                 </div>
               </div>
             </div>
@@ -76,25 +91,52 @@ export default {
       </section>
 
 
-
-
-      <!-- 01 / POSTS  -->
-      <div class="mini-title-container bg-nt-100">
-        <div class="mini-title-box pt-md">
-          <p class="mini-title-label txt-nt-15">What is Auro ?</p>
-        </div>
-      </div>
-
-      <!-- Info Block - Socials -->
-      <section class="quote-block bg-nt-100">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
-          Auro is a fictional wearables brand with a futuristic product line.
-        </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">The idea behind the Auro was to create a
-          collection of high-tech wearables to complement contemporary lifestyles.</p>
+      <!-- Info Block - Buildr Brief + Mockup -->
+      <section class="copy-block bg-white mt-md mb-md">
+        <h5 class="copy-block-text-half txt-ss-h5 txt-nt-100">
+          The brief: build a job-matching app and an accessible website for its users, develop the brand identity for
+          the product and empower users to find work more easily.</h5>
       </section>
 
-      <!-- CAROUSEL SLIDER FOR INSTA SLIDES GRID  -->
+      <!-- MOCKUP CENTERED -->
+      <div class="container-fluid mockup-center bg-white mt-md">
+        <img class="mockup-image" src="/assets/images/projects/buildr/buildr_animated_mock_app3.gif" alt="arrow">
+      </div>
+
+      <!-- QUOTE BLOCK "" -->
+      <section class="container-fluid bg-nt-10">
+        <div class="quote-block-wrapper">
+          <h6 class="txt-ss-h5 txt-gr-80">“Buildr started with a mission: To help people build their dreams.”</h6>
+        </div>
+      </section>
+
+      <!-- FULL IMAGE  -->
+      <div class="container-fluid">
+        <img class="img-fluid project-heading-img" src="/assets/images/projects/buildr/buildr-banner-1.png"
+          alt="An image of the made icon graphic language">
+      </div>
+
+      <!-- Info Block - Buildr Brief + Mockup -->
+
+      <section class="copy-block bg-white mt-md mb-md">
+        <h4 class="copy-block-text-half txt-ss-h5 txt-nt-100">
+          For our audience, it was essential that our platform be accessible, easy-to-use, and down-to-earth. No frills.
+        </h4>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-60 mt-sm">Buildr. is a (fictional) job-matching app for
+          construction,
+          metal and logistics. We did the branding, the interface for mobile and desktop, and developed the website
+          for the product.</p>
+      </section>
+
+      <!-- FULL IMAGE PADDED  -->
+      <div class="container-fluid bg-white">
+        <img class="img-fluid img-pagewidth padded fillheight"
+          src="/assets/images/projects/buildr/buildr_persona_jos.jpg">
+        <img class="img-fluid img-pagewidth padded-side fillheight"
+          src="/assets/images/projects/buildr/buildr_research1.png">
+      </div>
+
+      <!-- CAROUSEL SLIDER FOR INSTA SLIDES GRID  
 
       <div class="container-fluid py-xl bg-nt-100">
         <div class="grid-images-wrapper" ref="imageWrapper">
@@ -115,7 +157,7 @@ export default {
             <img class="scroll-arrow" src="../assets/arrow-right-link.png" alt="arrow">
           </button>
         </div>
-      </div>
+      </div>  -->
 
       <!-- FULL VIDEO  
       <div class="container-fluid bg-nt-100">
@@ -124,31 +166,19 @@ export default {
             </video>
       </div>  -->
 
-      <!-- Heading Block - II -->
-      <section class="quote-block bg-nt-100 pb-lg">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
-          I used Midjourney to generate a consistent line of products that reflect the Auro philosophy.
+      <!-- TEXT BLOCK - DESIGNING THE APP -->
+      <section class="copy-block bg-white py-md">
+        <h4 class="copy-copy-text-half txt-ss-h4 txt-nt-100">
+          Designing the app.
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">Midjourney is an AI-tool to generate creative
-          images. To visualise the Auro products I studied the use of advanced Midjourney settings. Experiments with
-          prompting helped met to further align a total of 20 Auro products.</p>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">While making the app we went through several stages. From sketches, information architecture and wireframes, to a visual design and prototype.</p>
       </section>
 
-      <!-- FULL VIDEO  -->
-      <div class="container-fluid bg-white">
-        <video class="vid-pagewidth padded" autoplay loop>
-          <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <!-- Info Block - WEBSITE -->
-      <section class="quote-block bg-white">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
-          To develop the website I used Craft CMS, Vue and Wordpress.
-        </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">This website was made as an exercise mostly. I developed
-          the website three times. Once in Vue, another time with Wordpress and a third time with Craft CMS.</p>
-      </section>
+      <!-- ADD IMAGES HERE
+       ***
+       ***
+       ***
+      -->
 
       <!-- CTA BUTTONS -->
       <div class="cta-wrapper container-fluid">
@@ -160,24 +190,24 @@ export default {
         </div>
       </div>
 
-      <div class="container-fluid mockup-center bg-nt-10 mt-md">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
+      <!-- MOCKUP CENTERED -->
+      <div class="container-fluid mockup-center bg-nt-100 mt-md">
+        <img class="mockup-image" src="/assets/images/projects/buildr/buildr_animated_mock_wire.gif" alt="arrow">
       </div>
 
+
       <!-- NEXT PROJECT BAR -->
-      <div class="next-project-bar mt-lg">
+      <div class="next-project-bar">
         <router-link to="/auro" class="next-project-link">
           <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right-dark.png" /></span>Next Project
         </router-link>
       </div>
 
-        <!-- MARQUEE BAR -->
-        <MarqueeBar />
+      <!-- MARQUEE BAR -->
+      <MarqueeBar />
 
-        <!-- FOOTER -->
-        <FooterComponent />
+      <!-- FOOTER -->
+      <FooterComponent />
 
     </main>
   </div>

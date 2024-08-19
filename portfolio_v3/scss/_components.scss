@@ -340,6 +340,26 @@
     }
 }
 
+.quote-block-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: $padding-xl;
+    padding-bottom: $padding-xl;
+        @include mediaquery(tablet) {
+        padding-top: $padding-lg;
+        padding-bottom: $padding-lg;
+        text-align: center;
+        width: 66%;
+    }
+    .quote-block-text {
+        text-indent: 8rem;
+        @include mediaquery(tablet) {
+          text-indent: 4rem;
+        }
+    }
+}
+
 .support-block-textwrap {
     width: 50%;
     margin: 0 auto;
@@ -439,7 +459,30 @@
     }
 }
 
+.copy-block {
+    padding-left: $padding-md;
+    padding-right: $padding-md;
+    @include mediaquery (tablet) {
+        padding-left: $padding-sm;
+        padding-right: $padding-sm;
+    }
+    .copy-block-text {
+        max-width: 75%;
+    }
+    .copy-block-text-half {
+        max-width: 50%;
+        @include mediaquery (tablet) {
+            max-width: 100%;
+        }
+    }
+    .copy-block-text-indent {
+        max-width: 80%;
+        text-indent: 160px;
+    }
+}
+
 // QUOTE BLOCK WITH TEXT -- Has a text quote block with or without indent.
+
 .quote-block {
     padding-left: $padding-md;
     padding-right: $padding-md;
@@ -1648,9 +1691,9 @@
       margin-left: $margin-sm;
       &:first-of-type {
         margin-left: $margin-md;
-      }
-      @include mediaquery (tablet){
-        margin-left: $margin-sm;
+        @include mediaquery (tablet){
+            margin-left: $margin-sm;
+          }
       }
       .grid-image {
         display: block;
@@ -1658,9 +1701,14 @@
         height: auto;
         border-radius: 2px;
         &.post {
-            width: 480px;
-            height: 480px;
+            width: 400px;
+            height: 400px;
+            @include mediaquery (tablet){
+                max-width: 360px;
+                max-height: 360px;
+            }
         }
+        
         &.tall {
             width: 360px;
             height: 720px;

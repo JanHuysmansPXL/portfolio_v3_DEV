@@ -81,12 +81,12 @@
     border-bottom: 0px solid #212323;
     background:  $color-green--30;
     vertical-align: text-bottom;
+    @include mediaquery(tablet) {
+      padding: 2rem 1rem 1rem 1rem;
+    }
     &:hover {
       background-color: $color-neutral--15;
     }
-    @include mediaquery(tablet) {
-        padding: 1rem 1rem .5rem 1rem;
-      }
     .next-project-link {
       font-family: $font-display;
       font-size: 0;

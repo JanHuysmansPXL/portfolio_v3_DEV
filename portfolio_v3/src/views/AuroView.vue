@@ -79,12 +79,26 @@ export default {
     MarqueeBar,
   },
   methods: {
-    scrollPrev() {
-            this.$refs.imageWrapper.scrollBy({ left: -316, behavior: 'smooth' });
-            },
-            scrollNext() {
-            this.$refs.imageWrapper.scrollBy({ left: 316, behavior: 'smooth' });
-            },
+      getScrollWidth() {
+        // Determine the screen width and return the appropriate scroll width
+        if (window.innerWidth <= 768) {
+          // Mobile size (360px width for mobile)
+          return 376;
+        } else {
+          // Default size (416px for larger screens)
+          return 416;
+        }
+      },
+      scrollPrev() {
+        // Use the calculated scroll width
+        const scrollWidth = this.getScrollWidth();
+        this.$refs.imageWrapper.scrollBy({ left: -scrollWidth, behavior: 'smooth' });
+      },
+      scrollNext() {
+        // Use the calculated scroll width
+        const scrollWidth = this.getScrollWidth();
+        this.$refs.imageWrapper.scrollBy({ left: scrollWidth, behavior: 'smooth' });
+      },
   }
 };
 </script>
@@ -97,7 +111,7 @@ export default {
       <!-- FULL IMAGE  -->
       <div class="container-fluid">
         <img class="img-fluid project-heading-img" src="/assets/images/projects/auro/auro-heading@x2.png"
-          alt="An image of the made icon graphic language">
+          alt="Auro project header">
       </div>
 
       <!-- TITLE BLOCK  -  1. WORDMARK -->
@@ -144,14 +158,13 @@ export default {
 
 
 
-      <!-- 01 / POSTS  -->
+      <!-- 01 / INTRO  -->
       <div class="mini-title-container bg-nt-100">
         <div class="mini-title-box pt-md">
           <p class="mini-title-label txt-nt-15">What is Auro ?</p>
         </div>
       </div>
-
-      <!-- Info Block - Socials -->
+      <!-- AURO INTRODUCTION -->
       <section class="quote-block bg-nt-100">
         <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
           Auro is a fictional wearables brand with a futuristic product line.
@@ -160,18 +173,22 @@ export default {
           collection of high-tech wearables to complement contemporary lifestyles.</p>
       </section>
 
-      <!-- CAROUSEL SLIDER FOR INSTA SLIDES GRID  -->
+      <!-- CAROUSEL SLIDER FOR AURO PRODUCTS GRID  -->
 
       <div class="container-fluid py-xl bg-nt-100">
         <div class="grid-images-wrapper" ref="imageWrapper">
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/auro/pods_1-min.png" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/auro/pods_7-min.png" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/auro/auroport_1-min.png" alt="">
+          <div class="grid-box"><img class="grid-image post" src="/assets/images/projects/auro/pods_1-min.png" alt="">
           </div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/auro/pods_1-min.png" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/auro/pods_3-min.png" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/auro/aurovision_2-min.png" alt="">
+          <div class="grid-box"><img class="grid-image post" src="/assets/images/projects/auro/pods_7-min.png" alt="">
           </div>
+          <div class="grid-box"><img class="grid-image post" src="/assets/images/projects/auro/auroport_1-min.png"
+              alt=""></div>
+          <div class="grid-box"><img class="grid-image post" src="/assets/images/projects/auro/pods_1-min.png" alt="">
+          </div>
+          <div class="grid-box"><img class="grid-image post" src="/assets/images/projects/auro/pods_3-min.png" alt="">
+          </div>
+          <div class="grid-box"><img class="grid-image post" src="/assets/images/projects/auro/aurovision_2-min.png"
+              alt=""></div>
         </div>
         <div class="scroll-buttons mt-sm">
           <button class="scroll-button prev" @click="scrollPrev">
@@ -182,13 +199,6 @@ export default {
           </button>
         </div>
       </div>
-
-      <!-- FULL VIDEO  
-      <div class="container-fluid bg-nt-100">
-            <video class="vid-pagewidth padded" autoplay loop playsinline muted>
-              <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
-            </video>
-      </div>  -->
 
       <!-- Heading Block - II -->
       <section class="quote-block bg-nt-100 pb-lg">
@@ -233,8 +243,15 @@ export default {
         <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
       </div>
 
+      <!-- QUOTE BLOCK "" -->
+      <section class="container-fluid bg-pp-30">
+        <div class="quote-block-wrapper">
+          <h6 class="txt-ss-h5">“I really enjoyed working on the Auro project. I’ve got some new AI-tricks up my sleeves.“</h6>
+        </div>
+      </section>
+
       <!-- NEXT PROJECT BAR -->
-      <div class="next-project-bar mt-lg">
+      <div class="next-project-bar">
         <router-link to="/tinyhouse" class="next-project-link">
           <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right-dark.png" /></span>Next Project
         </router-link>
