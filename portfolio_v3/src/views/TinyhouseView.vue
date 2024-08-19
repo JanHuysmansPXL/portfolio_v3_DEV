@@ -89,11 +89,11 @@ export default {
       </div>
 
       <!-- Info Block - Socials -->
-      <section class="quote-block bg-nt-10">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
+      <section class="copy-block bg-nt-10">
+        <h4 class="copy-block-text-half txt-ss-h4 txt-nt-100">
           Living smaller and greener.
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">TinyHouse is about inspiring people to live
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">TinyHouse is about inspiring people to live
           smaller and greener. For this brand I wanted a fresh and youthful image. I developed the logo, brand guide and
           social content for the brand.</p>
       </section>
@@ -138,11 +138,23 @@ export default {
       <!-- Heading Block - II -->
       <section class="quote-block bg-white py-lg">
         <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
-          Instagram posts and Google banners. I wrote the copy and made the designs as simple as possible. </h4>
+          A few Insta posts and Google banners. I wrote the copy in Dutch and went for a simple and to-the-point design.</h4>
         <p class="quote-block-text-half txt-ss-body1 txt-pp-80 mt-sm">Figma ipsum component variant main layer. Layer
           stroke prototype comment share invite strikethrough. Figma fill opacity plugin vector fill. Link image inspect
           share draft group.</p>
       </section>
+
+      <div class="container-fluid mockup-triple bg-white">
+        <div class="textbox">
+          <h4 class="copy-block-text-half txt-ss-h5 txt-nt-100 mb-sm">Photoshop keyframes.</h4>
+          <p class="txt-ss-body2 txt-nt-60">These reel animations were done in Adobe Photoshop. I used the timeline and keyframes to animate these posts. Usually I would use After Effects for more precise easing and timing, but for this project I had to leverage other tools.</p>
+        </div>
+        <div class="image-wrapper">
+          <img class="image" src="/assets/images/projects/tinyhouse/TinyHouse - Instagram Posts/TinyHouse---Instagram-Story-1080x1920-n1_EarthDay.gif" alt="arrow">
+          <img class="image" src="/assets/images/projects/tinyhouse/TinyHouse - Instagram Posts/TinyHouse---Instagram-Story-1080x1920-n2.gif" alt="arrow">
+          <img class="image" src="/assets/images/projects/tinyhouse/TinyHouse - Instagram Posts/TinyHouse---Instagram-Story-1080x1920-n3.gif" alt="arrow">
+        </div>
+      </div>
 
       <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
       <div class="container-fluid">
@@ -155,7 +167,7 @@ export default {
       <section class="quote-block bg-white py-lg">
         <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
           Tiny House has a dedicated brandguide where the identity of the brand is elaborated. </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-pp-80 mt-sm">Have a look at the finished brand guide here.</p>
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-60 mt-sm">Have a look at some exerpts from the finished brand guide here.</p>
       </section>
 
       <!-- BRAND SLIDES-->
@@ -174,12 +186,6 @@ export default {
             boards. — Thank you, Whimsical.”</h6>
         </div>
       </section>
-
-      <div class="container-fluid mockup-center bg-nt-10 mt-md">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-      </div>
 
       <!-- NEXT PROJECT BAR -->
       <div class="next-project-bar mt-lg">

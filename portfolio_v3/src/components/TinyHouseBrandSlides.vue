@@ -103,13 +103,14 @@ export default {
 
 .carousel-item {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity 0.3s cubic-bezier(0.56,0.25,0.33,0.75), transform 0.3s cubic-bezier(0.56,0.25,0.33,0.75);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
+  transform: scale(1.04); /* Slightly zoomed out initially */
 }
 
 .carousel-item.active {

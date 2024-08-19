@@ -575,6 +575,42 @@
     }
 }
 
+.mockup-triple {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: $padding-lg 32px;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 32px;
+    @include mediaquery (tablet) {
+        flex-direction: column;
+        gap: 16px;
+        padding: $padding-md 16px;
+    }
+    .textbox {
+        flex: 1;
+        min-width: 25%;
+        @include mediaquery (tablet) {
+            max-width: 100%;
+        }
+    }
+    .image-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .image {
+        width: 100%;
+        max-width: calc(100% / 3 - 16px);
+        object-fit: contain; /* Ensure the images are fully visible without cropping */
+        height: auto; /* Adjust height automatically based on the container width */
+                @include mediaquery (tablet) {
+            max-width: calc(33% - 8px);
+        }
+    }
+}
+
 /* TONE OF VOICE BLOCK STYLING  */
 .voice-block {
     width: 100%;
