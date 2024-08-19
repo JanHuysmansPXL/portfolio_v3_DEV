@@ -169,12 +169,12 @@ export default {
         <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
       </div>
 
-        <!-- SUGGESTION BAR -->
-        <div class="suggestion-bar mt-lg">
-          <router-link to="/auro" class="suggestion-link">
-            <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right-purple.png" /></span>Suggestion
-          </router-link>
-        </div>
+      <!-- NEXT PROJECT BAR -->
+      <div class="next-project-bar mt-lg">
+        <router-link to="/kronolith" class="next-project-link">
+          <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right-dark.png" /></span>Next Project
+        </router-link>
+      </div>
 
         <!-- MARQUEE BAR -->
         <MarqueeBar />

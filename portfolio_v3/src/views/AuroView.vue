@@ -212,7 +212,8 @@ export default {
         <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
           To develop the website I used Craft CMS, Vue and Wordpress.
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">This website was made as an exercise mostly. I developed
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">This website was made as an exercise mostly. I
+          developed
           the website three times. Once in Vue, another time with Wordpress and a third time with Craft CMS.</p>
       </section>
 
@@ -232,18 +233,18 @@ export default {
         <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
       </div>
 
-        <!-- SUGGESTION BAR -->
-        <div class="suggestion-bar mt-lg">
-          <router-link to="/auro" class="suggestion-link">
-            <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right-purple.png" /></span>Suggestion
-          </router-link>
-        </div>
+      <!-- NEXT PROJECT BAR -->
+      <div class="next-project-bar mt-lg">
+        <router-link to="/tinyhouse" class="next-project-link">
+          <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right-dark.png" /></span>Next Project
+        </router-link>
+      </div>
 
-        <!-- MARQUEE BAR -->
-        <MarqueeBar />
+      <!-- MARQUEE BAR -->
+      <MarqueeBar />
 
-        <!-- FOOTER -->
-        <FooterComponent />
+      <!-- FOOTER -->
+      <FooterComponent />
 
     </main>
   </div>

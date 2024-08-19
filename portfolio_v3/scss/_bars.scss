@@ -5,17 +5,19 @@
 .suggestion-bar {
     display: flex;
     width: 100%;
-    padding: 2rem 2rem;
+    padding: 1.25rem 2rem 2rem 2rem;
     justify-content: flex-end;
     align-items: center;
     border-top: 1px solid #212323;
     border-bottom: 0px solid #212323;
     background:  #C1C1E5;
+    vertical-align: text-bottom;
     @include mediaquery(tablet) {
-        padding: 1rem 1rem;
+        padding: 1rem 1rem .5rem 1rem;
       }
     .suggestion-link {
       font-family: $font-display;
+      font-size: 0;
       text-decoration: none;
       display: flex;
       align-items: center;
@@ -24,39 +26,116 @@
       font-size: 8rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 100%; /* 6.8rem */
       margin: 0;
       letter-spacing: 0.01rem;
       vertical-align: text-bottom;
+      line-height: 1;
+      position: relative;
+      margin-top: -16px;
       @include mediaquery(tablet) {
         font-size: 2.828rem;
         font-style: normal;
         font-weight: 700;
         line-height: 95%;
         &:hover > span .link-arrow {
-          margin-right: 12px;
+          margin-right: 8px;
         }
       }
       &:hover > span .link-arrow {
         margin-right: 16px;
       }
-
       .arrow-box {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        vertical-align: text-bottom;
       .link-arrow {
-        max-height: 80px;
+        max-height: 72px;
         width: auto;
         margin-right: 24px;
+        margin-top: 16px;
         transition-property: margin;
         transition-duration: 0.2s;
         transition-timing-function: ease-in-out;
         @include mediaquery(tablet) {
-            max-height: 32px;
+            height: 28px;
             width: auto;
-            margin-right: 16px;
+            margin-right: 12px;
+            margin-top: 8px;
+            transition-property: margin;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+          }
+      }}
+    }
+  }
+
+  .next-project-bar {
+    display: flex;
+    width: 100%;
+    padding: 1.25rem 2rem 2rem 2rem;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px solid #212323;
+    border-bottom: 0px solid #212323;
+    background:  $color-green--30;
+    vertical-align: text-bottom;
+    &:hover {
+      background-color: $color-neutral--15;
+    }
+    @include mediaquery(tablet) {
+        padding: 1rem 1rem .5rem 1rem;
+      }
+    .next-project-link {
+      font-family: $font-display;
+      font-size: 0;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: $color-neutral--100;
+      font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+      font-size: 8rem;
+      font-style: normal;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 0.01rem;
+      vertical-align: text-bottom;
+      line-height: 1;
+      position: relative;
+      margin-top: -16px;
+      @include mediaquery(tablet) {
+        font-size: 2.828rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 95%;
+        &:hover > span .link-arrow {
+          margin-right: 8px;
+          color: $color-green--50;
+        }
+      }
+      &:hover > span .link-arrow {
+        margin-right: 16px;
+      }
+      .arrow-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        vertical-align: text-bottom;
+      .link-arrow {
+        max-height: 72px;
+        width: auto;
+        margin-right: 24px;
+        margin-top: 16px;
+        transition-property: margin;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+        @include mediaquery(tablet) {
+            height: 28px;
+            width: auto;
+            margin-right: 12px;
+            margin-top: 8px;
             transition-property: margin;
             transition-duration: 0.2s;
             transition-timing-function: ease-in-out;
