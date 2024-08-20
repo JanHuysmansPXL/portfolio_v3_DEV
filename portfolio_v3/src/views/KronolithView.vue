@@ -1,11 +1,14 @@
 <script>
 import FooterComponent from "@/components/FooterComponent.vue";
 import MarqueeBar from "@/components/MarqueeBar.vue";
+import kronolithVideoImport from '/assets/images/projects/kronolith/kronolith-mockup-video.mp4';
+
 
 export default {
   data() {
     return {
       buttonWebsiteText: 'Auro Website',
+      vidKrono: kronolithVideoImport,
     };
   },
   components: {
@@ -28,12 +31,12 @@ export default {
     <main class="maintest">
 
 
- <!-- FULL IMAGE  -->
+      <!-- FULL IMAGE  -->
       <div class="container-fluid">
         <img class="img-fluid project-heading-img" src="/assets/images/projects/kronolith/kronolith-cover-1.png"
           alt="An image of the made icon graphic language">
       </div>
-       
+
 
       <!-- TITLE BLOCK  -  1. WORDMARK -->
       <section id="AuroHead" class="project-title-block bg-nt-10">
@@ -44,11 +47,14 @@ export default {
             <p class="about-text txt-ss-sub2 txt-gr-50">About</p>
           </div>
           <div class="intro-block">
-            <h6 class="intro-title txt-ss-h6">The Kronolith is a wall mounted clock with a clickable and rotating outer rim.</h6>
-            <p class="intro-subtitle txt-ss-body1 txt-nt-60">The clock is designed to have multiple states: always-on, active, as well as digital and analog display. It has personalisation options and a live circadian background.</p>
+            <h6 class="intro-title txt-ss-h6">The Kronolith is a wall mounted clock with a clickable and rotating outer
+              rim.</h6>
+            <p class="intro-subtitle txt-ss-body1 txt-nt-60">The clock is designed to have multiple states: always-on,
+              active, as well as digital and analog display. It has personalisation options and a live circadian
+              background.</p>
           </div>
           <div class="details-block">
-            <h5 class="details-title txt-ss-sub2">INTERFACE / Product Design / 3D Animation</h5>
+            <h5 class="details-title txt-ss-sub2">Interface / Product Design / 3D Animation</h5>
             <div class="details-wrap">
               <div class="detail-bar">
                 <div class="text-wrap">
@@ -73,46 +79,82 @@ export default {
         </div>
       </section>
 
-
-
-
-      <!-- 01 / POSTS  -->
-      <div class="mini-title-container bg-nt-100">
+      <!-- MINI TITLE  -->
+      <div class="mini-title-container bg-white">
         <div class="mini-title-box pt-md">
-          <p class="mini-title-label txt-nt-15">Process</p>
+          <p class="mini-title-label txt-nt-100">Process</p>
         </div>
       </div>
 
       <!-- Info Block - Socials -->
-      <section class="quote-block bg-nt-100">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
+      <section class="copy-block bg-white pt-md">
+        <h4 class="copy-block-text-half txt-ss-h4 txt-nt-100 pe-sm">
           The first drafts of the Kronolith were made with Midjourney and drawn out and animated in Blender.
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">I designed the product to be wall-mounted. The controls are integrated in the rim which rotates 360 degrees. The knurled rim can be pushed, so the user confirm selections. The body design is optimized for grip and sturdyness.</p>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-60 mt-sm pe-sm">I designed the product to be wall-mounted.
+          The
+          controls are integrated in the rim which rotates 360 degrees. The knurled rim can be pushed, so the user
+          confirm selections. The body design is optimized for grip and sturdyness.
+        </p>
       </section>
-
-      <!-- CAROUSEL SLIDER FOR INSTA SLIDES GRID  -->
-
-      <div class="container-fluid py-xl bg-nt-100">
-        <div class="grid-images-wrapper" ref="imageWrapper">
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_poster.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt1.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt2.jpg" alt="">
-          </div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt3.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt4.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_render.jpg" alt="">
-          </div>
+      <div class="duo-block py-lg">
+        <div class="half">
+          <section class="copy-block no-padding bg-white">
+            <h4 class="copy-block-text txt-ss-h5 txt-nt-100">
+              The Always-On state reflects the minimalist take on the digital clock. When triggered, the clock becomes
+              active.
+            </h4>
+            <p class="copy-block-text txt-ss-body1 txt-nt-60 mt-sm">This reflects how modern smart-watches work and has
+              a positive impact on the product’s energy consumption.</p>
+          </section>
         </div>
-        <div class="scroll-buttons mt-sm">
-          <button class="scroll-button prev" @click="scrollPrev">
-            <img class="scroll-arrow" src="../assets/arrow-right-link.png" alt="arrow">
-          </button>
-          <button class="scroll-button next" @click="scrollNext">
-            <img class="scroll-arrow" src="../assets/arrow-right-link.png" alt="arrow">
-          </button>
+        <div class="half">
+          <img class="img-pagewidth fillheight align-end" src="/assets/images/projects/kronolith/kronlith-mockup-1.png"
+            alt="Kronolith detail image">
         </div>
       </div>
+
+      <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
+      <div class="container-fluid">
+        <img class="img-fluid project-heading-img auto"
+          src="/assets/images/projects/kronolith/kronolith-overview-banner.png"
+          alt="An image of the made icon graphic language">
+      </div>
+
+      <div class="container-fluid mockup-triple bg-white">
+        <div class="textbox">
+          <h4 class="copy-block-text-half txt-ss-h5 txt-nt-100 mb-sm">Almost real.</h4>
+          <p class="txt-ss-body2 txt-nt-60">A model was made in Blender to mockup the product in action.</p>
+          <p class="txt-ss-body2 txt-nt-60">I made the actual product based on the prompt draft and animated the
+            rotating button.   These images display the process of designing the mockup. The display content was
+            animated in Figma and embedded in Blender as a surface modifier. No After Effects.</p>
+        </div>
+        <div class="image-wrapper">
+          <img class="image" src="/assets/images/projects/kronolith/kronolith-img-1.png" alt="Kronolith Detail image 1">
+          <img class="image" src="/assets/images/projects/kronolith/kronolith-img-2.png" alt="Kronolith Detail image 2">
+          <img class="image" src="/assets/images/projects/kronolith/kronolith-img-3.png" alt="Kronolith Detail image 3">
+        </div>
+      </div>
+
+      <!-- QUOTE BLOCK "" -->
+      <section class="container-fluid bg-nt-10">
+        <div class="quote-block-wrapper">
+          <h6 class="txt-ss-h5 txt-gr-80">“I animated the product in Blender to preview the actual controls of the
+            clock.“</h6>
+        </div>
+      </section>
+
+      <div class="container-fluid bg-white mt-md">
+        <div class="duo-block">
+          <video class="vid-pagewidth" autoplay loop playsinline muted>
+            <source :src="vidKrono" type="video/mp4"> Your browser does not support the video tag.
+          </video>
+          <p class="txt-ss-body2 txt-gr-50 caption-left">The alarm is set by rotating. This is immediatly reflected on the
+            display. When the alarm is dialed the indicators appear accordingly. When set the user gets a feedback
+            notification as well as a highlight on the display.</p>
+        </div>
+      </div>
+
 
       <!-- FULL VIDEO  
       <div class="container-fluid bg-nt-100">
@@ -121,31 +163,8 @@ export default {
             </video>
       </div>  -->
 
-      <!-- Heading Block - II -->
-      <section class="quote-block bg-nt-100 pb-lg">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
-          I used Midjourney to generate a consistent line of products that reflect the Auro philosophy.
-        </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">Midjourney is an AI-tool to generate creative
-          images. To visualise the Auro products I studied the use of advanced Midjourney settings. Experiments with
-          prompting helped met to further align a total of 20 Auro products.</p>
-      </section>
 
-      <!-- FULL VIDEO  -->
-      <div class="container-fluid bg-white">
-        <video class="vid-pagewidth padded" autoplay loop>
-          <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
-        </video>
-      </div>
 
-      <!-- Info Block - WEBSITE -->
-      <section class="quote-block bg-white">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
-          To develop the website I used Craft CMS, Vue and Wordpress.
-        </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">This website was made as an exercise mostly. I developed
-          the website three times. Once in Vue, another time with Wordpress and a third time with Craft CMS.</p>
-      </section>
 
       <!-- CTA BUTTONS -->
       <div class="cta-wrapper container-fluid">
@@ -170,11 +189,11 @@ export default {
         </router-link>
       </div>
 
-        <!-- MARQUEE BAR -->
-        <MarqueeBar />
+      <!-- MARQUEE BAR -->
+      <MarqueeBar />
 
-        <!-- FOOTER -->
-        <FooterComponent />
+      <!-- FOOTER -->
+      <FooterComponent />
 
     </main>
   </div>

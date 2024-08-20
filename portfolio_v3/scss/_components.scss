@@ -486,6 +486,7 @@
 }
 
 .copy-block {
+    width: 100%;
     padding-left: $padding-md;
     padding-right: $padding-md;
     @include mediaquery (tablet) {
@@ -496,7 +497,7 @@
         max-width: 75%;
     }
     .copy-block-text-half {
-        max-width: 50%;
+        max-width: calc(50% - 16px);
         @include mediaquery (tablet) {
             max-width: 100%;
         }
@@ -533,6 +534,10 @@
             }
         }
     }
+    &.no-padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 // QUOTE BLOCK WITH TEXT -- Has a text quote block with or without indent.
@@ -556,6 +561,38 @@
     .quote-block-text-indent {
         max-width: 80%;
         text-indent: 160px;
+    }
+}
+
+.duo-block {
+    width: 100%;
+    max-width: 100%;
+    padding-left: $padding-md;
+    padding-right: $padding-md;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow-x: scroll;
+    gap: 16px;
+    @include mediaquery (tablet){
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-x: none;
+    }
+    .half {
+        display: flex;
+        flex-direction: row;
+        max-width: calc(100% / 2 - $margin-sm);
+        height: auto;
+        @include mediaquery (tablet){
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    &.align-end {
+        align-self: flex-end;
     }
 }
 

@@ -146,33 +146,9 @@ export default {
 
       <!-- FULL IMAGE PADDED  -->
       <div class="container-fluid double-block bg-white">
-        <img class="img-fluid img-halfwidth fillheight"
-          src="/assets/images/projects/buildr/buildr_persona_jos.jpg">
-        <img class="img-fluid img-halfwidth fillheight"
-          src="/assets/images/projects/buildr/buildr_research1.png">
+        <img class="img-fluid img-halfwidth fillheight" src="/assets/images/projects/buildr/buildr_persona_jos.jpg">
+        <img class="img-fluid img-halfwidth fillheight" src="/assets/images/projects/buildr/buildr_research1.png">
       </div>
-
-      <!-- CAROUSEL SLIDER FOR INSTA SLIDES GRID  
-      <div class="container-fluid py-xl bg-nt-100">
-        <div class="grid-images-wrapper" ref="imageWrapper">
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_poster.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt1.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt2.jpg" alt="">
-          </div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt3.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt4.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_render.jpg" alt="">
-          </div>
-        </div>
-        <div class="scroll-buttons mt-sm">
-          <button class="scroll-button prev" @click="scrollPrev">
-            <img class="scroll-arrow" src="../assets/arrow-right-link.png" alt="arrow">
-          </button>
-          <button class="scroll-button next" @click="scrollNext">
-            <img class="scroll-arrow" src="../assets/arrow-right-link.png" alt="arrow">
-          </button>
-        </div>
-      </div>  -->
 
       <!-- FULL VIDEO  
       <div class="container-fluid bg-nt-100">
@@ -181,8 +157,8 @@ export default {
             </video>
       </div>  -->
 
-            <!-- COPY BLOCK v1 -->
-        <section class="copy-block bg-nt-100 py-md mt-lg">
+      <!-- COPY BLOCK -- BUILDR SKETCHES -->
+      <section class="copy-block bg-nt-100 py-md mt-lg">
         <h4 class="copy-block-text-half txt-ss-h4 txt-nt-10">Designing the app.</h4>
         <p class="copy-block-text-half txt-ss-body1 txt-nt-10 mt-sm">While making the app we went through several
           stages. From sketches to information architecture and wireframes. The end result was a visual design and
@@ -191,9 +167,12 @@ export default {
           <img src="/assets/images/projects/buildr/buildr_sketch_UI3.jpg" alt="Buildr Sketch 1" class="half-image">
           <img src="/assets/images/projects/buildr/buildr_sketch_UI4.jpg" alt="Buildr Sketch 2" class="half-image">
         </div>
-        <h4 class="copy-block-text-half txt-ss-h4 txt-nt-10 mt-lg">Wireframes were made in Adobe XD. We made a flow for the consumer, and a separate one for the professional user.</h4>
-        <p class="copy-block-text-half txt-ss-body1 txt-nt-10 mt-sm">For the UI-design I partnered with my teammate Eline Moesen.
-It’s a pleasure to work with talented people. I learned to trust my team, and to find a common ground on design-related issues.</p>
+        <h4 class="copy-block-text-half txt-ss-h4 txt-nt-10 mt-lg">Wireframes were made in Adobe XD. We made a flow for
+          the consumer, and a separate one for the professional user.</h4>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-10 mt-sm">For the UI-design I partnered with my teammate
+          Eline Moesen.
+          It’s a pleasure to work with talented people. I learned to trust my team, and to find a common ground on
+          design-related issues.</p>
       </section>
 
       <!-- MOCKUP CENTERED -->
@@ -220,23 +199,19 @@ It’s a pleasure to work with talented people. I learned to trust my team, and 
           The website.
         </h4>
         <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">For the website I teamed with Yoritt Borkelmans.
-I did a large chunk of the HTML, CSS and Bootstrap 5.
-Yoritt engineered the interactions and dynamics in JavaScript.</p>
-      <!-- CTA BUTTONS -->
-      <div class="cta-wrapper no-x-padding container-fluid">
-        <div class="cta-buttonbar">
-          <button class="cta-button">
-            <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
-            <a href="https://graceful-gingersnap-7a47a3.netlify.app/index.html" target="_blank" class="link-text">{{ buttonWebsiteText }}</a>
-          </button>
+          I did a large chunk of the HTML, CSS and Bootstrap 5.
+          Yoritt engineered the interactions and dynamics in JavaScript.</p>
+        <!-- CTA BUTTONS -->
+        <div class="cta-wrapper no-x-padding container-fluid">
+          <div class="cta-buttonbar">
+            <button class="cta-button">
+              <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+              <a href="https://graceful-gingersnap-7a47a3.netlify.app/index.html" target="_blank" class="link-text">{{
+                buttonWebsiteText }}</a>
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
-
-
-
-
-
+      </section>
 
 
 
@@ -246,10 +221,8 @@ Yoritt engineered the interactions and dynamics in JavaScript.</p>
           <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right-dark.png" /></span>Next Project
         </router-link>
       </div>
-
       <!-- MARQUEE BAR -->
       <MarqueeBar />
-
       <!-- FOOTER -->
       <FooterComponent />
 
