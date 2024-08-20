@@ -80,31 +80,30 @@ export default {
       </section>
 
       <!-- MINI TITLE  -->
-      <div class="mini-title-container bg-white">
+      <div class="mini-title-container bg-nt-100">
         <div class="mini-title-box pt-md">
-          <p class="mini-title-label txt-nt-100">Process</p>
+          <p class="mini-title-label txt-nt-10">Leveraging AI</p>
         </div>
       </div>
 
       <!-- Info Block - Socials -->
-      <section class="copy-block bg-white pt-md">
-        <h4 class="copy-block-text-half txt-ss-h4 txt-nt-100 pe-sm">
+      <section class="copy-block bg-nt-100">
+        <h4 class="copy-block-text-half txt-ss-h4 txt-nt-10 pe-sm">
           The first drafts of the Kronolith were made with Midjourney and drawn out and animated in Blender.
         </h4>
-        <p class="copy-block-text-half txt-ss-body1 txt-nt-60 mt-sm pe-sm">I designed the product to be wall-mounted.
-          The
-          controls are integrated in the rim which rotates 360 degrees. The knurled rim can be pushed, so the user
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-10 mt-sm pe-sm">I designed the product to be wall-mounted.
+          The controls are integrated in the rim which rotates 360 degrees. The knurled rim can be pushed, so the user
           confirm selections. The body design is optimized for grip and sturdyness.
         </p>
       </section>
-      <div class="duo-block py-lg">
+      <div class="duo-block bg-nt-100 py-lg">
         <div class="half">
-          <section class="copy-block no-padding bg-white">
-            <h4 class="copy-block-text txt-ss-h5 txt-nt-100">
+          <section class="copy-block no-padding">
+            <h4 class="copy-block-text txt-ss-h5 txt-nt-10">
               The Always-On state reflects the minimalist take on the digital clock. When triggered, the clock becomes
               active.
             </h4>
-            <p class="copy-block-text txt-ss-body1 txt-nt-60 mt-sm">This reflects how modern smart-watches work and has
+            <p class="copy-block-text txt-ss-body1 txt-nt-10 mt-sm">This reflects how modern smart-watches work and has
               a positive impact on the product’s energy consumption.</p>
           </section>
         </div>
@@ -121,12 +120,12 @@ export default {
           alt="An image of the made icon graphic language">
       </div>
 
-      <div class="container-fluid mockup-triple bg-white">
+      <div class="container-fluid mockup-triple bg-white mt-sm">
         <div class="textbox">
           <h4 class="copy-block-text-half txt-ss-h5 txt-nt-100 mb-sm">Almost real.</h4>
-          <p class="txt-ss-body2 txt-nt-60">A model was made in Blender to mockup the product in action.</p>
-          <p class="txt-ss-body2 txt-nt-60">I made the actual product based on the prompt draft and animated the
-            rotating button.   These images display the process of designing the mockup. The display content was
+          <p class="txt-ss-body2 txt-nt-60">A model was made in Blender to mockup the product in action.I made the actual product based on the prompt draft and animated the
+            rotating button.</p>
+          <p class="txt-ss-body2 txt-nt-60 mt-sm">These images display the process of designing the mockup. The display content was
             animated in Figma and embedded in Blender as a surface modifier. No After Effects.</p>
         </div>
         <div class="image-wrapper">
@@ -144,14 +143,16 @@ export default {
         </div>
       </section>
 
-      <div class="container-fluid bg-white mt-md">
-        <div class="duo-block">
+      <div class="container-fluid bg-white mt-sm">
+        <div class="duo-block align-end">
           <video class="vid-pagewidth" autoplay loop playsinline muted>
             <source :src="vidKrono" type="video/mp4"> Your browser does not support the video tag.
           </video>
+          <div class="text-block container-fluid">
           <p class="txt-ss-body2 txt-gr-50 caption-left">The alarm is set by rotating. This is immediatly reflected on the
             display. When the alarm is dialed the indicators appear accordingly. When set the user gets a feedback
             notification as well as a highlight on the display.</p>
+          </div>
         </div>
       </div>
 
@@ -162,25 +163,6 @@ export default {
               <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
             </video>
       </div>  -->
-
-
-
-
-      <!-- CTA BUTTONS -->
-      <div class="cta-wrapper container-fluid">
-        <div class="cta-buttonbar">
-          <button class="cta-button">
-            <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
-            <a href="https://auro-future.com/" target="_blank" class="link-text">{{ buttonWebsiteText }}</a>
-          </button>
-        </div>
-      </div>
-
-      <div class="container-fluid mockup-center bg-nt-10 mt-md">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-      </div>
 
       <!-- NEXT PROJECT BAR -->
       <div class="next-project-bar mt-lg">

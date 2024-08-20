@@ -1,6 +1,7 @@
 <script>
 import FooterComponent from "@/components/FooterComponent.vue";
 import MarqueeBar from "@/components/MarqueeBar.vue";
+import HolyCowBrandSlides from "@/components/HolyCowBrandSlides.vue";
 
 export default {
   data() {
@@ -11,6 +12,7 @@ export default {
   components: {
     FooterComponent,
     MarqueeBar,
+    HolyCowBrandSlides,
   },
   methods: {
     scrollPrev() {
@@ -28,12 +30,15 @@ export default {
     <main class="maintest">
 
 
- <!-- FULL IMAGE  -->
+      <!-- HEADING COVER WITH SCREEN RESPONSIVE IMAGE (PICTURE) -->
       <div class="container-fluid">
-        <img class="img-fluid project-heading-img" src="/assets/images/projects/holycow/holycow-cover-1.png"
-          alt="An image of the made icon graphic language">
+        <picture>
+          <source media="(max-width: 768px)" srcset="/assets/images/projects/holycow/holycow-cover-mobile.png" />
+          <img class="img-fluid project-heading-img" src="/assets/images/projects/holycow/holycow-cover-1.png"
+            alt="An image of the made icon graphic language">
+        </picture>
       </div>
-       
+
 
       <!-- TITLE BLOCK  -  1. WORDMARK -->
       <section id="AuroHead" class="project-title-block bg-nt-10">
@@ -45,7 +50,9 @@ export default {
           </div>
           <div class="intro-block">
             <h6 class="intro-title txt-ss-h6">Building a kick-ass burger brand with a conscience.</h6>
-            <p class="intro-subtitle txt-ss-body1 txt-pp-80">Lorem ipsum dolor sit amet consectetur. At posuere aliquet sit sagittis ornare id cras magna. Pellentesque tincidunt enim aliquam elit .Lorem ipsum dolor sit amet consectetur.</p>
+            <p class="intro-subtitle txt-ss-body1 txt-pp-80">Lorem ipsum dolor sit amet consectetur. At posuere aliquet
+              sit sagittis ornare id cras magna. Pellentesque tincidunt enim aliquam elit .Lorem ipsum dolor sit amet
+              consectetur.</p>
           </div>
           <div class="details-block">
             <h5 class="details-title txt-ss-sub2">BRANDING / SOCIAL MARKETING</h5>
@@ -83,98 +90,78 @@ export default {
         </div>
       </div>
 
-      <!-- Info Block - Socials -->
-      <section class="quote-block bg-white">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
-          Holy Cow's mission is to create a world where people can enjoy a healthy and guilt-free meal. We want to be the most ecological fastfood-chain in the industry by spearheading innovation. 
+      <!-- Info Block - HOLY COW'S MISSION -->
+      <section class="copy-block bg-white">
+        <h4 class="copy-block-text txt-ss-h5 txt-nt-100">
+          Holy Cow's mission is to create a world where people can enjoy a healthy and guilt-free meal. We want to be
+          the most ecological fastfood-chain in the industry by spearheading innovation.
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">I designed the product to be wall-mounted. The controls are integrated in the rim which rotates 360 degrees. The knurled rim can be pushed, so the user confirm selections. The body design is optimized for grip and sturdyness.</p>
-      </section>
-
-      <!-- CAROUSEL SLIDER FOR INSTA SLIDES GRID  -->
-
-      <div class="container-fluid py-xl bg-nt-100">
-        <div class="grid-images-wrapper" ref="imageWrapper">
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_poster.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt1.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt2.jpg" alt="">
-          </div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt3.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_sculpt4.jpg" alt=""></div>
-          <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_render.jpg" alt="">
-          </div>
+        <div class="images-wrapper">
+          <img src="/assets/images/projects/holycow/holycow_branding/brand_benchmark1.jpg" alt="Onyx Sketch 1"
+            class="half-image">
+          <img src="/assets/images/projects/holycow/holycow_branding/brand_benchmark2.jpg" alt="Onyx Sketch 2"
+            class="half-image">
         </div>
-        <div class="scroll-buttons mt-sm">
-          <button class="scroll-button prev" @click="scrollPrev">
-            <img class="scroll-arrow" src="../assets/arrow-right-link.png" alt="arrow">
-          </button>
-          <button class="scroll-button next" @click="scrollNext">
-            <img class="scroll-arrow" src="../assets/arrow-right-link.png" alt="arrow">
-          </button>
+        <h4 class="copy-block-text txt-ss-h5 txt-nt-100">
+          To achieve this we go full circle. We make use of the latest trends and innovations, like Clean-meat,
+          farm-to-table and online services like TooGoodToGo. </h4>
+        <h4 class="copy-block-text txt-ss-h5 txt-nt-100 mt-sm">
+          We focus on what matters, by insuring the best quality at the lowest possible impact for our beloved planet.
+        </h4>
+      </section>
+
+
+      <!-- Info Block - HOLY COW'S SKETCHES -->
+      <section class="copy-block bg-nt-100 pb-lg mt-lg">
+        <div class="images-wrapper no-stack">
+          <img src="/assets/images/projects/holycow/holycow_interface/ui_schets_2.png" alt="Onyx Sketch 1"
+            class="half-image">
+          <img src="/assets/images/projects/holycow/holycow_interface/ui_schets_3.png" alt="Onyx Sketch 2"
+            class="half-image">
         </div>
-      </div>
-
-      <!-- FULL VIDEO  
-      <div class="container-fluid bg-nt-100">
-            <video class="vid-pagewidth padded" autoplay loop>
-              <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
-            </video>
-      </div>  -->
-
-      <!-- Heading Block - II -->
-      <section class="quote-block bg-nt-100 pb-lg">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
-          I used Midjourney to generate a consistent line of products that reflect the Auro philosophy.
-        </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">Midjourney is an AI-tool to generate creative
-          images. To visualise the Auro products I studied the use of advanced Midjourney settings. Experiments with
-          prompting helped met to further align a total of 20 Auro products.</p>
+        <h4 class="copy-block-text-half txt-ss-h5 txt-nt-10">
+          “I love sketching interfaces. — Nearly as much as I love a Holy Cow burger.”</h4>
       </section>
 
-      <!-- FULL VIDEO  -->
-      <div class="container-fluid bg-white">
-        <video class="vid-pagewidth padded" autoplay loop>
-          <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <!-- Info Block - WEBSITE -->
-      <section class="quote-block bg-white">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
-          To develop the website I used Craft CMS, Vue and Wordpress.
+      <!-- Info Block - HOLY COW'S MISSION -->
+      <section class="copy-block bg-white mt-lg">
+        <h4 class="copy-block-text txt-ss-h5 txt-nt-100">
+          How 'bout the cow?
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">This website was made as an exercise mostly. I developed
-          the website three times. Once in Vue, another time with Wordpress and a third time with Craft CMS.</p>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm mb-md">
+          I prototyped an app for Holy Cow, and made a brand bible. A collection of guidelines for the brand. Checkit below.
+        </p>
       </section>
 
-      <!-- CTA BUTTONS -->
-      <div class="cta-wrapper container-fluid">
-        <div class="cta-buttonbar">
-          <button class="cta-button">
-            <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
-            <a href="https://auro-future.com/" target="_blank" class="link-text">{{ buttonWebsiteText }}</a>
-          </button>
+      <HolyCowBrandSlides />
+
+      <!-- MOCKUPS - HOLY COW INTERFACE TRIPLE -->
+      <div class="container-fluid mockup-triple bg-white mt-sm">
+        <div class="textbox">
+          <h4 class="copy-block-text-half txt-ss-h5 txt-nt-100 mb-sm">Get flowing.</h4>
+          <p class="txt-ss-body2 txt-nt-60">I designed a large part of the Holy Cow-interface. Our goal was to create an app where people could easily order and pick-up our delicious burgers. Designing the Holy-Cow interface was a smash. We tried to uphold an idea of zesty freshness, while trying to communicate our love for our planet, and it’s 4-bellied beings.</p>
+        </div>
+        <div class="image-wrapper">
+          <img class="image" src="/assets/images/projects/holycow/holycow_interface/holycow_mockup_app4.png" alt="HolyCow Interface Detail Image - Shop">
+          <img class="image" src="/assets/images/projects/holycow/holycow_interface/holycow_mockup_app2.png" alt="HolyCow Interface Detail Image - Checkout">
+          <img class="image" src="/assets/images/projects/holycow/holycow_interface/holycow_mockup_app3.png" alt="HolyCow Interface Detail Image - Confirmed">
         </div>
       </div>
 
-      <div class="container-fluid mockup-center bg-nt-10 mt-md">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-      </div>
+
 
       <!-- NEXT PROJECT BAR -->
-      <div class="next-project-bar mt-lg">
+      <div class="next-project-bar mt-md">
         <router-link to="/transit" class="next-project-link">
           <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right-dark.png" /></span>Next Project
         </router-link>
       </div>
 
-        <!-- MARQUEE BAR -->
-        <MarqueeBar />
+      <!-- MARQUEE BAR -->
+      <MarqueeBar />
 
-        <!-- FOOTER -->
-        <FooterComponent />
+      <!-- FOOTER -->
+      <FooterComponent />
 
     </main>
   </div>

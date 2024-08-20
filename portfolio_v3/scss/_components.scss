@@ -400,6 +400,10 @@
     flex-direction: row;
     align-items: baseline;
     justify-content: flex-start;
+    @include mediaquery(tablet) {
+        padding-left: $padding-sm;
+        padding-right: $padding-sm;
+    }
     &.no-x-padding {
         padding-left: 0;
         padding-right: 0;
@@ -493,6 +497,9 @@
         padding-left: $padding-sm;
         padding-right: $padding-sm;
     }
+    .copy-block-text-full {
+        max-width: 100%;
+    }
     .copy-block-text {
         max-width: 75%;
     }
@@ -513,8 +520,12 @@
         flex-direction: row;
         justify-content: center;
         gap: 2rem;
+        padding-top: $padding-lg;
+        padding-bottom: $padding-lg;
         @include mediaquery (tablet) {
             gap: 1rem;
+            padding-top: $padding-md;
+            padding-bottom: $padding-md;
         }
         @include mediaquery (mobile) {
             flex-direction: column;
@@ -523,6 +534,7 @@
         .half-image {
             width: calc(100% / 2 - 16px);
             height: auto;
+            max-height: 640px;
             object-fit: cover;
             @include mediaquery (mobile) {
                 width: calc(100% / 2 - 8px);
@@ -531,6 +543,14 @@
             @include mediaquery (mobile) {
                 min-width: 100%;
                 height: auto;
+                &.no-stack {
+                    width: calc(100% / 2 - 16px);
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+            &.no-stack {
+                flex-direction: row;
             }
         }
     }
@@ -580,6 +600,8 @@
         justify-content: flex-start;
         align-items: flex-start;
         overflow-x: none;
+        padding-left: $padding-sm;
+        padding-right: $padding-sm;
     }
     .half {
         display: flex;
@@ -592,9 +614,14 @@
         }
     }
     &.align-end {
-        align-self: flex-end;
+        align-items: flex-end;
     }
 }
+
+.caption-left {
+    max-width: 45ch;
+}
+
 
 /* Mockup BAR */
 
@@ -636,14 +663,17 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        @include mediaquery (tablet) {
+            margin-top: $margin-sm;
+    }
     }
     .image {
         width: 100%;
         max-width: calc(100% / 3 - 16px);
         object-fit: contain; /* Ensure the images are fully visible without cropping */
         height: auto; /* Adjust height automatically based on the container width */
-                @include mediaquery (tablet) {
-            max-width: calc(33% - 8px);
+            @include mediaquery (tablet) {
+                max-width: calc(33% - 8px);
         }
     }
 }
@@ -1542,6 +1572,7 @@
             width: 80%;
         }
     }
+    
     .carousel-container {
         display: flex;
         flex-direction: column;
