@@ -1,4 +1,5 @@
 <script>
+import BuildrBrandSlides from "@/components/BuildrBrandSlides.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
 import MarqueeBar from "@/components/MarqueeBar.vue";
 
@@ -11,6 +12,7 @@ export default {
   components: {
     FooterComponent,
     MarqueeBar,
+    BuildrBrandSlides,
   },
   methods: {
     getScrollWidth() {
@@ -94,7 +96,7 @@ export default {
       <!-- Info Block - Buildr Brief + Mockup -->
       <section class="copy-block bg-white mt-md mb-md">
         <h5 class="copy-block-text-half txt-ss-h5 txt-nt-100">
-          The brief: build a job-matching app and an accessible website for its users, develop the brand identity for
+          The brief: Build a job-matching app and an accessible website for its users, develop the brand identity for
           the product and empower users to find work more easily.</h5>
       </section>
 
@@ -110,8 +112,21 @@ export default {
         </div>
       </section>
 
+
+      <!-- Info Block - Buildr Brief + Mockup -->
+      <section class="copy-block bg-white mt-md mb-md">
+        <h5 class="copy-block-text-half txt-ss-h6 txt-nt-100">
+          We designed the brand identity first. Our team's aim was to create a fairly simple but recognisable brand,
+          which would appeal to a broad crowd of workers.</h5>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-60 mt-sm">For the branding I teamed with Eline Moesen, a very
+          talented classmate. The Buildr logo we defined represents the connection we try to inspire between people.
+          Find some exerpts of the full brand guide below.</p>
+      </section>
+
+      <BuildrBrandSlides />
+
       <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
-      <div class="container-fluid">
+      <div class="container-fluid py-lg">
         <img class="img-fluid project-heading-img" src="/assets/images/projects/buildr/buildr-banner-1.png"
           alt="An image of the made icon graphic language">
       </div>
@@ -120,24 +135,24 @@ export default {
 
       <section class="copy-block bg-white mt-md mb-md">
         <h4 class="copy-block-text-half txt-ss-h5 txt-nt-100">
-          For our audience, it was essential that our platform be accessible, easy-to-use, and down-to-earth. No frills.
+          For our audience, it was essential that our platform be accessible, easy-to-use, and down-to-earth. No
+          frills.<br>— ‘You are not your user.’
         </h4>
-        <p class="copy-block-text-half txt-ss-body1 txt-nt-60 mt-sm">Buildr. is a (fictional) job-matching app for
-          construction,
-          metal and logistics. We did the branding, the interface for mobile and desktop, and developed the website
-          for the product.</p>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-60 mt-sm">We gathered some very useful date from 20
+          construction workers. Based on their input we managed to define the key priorities for our app. Workers mainly
+          wanted to learn about the employers company culture, to reduce time needed for interviews or to present
+          themselves online in a better way.</p>
       </section>
 
       <!-- FULL IMAGE PADDED  -->
-      <div class="container-fluid bg-white">
-        <img class="img-fluid img-pagewidth padded fillheight"
+      <div class="container-fluid double-block bg-white">
+        <img class="img-fluid img-halfwidth fillheight"
           src="/assets/images/projects/buildr/buildr_persona_jos.jpg">
-        <img class="img-fluid img-pagewidth padded-side fillheight"
+        <img class="img-fluid img-halfwidth fillheight"
           src="/assets/images/projects/buildr/buildr_research1.png">
       </div>
 
       <!-- CAROUSEL SLIDER FOR INSTA SLIDES GRID  
-
       <div class="container-fluid py-xl bg-nt-100">
         <div class="grid-images-wrapper" ref="imageWrapper">
           <div class="grid-box"><img class="grid-image" src="/assets/images/projects/transit/transit_poster.jpg" alt=""></div>
@@ -166,12 +181,31 @@ export default {
             </video>
       </div>  -->
 
-      <!-- TEXT BLOCK - DESIGNING THE APP -->
-      <section class="copy-block bg-white py-md">
-        <h4 class="copy-copy-text-half txt-ss-h4 txt-nt-100">
-          Designing the app.
-        </h4>
-        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">While making the app we went through several stages. From sketches, information architecture and wireframes, to a visual design and prototype.</p>
+            <!-- COPY BLOCK v1 -->
+        <section class="copy-block bg-nt-100 py-md mt-lg">
+        <h4 class="copy-block-text-half txt-ss-h4 txt-nt-10">Designing the app.</h4>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-10 mt-sm">While making the app we went through several
+          stages. From sketches to information architecture and wireframes. The end result was a visual design and
+          working prototype.</p>
+        <div class="images-wrapper mt-md">
+          <img src="/assets/images/projects/buildr/buildr_sketch_UI3.jpg" alt="Buildr Sketch 1" class="half-image">
+          <img src="/assets/images/projects/buildr/buildr_sketch_UI4.jpg" alt="Buildr Sketch 2" class="half-image">
+        </div>
+        <h4 class="copy-block-text-half txt-ss-h4 txt-nt-10 mt-lg">Wireframes were made in Adobe XD. We made a flow for the consumer, and a separate one for the professional user.</h4>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-10 mt-sm">For the UI-design I partnered with my teammate Eline Moesen.
+It’s a pleasure to work with talented people. I learned to trust my team, and to find a common ground on design-related issues.</p>
+      </section>
+
+      <!-- MOCKUP CENTERED -->
+      <div class="container-fluid mockup-center bg-nt-100">
+        <img class="mockup-image" src="/assets/images/projects/buildr/buildr_animated_mock_wire.gif" alt="arrow">
+      </div>
+      <!-- QUOTE BLOCK "" -->
+      <section class="container-fluid bg-nt-10">
+        <div class="quote-block-wrapper">
+          <h6 class="txt-ss-h5 txt-gr-80">“I got a free student upgrade after I needed over 500 elements to place on my
+            boards. — Thank you, Whimsical.”</h6>
+        </div>
       </section>
 
       <!-- ADD IMAGES HERE
@@ -180,28 +214,30 @@ export default {
        ***
       -->
 
+      <!-- TEXT BLOCK - WEBSITE -->
+      <section class="copy-block bg-white mt-lg py-md">
+        <h4 class="copy-copy-text-half txt-ss-h4 txt-nt-100">
+          The website.
+        </h4>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">For the website I teamed with Yoritt Borkelmans.
+I did a large chunk of the HTML, CSS and Bootstrap 5.
+Yoritt engineered the interactions and dynamics in JavaScript.</p>
       <!-- CTA BUTTONS -->
-      <div class="cta-wrapper container-fluid">
+      <div class="cta-wrapper no-x-padding container-fluid">
         <div class="cta-buttonbar">
           <button class="cta-button">
             <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
-            <a href="https://auro-future.com/" target="_blank" class="link-text">{{ buttonWebsiteText }}</a>
+            <a href="https://graceful-gingersnap-7a47a3.netlify.app/index.html" target="_blank" class="link-text">{{ buttonWebsiteText }}</a>
           </button>
         </div>
       </div>
+    </section>
 
 
 
-      <!-- QUOTE BLOCK "" -->
-      <section class="container-fluid bg-nt-10 mt-md">
-        <div class="quote-block-wrapper">
-          <h6 class="txt-ss-h5 txt-gr-80">“I got a free student upgrade after I needed over 500 elements to place on my boards. — Thank you, Whimsical.”</h6>
-        </div>
-      </section>
-      <!-- MOCKUP CENTERED -->
-      <div class="container-fluid mockup-center bg-nt-100">
-        <img class="mockup-image" src="/assets/images/projects/buildr/buildr_animated_mock_wire.gif" alt="arrow">
-      </div>
+
+
+
 
 
       <!-- NEXT PROJECT BAR -->
