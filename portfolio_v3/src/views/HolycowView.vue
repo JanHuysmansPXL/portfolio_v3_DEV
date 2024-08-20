@@ -110,9 +110,15 @@ export default {
         </h4>
       </section>
 
+      <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
+      <div class="container-fluid mt-lg">
+        <img class="img-fluid project-heading-img auto"
+          src="/assets/images/projects/holycow/holycow-banner-red.png" alt="An image of some tinyhouse mockups">
+      </div>
+
 
       <!-- Info Block - HOLY COW'S SKETCHES -->
-      <section class="copy-block bg-nt-100 pb-lg mt-lg">
+      <section class="copy-block bg-nt-100 pb-lg">
         <div class="images-wrapper no-stack">
           <img src="/assets/images/projects/holycow/holycow_interface/ui_schets_2.png" alt="Onyx Sketch 1"
             class="half-image">
@@ -124,34 +130,40 @@ export default {
       </section>
 
       <!-- Info Block - HOLY COW'S MISSION -->
-      <section class="copy-block bg-white mt-lg">
+      <section class="copy-block bg-white mt-md">
         <h4 class="copy-block-text txt-ss-h5 txt-nt-100">
           How 'bout the cow?
         </h4>
         <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm mb-md">
-          I prototyped an app for Holy Cow, and made a brand bible. A collection of guidelines for the brand. Checkit below.
+          I prototyped an app for Holy Cow, and made a brand bible. A collection of guidelines for the brand. Checkit
+          below.
         </p>
       </section>
 
       <HolyCowBrandSlides />
 
       <!-- MOCKUPS - HOLY COW INTERFACE TRIPLE -->
-      <div class="container-fluid mockup-triple bg-white mt-sm">
+      <div class="container-fluid mockup-triple bg-nt-100 mt-sm">
         <div class="textbox">
-          <h4 class="copy-block-text-half txt-ss-h5 txt-nt-100 mb-sm">Get flowing.</h4>
-          <p class="txt-ss-body2 txt-nt-60">I designed a large part of the Holy Cow-interface. Our goal was to create an app where people could easily order and pick-up our delicious burgers. Designing the Holy-Cow interface was a smash. We tried to uphold an idea of zesty freshness, while trying to communicate our love for our planet, and it’s 4-bellied beings.</p>
+          <h4 class="copy-block-text-half txt-ss-h5 txt-nt-10 mb-sm">Get flowing.</h4>
+          <p class="txt-ss-body2 txt-gr-30">I designed a large part of the Holy Cow-interface. Our goal was to create an
+            app where people could easily order and pick-up our delicious burgers. Designing the Holy-Cow interface was
+            a smash. We tried to uphold an idea of zesty freshness, while trying to communicate our love for our planet,
+            and it’s 4-bellied beings.</p>
         </div>
         <div class="image-wrapper">
-          <img class="image" src="/assets/images/projects/holycow/holycow_interface/holycow_mockup_app4.png" alt="HolyCow Interface Detail Image - Shop">
-          <img class="image" src="/assets/images/projects/holycow/holycow_interface/holycow_mockup_app2.png" alt="HolyCow Interface Detail Image - Checkout">
-          <img class="image" src="/assets/images/projects/holycow/holycow_interface/holycow_mockup_app3.png" alt="HolyCow Interface Detail Image - Confirmed">
+          <img class="image" src="/assets/images/projects/holycow/holycow_interface/holycow_mockup_app4.png"
+            alt="HolyCow Interface Detail Image - Shop">
+          <img class="image" src="/assets/images/projects/holycow/holycow_interface/holycow_mockup_app2.png"
+            alt="HolyCow Interface Detail Image - Checkout">
+          <img class="image" src="/assets/images/projects/holycow/holycow_interface/holycow_mockup_app3.png"
+            alt="HolyCow Interface Detail Image - Confirmed">
         </div>
       </div>
 
 
-
       <!-- NEXT PROJECT BAR -->
-      <div class="next-project-bar mt-md">
+      <div class="next-project-bar">
         <router-link to="/transit" class="next-project-link">
           <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right-dark.png" /></span>Next Project
         </router-link>

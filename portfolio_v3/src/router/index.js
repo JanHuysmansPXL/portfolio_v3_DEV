@@ -4,7 +4,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
 
-/* PROJECTS IMPORT */import AuroView from '@/views/AuroView.vue'
+/* PROJECTS IMPORT */
+import AuroView from '@/views/AuroView.vue'
 import BuildrView from '@/views/BuildrView.vue'
 import ColliderView from '@/views/ColliderView.vue'
 import HolycowView from '@/views/HolycowView.vue'
@@ -14,6 +15,9 @@ import OnyxView from '@/views/OnyxView.vue'
 import TransitView from '@/views/TransitView.vue'
 import TinyhouseView from '@/views/TinyhouseView.vue'
 import LinedrawingsView from '@/views/LinedrawingsView.vue'
+
+import AuroViewTest from '@/views/AuroViewTest.vue'
+
 
 
 /* ROUTER SETUP */
@@ -80,6 +84,11 @@ const router = createRouter({
       path: '/transit',
       name: 'TransitView',
       component: TransitView,
+    },
+    {
+      path: '/aurotest',
+      name: 'AuroViewTest',
+      component: AuroViewTest,
     },
   ],
   scrollBehavior(to, from, savedPosition) {

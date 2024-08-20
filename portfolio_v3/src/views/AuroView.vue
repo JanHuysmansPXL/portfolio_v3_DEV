@@ -3,75 +3,11 @@ import FooterComponent from "@/components/FooterComponent.vue";
 import MarqueeBar from "@/components/MarqueeBar.vue";
 import auroVideoHead from '/assets/images/projects/auro/auro-video-head.mp4';
 
-
 export default {
   data() {
     return {
       vidOne: auroVideoHead,
       buttonWebsiteText: 'Auro Website',
-      projects: [
-        {
-          title: "Made Digital Brand Book",
-          image: '/assets/images/covers/coverimage.png',
-          icon: null,
-          description: "How I defined, designed and delivered an interactive online brand guide for the new Made brand identity.",
-        },
-        {
-          title: "Kronolith",
-          image: '/assets/images/covers/coverimage-1.png',
-          icon: '/assets/images/square-dont.png',
-          description: "Design and 3D-animation of a wall-mounted clock.",
-        },
-        {
-          title: "Buildr",
-          image: '/assets/images/covers/coverimage-2.png',
-          icon: null,
-          description: "Guiding a group of young designers to design and develop an accessible job matching platform.",
-        },
-        {
-          title: "Auro",
-          image: '/assets/images/covers/coverimage-3.png',
-          icon: null,
-          description: "Webdesign and development for an imaginative wearables brand, powered by Midjourney.",
-        },
-        {
-          title: "Tiny House",
-          image: '/assets/images/covers/coverimage-4.png',
-          icon: '/assets/images/square-dont.png',
-          description: "Inspiring people to live smaller trough joyful branding.",
-        },
-        {
-          title: "Holy Cow!",
-          image: '/assets/images/covers/coverimage-5.png',
-          icon: null,
-          description: "How I designed an offbeat burger chain brand and app.",
-        },
-        {
-          title: "Transit",
-          image: '/assets/images/covers/coverimage-6.png',
-          icon: null,
-          description: "3D-sculptures for Transit, a techno/house-event with headliners like Mall Grab.",
-        },
-        {
-          title: "Onyx",
-          image: '/assets/images/covers/coverimage-7.png',
-          icon: '/assets/images/square-dont.png',
-          description: "A handmade font that rocks.",
-        },
-        {
-          title: "Collider",
-          image: '/assets/images/covers/coverimage-8.png',
-          icon: null,
-          description: "A collection of handmade drawings and Axidraw prints.",
-        },
-        {
-          title: "Line Drawings",
-          image: '/assets/images/covers/coverimage-9.png',
-          icon: null,
-          description: "A collection of intricate ballpoint drawings and colour studies.",
-        },
-        // Add more projects as needed...
-      ],
     };
   },
   components: {

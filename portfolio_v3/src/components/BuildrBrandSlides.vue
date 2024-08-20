@@ -124,4 +124,9 @@ export default {
   object-fit: contain;
   border-radius: 8px;
 }
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    padding: 0 16px; /* Reduce padding for smaller screens */
+  }
+}
 </style>
