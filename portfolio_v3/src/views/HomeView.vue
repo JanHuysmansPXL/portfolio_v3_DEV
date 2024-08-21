@@ -1,6 +1,7 @@
 <script>
 import FooterComponent from '@/components/FooterComponent.vue';
 import MarqueeBar from "@/components/MarqueeBar.vue";
+import ProjectsRowList from "@/components/ProjectsRowList.vue";
 
 
     export default {
@@ -25,6 +26,7 @@ import MarqueeBar from "@/components/MarqueeBar.vue";
         components: {
             FooterComponent,
             MarqueeBar,
+            ProjectsRowList,
         },
     }
 </script>
@@ -74,6 +76,8 @@ import MarqueeBar from "@/components/MarqueeBar.vue";
                     </div>
                 </div>
             </section>
+
+            <ProjectsRowList class="py-xl"/>
 
             <!-- *** DOUBLE IMAGES *** BLOCK  
             <section class="story-block container-fluid mt-xl">
