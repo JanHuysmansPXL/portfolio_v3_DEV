@@ -415,7 +415,7 @@
         min-width: 25%;
         padding: $padding-md 0;
         @include mediaquery(tablet) {
-            padding: $padding-md 0;
+            padding: $padding-sm 0;
         }
         .mini-title-label {
             font-weight: 300;
