@@ -50,11 +50,11 @@ import FooterComponent from '@/components/FooterComponent.vue';
                         <div class="cta-wrapper container-fluid no-x-padding">
                         <div class="cta-buttonbar">
                             <button class="cta-button">
-                                <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+                                <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
                                 <router-link to="/work" class="link-text">{{ buttonAboutText }}</router-link>                            
                             </button>
                             <button class="cta-button">
-                                <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+                                <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
                                 <router-link to="/home" class="link-text">{{ buttonContactText }}</router-link>                            
                             </button>
                         </div>
@@ -76,11 +76,11 @@ import FooterComponent from '@/components/FooterComponent.vue';
                 </div>
                 <div class="story-box-images mt-lg">
                     <div class="story-images-third">
-                        <img class="story-img--sm img-fluid" src="../assets/images/home-green.png"
+                        <img class="story-img--sm img-fluid" src="/assets/images/home-green.png"
                             alt="Simon Explaining something">
                     </div>
                     <div class="story-images-full">
-                        <img class="story-img--sm img-fluid" src="../assets/images/home-ecover.png"
+                        <img class="story-img--sm img-fluid" src="/assets/images/home-ecover.png"
                             alt="a pen writing on a whiteboard">
                     </div>
                 </div>

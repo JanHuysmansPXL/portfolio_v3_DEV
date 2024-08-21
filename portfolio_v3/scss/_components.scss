@@ -1851,6 +1851,9 @@
       max-width: 400px;
       height: auto;
       margin-left: $margin-sm;
+      &.sm {
+        max-width: 360px;
+      }
       &:first-of-type {
         margin-left: $margin-md;
         @include mediaquery (tablet){
@@ -1870,10 +1873,14 @@
                 max-height: 360px;
             }
         }
-        
         &.tall {
             width: 360px;
             height: 720px;
+        }
+        .box-spacer {
+            width: 360px;
+            height: 100%;
+            border: 1px sold black;
         }
       }
     }

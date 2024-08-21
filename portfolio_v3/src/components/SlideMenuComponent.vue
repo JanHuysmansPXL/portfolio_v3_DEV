@@ -11,27 +11,27 @@
       <ul class="menu-list">
         <li class="menu-item">
           <router-link to="/" class="menu-link" @click.native="closeMenu">
-            <span><img class="menu-arrow" src="../assets/arrow-right.png" /></span>Home
+            <span><img class="menu-arrow" src="/assets/arrow-right.png" /></span>Home
           </router-link>
         </li>
         <li class="menu-item">
           <router-link to="/work" class="menu-link" @click.native="closeMenu">
-            <span><img class="menu-arrow" src="../assets/arrow-right.png" /></span>Work
+            <span><img class="menu-arrow" src="/assets/arrow-right.png" /></span>Work
           </router-link>
         </li>
         <li class="menu-item">
           <router-link to="/work" class="menu-link" @click.native="closeMenu">
-            <span><img class="menu-arrow" src="../assets/arrow-right.png" /></span>About
+            <span><img class="menu-arrow" src="/assets/arrow-right.png" /></span>About
           </router-link>
         </li>
         <li class="menu-item">
           <router-link to="/work" class="menu-link" @click.native="closeMenu">
-            <span><img class="menu-arrow" src="../assets/arrow-right.png" /></span>Archive
+            <span><img class="menu-arrow" src="/assets/arrow-right.png" /></span>Archive
           </router-link>
         </li>
         <li class="menu-item">
           <a href="mailto:jan_huysmans@outlook.com" class="menu-link">
-            <span><img class="menu-arrow" src="../assets/arrow-right.png" /></span>Get in touch
+            <span><img class="menu-arrow" src="/assets/arrow-right.png" /></span>Get in touch
           </a>
         </li>
       </ul>

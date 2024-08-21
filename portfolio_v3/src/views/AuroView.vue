@@ -128,10 +128,10 @@ export default {
         </div>
         <div class="scroll-buttons mt-sm">
           <button class="scroll-button prev" @click="scrollPrev">
-            <img class="scroll-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+            <img class="scroll-arrow" src="/assets/arrow-right-link.png" alt="arrow">
           </button>
           <button class="scroll-button next" @click="scrollNext">
-            <img class="scroll-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+            <img class="scroll-arrow" src="/assets/arrow-right-link.png" alt="arrow">
           </button>
         </div>
       </div>
@@ -167,7 +167,7 @@ export default {
       <div class="cta-wrapper container-fluid">
         <div class="cta-buttonbar">
           <button class="cta-button">
-            <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+            <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
             <a href="https://auro-future.com/" target="_blank" class="link-text">{{ buttonWebsiteText }}</a>
           </button>
         </div>

@@ -120,10 +120,10 @@ export default {
         </div>
         <div class="scroll-buttons mt-sm">
           <button class="scroll-button prev" @click="scrollPrev">
-            <img class="scroll-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+            <img class="scroll-arrow" src="/assets/arrow-right-link.png" alt="arrow">
           </button>
           <button class="scroll-button next" @click="scrollNext">
-            <img class="scroll-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+            <img class="scroll-arrow" src="/assets/arrow-right-link.png" alt="arrow">
           </button>
         </div>
       </div>

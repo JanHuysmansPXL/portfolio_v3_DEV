@@ -13,7 +13,7 @@
             <li><a href="#" class="txt-ss-sub2 filter-link">Art</a></li>
           </ul>
           <button class="view-button-box">
-            <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+            <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
             <a class="link-text" href="#">View List</a>
           </button>
         </div>

@@ -205,7 +205,7 @@ export default {
         <div class="cta-wrapper no-x-padding container-fluid">
           <div class="cta-buttonbar">
             <button class="cta-button">
-              <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+              <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
               <a href="https://graceful-gingersnap-7a47a3.netlify.app/index.html" target="_blank" class="link-text">{{
                 buttonWebsiteText }}</a>
             </button>

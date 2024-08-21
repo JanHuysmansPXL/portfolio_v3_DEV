@@ -117,7 +117,7 @@ export default {
       <div class="cta-wrapper container-fluid">
         <div class="cta-buttonbar">
           <button class="cta-button">
-            <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+            <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
             <a href="/assets/images/projects/onyx/Onyx.ttf" target="_blank" type="download" class="link-text">{{ buttonWebsiteText }}</a>
           </button>
         </div>
