@@ -83,13 +83,14 @@
       }
     }
     
-    @media (max-width: 900px) {
+    @media (max-width: 780px) {
       .navbar-center {
         display: none; /* Hide menu list on mobile */
       }
     
       .menu-toggle {
-        order: 2; /* Center align the toggle button */
+        order: 2;
+        display: block; /* Center align the toggle button */
       }
     }
   }

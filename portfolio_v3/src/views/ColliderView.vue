@@ -99,14 +99,14 @@ export default {
         </div>
       </section>
 
-      <!-- 01 / MINI TITLE - Process ?   -->
+      <!-- *** 01 / MINI TITLE - HANDMADE ? *** -->
       <div class="mini-title-container bg-white">
         <div class="mini-title-box pt-md">
           <p class="mini-title-label txt-gr-60">Handmade series</p>
         </div>
       </div>
 
-      <!-- Work Title Block - 80X60 -->
+      <!-- *** Work Title Block - 80X60 *** -->
       <section class="copy-block bg-white">
         <h4 class="copy-block-text txt-ss-h4 txt-nt-100">Collider 80x60</h4>
         <p class="copy-block-text txt-ss-sub2 txt-gr-50 mt-xs">2018</p>
@@ -140,7 +140,7 @@ export default {
         </div>
       </div>
 
-      <!-- Work Title Block - 80X60 -->
+      <!-- *** Work Title Block - 80X60 *** -->
       <section class="copy-block bg-white pb-md">
         <h4 class="copy-block-text-half txt-ss-h6 txt-nt-100">These drawings are quite large, I spent around 6 weeks of
           hand drawing on each individual piece.</h4>
@@ -150,7 +150,7 @@ export default {
           digitally, combining Adobe Illustrator and Inkscape with my Axidraw plotter.</p>
       </section>
 
-      <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
+      <!-- *** FULL IMAGE -- FULL SCREEN WIDTH *** -->
       <div class="container-fluid mt-md">
         <picture>
           <source media="(max-width: 450px)" srcset="/assets/images/projects/collider/collider-banner-1-mobile.png" />
@@ -159,7 +159,7 @@ export default {
         </picture>
       </div>
 
-      <!-- Info Block - DOUBLE TEXT ON AXIDRAW -->
+      <!-- *** COPY BLOCK - DOUBLE TEXT ON AXIDRAW *** -->
       <section class="copy-block bg-nt-100">
         <div class="images-wrapper no-stack py-sm">
           <p class="copy-block-text-half txt-ss-body2 txt-gr-30">This series started in 2022, I got an Axidraw SE
@@ -171,7 +171,7 @@ export default {
             aiming for a more economical approach to drawing, opposed to manual labour. This resulted in using robotics
             as a new creative tool.</p>
         </div>
-        <!-- Work Title Block - PLOTTED -->
+        <!-- *** Work Title Block - COLLIDER PRINTS *** -->
         <h4 class="copy-block-text txt-ss-h4 txt-nt-10">Collider Prints</h4>
         <p class="copy-block-text txt-ss-sub2 txt-gr-50 mt-xs">2021-2022</p>
         <p class="copy-block-text-half txt-ss-body1 txt-nt-10 mt-sm">This set was made between 2021 and 2022. Each
@@ -198,9 +198,7 @@ export default {
           <div class="grid-box sm">
             <div class="box-spacer"></div>
           </div>
-
         </div>
-
         <div class="scroll-buttons mt-sm">
           <button class="scroll-button prev" @click="scrollPrevAlt">
             <img class="scroll-arrow" src="/assets/arrow-right-link.png" alt="arrow">
@@ -211,7 +209,7 @@ export default {
         </div>
       </div>
 
-      <!-- QUOTE BLOCK "" -->
+      <!-- *** QUOTE BLOCK *** -->
       <section class="container-fluid bg-gr-80">
         <div class="quote-block-wrapper">
           <h6 class="txt-ss-h5 txt-nt-10">“The Axidraw robot is a wonderful tool. I learned that getting it up and
@@ -219,7 +217,7 @@ export default {
         </div>
       </section>
 
-      <!-- Work Title Block - A3 -->
+      <!-- *** Work Title Block - A3 *** -->
       <section class="copy-block bg-white pt-lg">
         <h4 class="copy-block-text txt-ss-h4 txt-nt-100">Collider A3</h4>
         <p class="copy-block-text txt-ss-sub2 txt-gr-50 mt-xs">2021-2022</p>
@@ -227,7 +225,7 @@ export default {
           drawing is done freehanded in ink, 32x24cm on 220g Ca' Grain paper.</p>
       </section>
 
-      <!-- CAROUSEL SLIDER 3 - A3 DRAWINGS  -->
+      <!-- *** CAROUSEL SLIDER 3 - A3 DRAWINGS ***  -->
       <div class="container-fluid pb-md bg-white pt-md">
         <div class="grid-images-wrapper" ref="imageWrapperDigital">
           <div class="grid-box sm"><img class="grid-image" src="/assets/images/projects/collider/collider_d1@0.5x.jpg" alt="Collider Digital - P1"></div>
@@ -247,7 +245,7 @@ export default {
         </div>
       </div>
 
-      <!-- Work Title Block - 80X60 -->
+      <!-- *** Work Title Block - 80X60 *** -->
       <section class="copy-block bg-white pb-md">
         <h4 class="copy-block-text-half txt-ss-h6 txt-nt-100">I did a few digital experiments based oh my analogous work.</h4>
         <p class="copy-block-text-half txt-ss-body1 txt-pp-80 mt-sm">I try to apply a systemic approach to each
