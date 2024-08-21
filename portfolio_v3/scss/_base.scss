@@ -249,7 +249,10 @@ $color-transparant: rgba(255,255,255,0.02);
 .mt-sm { margin-top: $margin-sm;}
 .mt-md { margin-top: $margin-md;}
 .mt-lg { margin-top: $margin-lg;}
-.mt-xl { margin-top: $margin-xl;}
+.mt-xl { margin-top: $margin-xl; 
+    @include mediaquery(tablet) {
+        margin-top: $margin-lg;
+}}
 .mt-xxl { margin-top: $margin-xxl;}
 
 .mb-0 { margin-bottom: 0}
@@ -496,6 +499,10 @@ $color-transparant: rgba(255,255,255,0.02);
 }
 .indent-xxl {
     text-indent: 160px;
+}
+
+.txt-width-65ch {
+    max-width: 65ch;
 }
 
 /*  IMAGE FRAME / BORDER */

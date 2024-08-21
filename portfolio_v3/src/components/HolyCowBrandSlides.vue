@@ -75,16 +75,6 @@ export default {
   height: auto;
 }
 
-.carousel-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 0 32px;
-  width: 100%;
-  height: auto;
-}
-
 .carousel-container {
   position: relative;
   width: 100%;

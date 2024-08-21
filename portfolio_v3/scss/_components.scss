@@ -111,7 +111,7 @@
         max-height: 16px;
         width: auto;
         margin-right: 8px;
-        margin-top: 4px;
+        margin-top: -1px;
         box-sizing: border-box;
         transition-property: margin-right;
         transition-duration: 0.3s;
@@ -121,12 +121,12 @@
             max-height: 12px;
             width: auto;
             margin-right: 8px;
-            margin-top: 4px;
+            margin-top: -1px;
         }
     }
     .link-text {
         /* Button Default */
-        font-family: "Degular Display", Arial, Helvetica, sans-serif;
+        font-family: $font-display;
         font-size: 1.41375rem;
         font-style: normal;
         font-weight: 500;
@@ -134,6 +134,7 @@
         letter-spacing: 0.01413rem;
         text-decoration: none;
         color: $color-neutral--100;
+        margin-top: -2px;
         @include mediaquery (tablet){
             font-size: 1rem;
         }
@@ -450,8 +451,8 @@
             display: block;
         }
         .metric-number {
+            font-family: $font-variable;
             font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
-            font-family: "Degular Variable", Arial, Helvetica, sans-serif;
             font-size: 5.656rem;
             font-style: normal;
             font-weight: 680;
@@ -1075,22 +1076,33 @@
 
 /* COPY BOX -- BLOCK COMPONENT */
 
-.copy-box {
-    width: 100%;
-    margin: $margin-xl $margin-md;
+.service-box {
+    max-width: 100%;
+    height: auto;
+    padding: 0 $padding-md;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
-    justify-content: flex-start;
-    .copy-column-left {
-        min-width: 25%;
-        .copy-label {
-            color: $color-green--50;
-            font-weight: 400;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: $margin-lg;
+    &:first-of-type {
+        margin-top: $margin-sm;
+    }
+    @include mediaquery (tablet){
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 $padding-sm;
+        margin-top: $margin-md;
+    }
+    .service-column-left {
+        flex: 1;
+        .service-label {
+            display: block;
         }
     }
-    .copy-column-right {
-        min-width: 75%;
+    .service-column-right {
+        flex: 2;
     }
 }
 
@@ -2129,5 +2141,11 @@
         transition-duration: 0.7s;
         transition-timing-function: cubic-bezier(0.64, 0, 0.78, 0);
         z-index: 1000;
+    }
+}
+
+@media (max-width: 780px) {
+    .menu-toggle {
+        display: none;
     }
 }
