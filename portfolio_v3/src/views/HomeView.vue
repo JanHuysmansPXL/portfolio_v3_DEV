@@ -1,5 +1,7 @@
 <script>
 import FooterComponent from '@/components/FooterComponent.vue';
+import MarqueeBar from "@/components/MarqueeBar.vue";
+
 
     export default {
     data() {
@@ -22,6 +24,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
         },
         components: {
             FooterComponent,
+            MarqueeBar,
         },
     }
 </script>
