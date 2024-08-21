@@ -116,13 +116,167 @@
         transition-property: margin-right;
         transition-duration: 0.3s;
         transition-timing-function: cubic-bezier(0.56,0.25,0.33,0.75);
-        @include mediaquery(tablet) {
-            box-sizing: border-box;
-            max-height: 12px;
-            width: auto;
-            margin-right: 8px;
-            margin-top: -1px;
-        }
+        .work-list {
+            .row {
+              /* Keep the row full-width */
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+              align-self: stretch;
+              
+              /* Remove margin from the row itself, so background extends full width */
+              margin: 0;
+          
+              /* Full-width hover effect */
+              cursor: pointer;
+              transition: background-color 0.7s ease-in-out;
+          
+              &:hover {
+                background-color: #C1C1E5; // Light purple on hover
+              }
+          
+              /* Inner container to handle padding and borders */
+              .row-inner {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+          
+                /* Spacing inside the row */
+                padding: 1rem 2rem;
+          
+                /* Apply the borders here */
+                border-bottom: 1px solid #DAE3E3;
+                border-top: 1px solid #DAE3E3;
+                border-collapse: collapse;
+          
+                /* Margin for the border only */
+                margin: 0 32px; // Adds margin for desktop
+          
+                @include mediaquery(tablet) {
+                  margin: 0 16px; // Adjust margin for smaller screens (tablet and below)
+                  padding: 0.5rem 1rem;
+                }
+          
+                &:first-of-type {
+                  border-top: 1px solid #DAE3E3;
+                }
+          
+                &:last-of-type {
+                  border-bottom: 1px solid #DAE3E3;
+                }
+          
+                /* Content inside the row */
+                .row-content {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: flex-start;
+                  gap: 8px;
+                  align-self: stretch;
+                  text-decoration: none;
+                  color: inherit; // Ensure it inherits the text color
+          
+                  .top-row {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    width: 100%;
+                    .year {
+                      /* Font styles */
+                      font-family: $font-text, $font-display;
+                      font-size: 1rem;
+                      font-weight: 300;
+                      line-height: 115%;
+                      letter-spacing: 0.02rem;
+                      font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+                      text-transform: uppercase;
+          
+                      /* Alignment and spacing */
+                      margin-left: auto;
+                      text-align: end;
+          
+                      @include mediaquery(tablet) {
+                        font-size: 12px;
+                      }
+                    }
+                  }
+          
+                  .middle-row {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 100%;
+                    .title {
+                      font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+                      font-family: "Degular Display", Arial, Helvetica, sans-serif;
+                      font-size: 4rem;
+                      font-weight: 500;
+                      line-height: 95%; /* 3.8rem */
+                      text-transform: uppercase;
+          
+                      @include mediaquery(tablet) {
+                        font-size: 1.75rem;
+                      }
+                    }
+                  }
+          
+                  .bottom-row {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    width: 100%;
+                    .details {
+                      font-family: $font-text, $font-display;
+                      font-size: 1rem;
+                      font-weight: 300;
+                      line-height: 115%;
+                      letter-spacing: 0.02rem;
+                      font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+                      text-transform: uppercase;
+          
+                      margin-left: auto;
+                      text-align: end;
+          
+                      @include mediaquery(tablet) {
+                        font-size: 12px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          
+            .hover-image {
+              position: absolute;
+              z-index: 1000;
+              pointer-events: none;
+          
+              img {
+                width: 360px;
+                height: auto;
+                border-radius: 1px;
+                box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
+                transition: transform 0.3s ease, opacity 0.3s ease;
+              }
+            }
+          
+            /* Enter and leave transitions */
+            .image-fade-enter-active,
+            .image-fade-leave-active {
+              transition: opacity 0.3s cubic-bezier(0.56, 0.25, 0.33, 0.75), transform 0.3s cubic-bezier(0.56, 0.25, 0.33, 0.75);
+            }
+          
+            .image-fade-enter,
+            .image-fade-leave-to {
+              opacity: 0;
+              transform: scale(0.90);
+            }
+          }
+          
     }
     .link-text {
         /* Button Default */

@@ -1,0 +1,147 @@
+@use "base" as *;
+
+/* TITLE BOX */
+
+.work-list {
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    /* SPACING */
+    height: auto;
+    margin-bottom: -1px;
+    padding: 0 2rem;
+    border-collapse: collapse;
+    gap: 12px;
+    /* UNDO LIST STYLE */
+    text-decoration: none;
+    color: inherit; // Ensure it inherits the text color
+    /* POSITION / TRANSITION*/
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.7s ease-in-out;
+    @include mediaquery (tablet){
+      padding: 0 1rem;
+    }
+
+    &:hover {
+      background-color: #C1C1E5; // Light purple on hover
+      border-color: #212323;
+    }
+    // Remove default link styling for router-link
+    .row-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 8px;
+      align-self: stretch;
+      text-decoration: none;
+      color: inherit; // Ensure it inherits the text color
+      .divider {
+        width: 100%;
+        height: .5px;
+        margin-top: 0;
+        background-color: #444F4F;
+        &:first-of-type {
+          height: 1px;
+        }
+      }
+      .top-row {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: 8px;
+        .year {
+          /*FONT STYLE*/
+          font-family: $font-text;
+          font-family: $font-display;
+          font-size: 1rem;
+          font-weight: 300;
+          line-height: 115%;
+          letter-spacing: 0.02rem;
+          font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+          font-style: normal;
+          text-transform: uppercase;
+          /*SPACING*/
+          margin-left: auto;
+          text-align: end;
+          text-decoration: none;
+          @include mediaquery (tablet){
+            font-size: 12px;
+          }
+        }
+      }
+
+      .middle-row {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        .title {
+          font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+          font-family: "Degular Display", Arial, Helvetica, sans-serif;
+          font-size: 4rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 95%; /* 3.8rem */
+          text-transform: uppercase;
+          text-decoration: none;
+          @include mediaquery (tablet){
+            font-size: 1.75rem;
+          }
+        }
+      }
+      .bottom-row {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        .details {
+          /*FONT STYLE*/
+          font-family: $font-text;
+          font-family: $font-display;
+          font-size: 1rem;
+          font-weight: 300;
+          line-height: 115%;
+          letter-spacing: 0.02rem;
+          font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
+          font-style: normal;
+          text-transform: uppercase;
+          /*SPACING*/
+          margin-left: auto;
+          text-align: end;
+          text-decoration: none;
+          @include mediaquery (tablet){
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .hover-image {
+    position: absolute;
+    z-index: 1000;
+    pointer-events: none; // Ensure the image does not interfere with hover detection
+    img {
+      width: 360px;
+      height: auto;
+      border-radius: 1px;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, opacity 0.3s ease; // Add transition for smooth scaling and fading
+    }
+  }
+
+  /* Enter and leave transitions */
+  .image-fade-enter-active, .image-fade-leave-active {
+    transition: opacity 0.3s cubic-bezier(0.56,0.25,0.33,0.75), transform 0.3s ease; // Apply the duration for enter and leave
+  }
+  .image-fade-enter, .image-fade-leave-to {
+    opacity: 0;
+    transform: scale(0.90); // Image will slightly shrink and fade out when disappearing
+  }
+}
