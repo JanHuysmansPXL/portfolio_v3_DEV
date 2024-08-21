@@ -14,10 +14,10 @@
   </div>
   <div class="scroll-buttons">
       <button class="scroll-button prev" @click="prevSlide">
-        <img class="scroll-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+        <img class="scroll-arrow" src="/assets/arrow-right-link.png" alt="arrow">
       </button>
       <button class="scroll-button next" @click="nextSlide">
-        <img class="scroll-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+        <img class="scroll-arrow" src="/assets/arrow-right-link.png" alt="arrow">
       </button>
     </div>
 
@@ -25,7 +25,7 @@
     <div class="cta-wrapper container-fluid">
       <div class="cta-buttonbar">
         <button class="cta-button">
-          <img class="link-arrow" src="../assets/arrow-right-link.png" alt="arrow">
+          <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
           <a href="/assets/images/projects/tinyhouse/tinyhouse_brandbook.pdf" target="_blank" type="download" class="link-text">{{ buttonWebsiteText }}</a>
         </button>
       </div>
