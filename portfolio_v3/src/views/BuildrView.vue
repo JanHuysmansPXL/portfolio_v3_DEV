@@ -92,7 +92,6 @@ export default {
         </div>
       </section>
 
-
       <!-- Info Block - Buildr Brief + Mockup -->
       <section class="copy-block bg-white mt-md mb-md">
         <h5 class="copy-block-text-half txt-ss-h5 txt-nt-100">
@@ -111,7 +110,6 @@ export default {
           <h6 class="txt-ss-h5 txt-gr-80">“Buildr started with a mission: To help people build their dreams.”</h6>
         </div>
       </section>
-
 
       <!-- Info Block - Buildr Brief + Mockup -->
       <section class="copy-block bg-white mt-md mb-md">
