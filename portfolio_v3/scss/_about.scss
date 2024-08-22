@@ -109,3 +109,125 @@
     }
   }
 }
+
+// ABOUT CONTAINERS -- WITH IMAGES ETC..
+
+.about-container {
+  width: 100%;
+  padding: 1rem;
+  
+  .date-row {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 8px;
+
+    .date {
+      font-size: 1.5rem;
+      color: #6e8383;
+      font-family: 'Degular Display', sans-serif;
+    }
+  }
+
+  /* Two symmetrical blocks (side by side) */
+  .double-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 16px; /* Space between the two blocks */
+
+    .box-left, .box-right {
+      width: 48%;  /* Both blocks take up 48% of the container's width */
+    }
+
+    .box-left {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      flex: 1;
+      &.align-end {
+        align-items: flex-end;
+      }
+      &.align-start {
+        align-items: flex-start;
+      }
+      .text-lg {
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: #212323;
+      }
+    }
+    .box-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &.wider {
+        flex:2;
+      }
+
+      .image {
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: 400px;
+        border-radius: 1px;
+        align-self: flex-end;
+        object-fit: cover;
+        &.height-full {
+          height: 100%;
+        }
+        &.height-third {
+          height: 66%;
+        }
+        &.height-half {
+          height: 50%;
+        }
+        &.square-gif {
+          height: 244px;
+        }
+      }
+      .subtext {
+        margin-top: 4px;
+        font-size: 0.875rem;
+        color: #6e8383;
+      }
+    }
+  }
+
+  /* Full-width body text */
+  .text-row {
+    width: 100%;
+    margin-top: 2rem;
+    .frame {
+      background: none;
+      .full-text {
+        display: block;
+      }
+    }
+  }
+  .caption {
+    font-family: $font-text;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.015rem;
+    margin-top: 4px;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .double-box {
+    .box-left, .box-right {
+      width: 48%;  /* Keep symmetrical blocks on smaller screens */
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .double-box {
+    .box-left, .box-right {
+      width: 48%;  /* Maintain the 50-50 split even on mobile */
+    }
+  }
+}
