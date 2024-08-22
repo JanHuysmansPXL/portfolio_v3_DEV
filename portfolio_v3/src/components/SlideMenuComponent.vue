@@ -20,12 +20,12 @@
           </router-link>
         </li>
         <li class="menu-item">
-          <router-link to="/work" class="menu-link" @click.native="closeMenu">
+          <router-link to="/about" class="menu-link" @click.native="closeMenu">
             <span><img class="menu-arrow" src="/assets/arrow-right.png" /></span>About
           </router-link>
         </li>
         <li class="menu-item">
-          <router-link to="/work" class="menu-link" @click.native="closeMenu">
+          <router-link to="/archive" class="menu-link" @click.native="closeMenu">
             <span><img class="menu-arrow" src="/assets/arrow-right.png" /></span>Archive
           </router-link>
         </li>

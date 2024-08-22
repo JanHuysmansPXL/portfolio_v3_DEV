@@ -17,10 +17,10 @@
                     <li> <router-link to="/work" class="footer-link">
                         <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right.png" /></span>Work
                     </router-link></li>
-                    <li><router-link to="/work" class="footer-link">
+                    <li><router-link to="/about" class="footer-link">
                         <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right.png" /></span>About
                     </router-link></li>
-                    <li><router-link to="/work" class="footer-link">
+                    <li><router-link to="/archive" class="footer-link">
                         <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right.png" /></span>Archive
                     </router-link>
                     </li>   
