@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 /* MAIN PAGES IMPORT */
 import HomeView from '@/views/HomeView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
+import AboutView from '@/views/AboutView.vue'
 
 /* PROJECTS IMPORT */
 import AuroView from '@/views/AuroView.vue'
@@ -34,6 +35,11 @@ const router = createRouter({
       path: '/work',
       name: 'ProjectsView',
       component: ProjectsView,
+    },
+    {
+      path: '/about',
+      name: 'AboutView',
+      component: AboutView,
     },
     {
       path: '/auro',
