@@ -5,13 +5,14 @@
       <router-link to="/" class="jan" v-slot="{ href, navigate, isActive, isExactActive }">
         <a class="jan" :href="href" @click="navigate" ref="jan">JAN HUYSMANS</a>
       </router-link>
-      
+
       <nav class="navbar-center">
         <ul class="navbar-menu">
-          <li class="navbar-listitem"><router-link to="/work" class="navbar-link">{{ linkProjectsText }}</router-link></li>
-          <li class="navbar-listitem"><a class="navbar-link" href="#">About</a></li>
-          <li class="navbar-listitem"><a class="navbar-link" href="#">Archive</a></li>
-          <li class="navbar-listitem"><a class="navbar-link" href="#">Contact</a></li>
+          <li class="navbar-listitem"><router-link to="/work" class="navbar-link">{{ linkProjectsText }}</router-link>
+          </li>
+          <li class="navbar-listitem"><router-link to="/about" class="navbar-link">{{ linkAboutText }}</router-link></li>
+          <li class="navbar-listitem"><router-link to="/archive" class="navbar-link">{{ linkArchiveText }}</router-link></li>
+          <li class="navbar-listitem"><a class="navbar-link" href="mailto:jan_huysmans@outlook.com">Contact</a></li>
         </ul>
       </nav>
       <!-- Menu Toggle Button (visible on both mobile and desktop) -->
@@ -35,6 +36,8 @@ export default {
     return {
       isMenuOpen: false,
       linkProjectsText: 'Work',
+      linkAboutText: "About",
+      linkArchiveText: "Archive",
     };
   },
   methods: {
@@ -46,16 +49,25 @@ export default {
       this.isMenuOpen = false;
       this.updateNavbarVisibility();
     },
-    updateNavbarVisibility() {
-      const navbarCenter = document.querySelector('.navbar-center');
-      if (navbarCenter) {
-        if (this.isMenuOpen || window.scrollY > 0) {
-          navbarCenter.classList.add('hidden');
-        } else {
-          navbarCenter.classList.remove('hidden');
-        }
-      }
-    },
+updateNavbarVisibility() {
+  const navbarCenter = document.querySelector('.navbar-center');
+  
+  if (navbarCenter) {
+    // Always keep the navbar visible when the menu is open
+    if (this.isMenuOpen) {
+      navbarCenter.classList.add('hidden');
+      return;
+    }
+    
+    // Show the navbar if the page is scrolled up (i.e., not at the top)
+    if (window.scrollY > 120) {
+      navbarCenter.classList.add('hidden');
+    } else {
+      // Hide navbar if we're at the top and no other conditions apply
+      navbarCenter.classList.remove('hidden');
+    }
+  }
+},
     adjustNavbarTextColor() {
       const navbar = document.querySelector('.navbar');
       const navbarStyle = getComputedStyle(navbar);

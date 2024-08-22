@@ -49,6 +49,10 @@ $font-piazzolla-italic: 'degular', serif, Helvetica;
     box-sizing: border-box;
     font-family: $font-text;
 }
+
+html, body {
+    height: 100%; /* Allow body and HTML to take full height */
+}
 html {
     scroll-behavior: smooth;
 }
@@ -57,14 +61,12 @@ body {
     overflow-x: hidden;
     background-color: #ffffff;
 }
-html, body {
-    height: 100%; /* Allow body and HTML to take full height */
-}
+
 
 #pagewrapper {
     width: 100%;
     display: flex;
-    flex-direction: column; /* Set to column for better vertical layout */
+    flex-direction: row; /* Set to column for better vertical layout */
 }
 
 .maintest {
