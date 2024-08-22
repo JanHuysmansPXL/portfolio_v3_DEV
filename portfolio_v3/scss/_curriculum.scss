@@ -1,0 +1,80 @@
+@use "base" as *;
+
+// CURRICULUM LAYOUT
+.curriculum-block {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  
+    .title-wrapper {
+      width: 100%;
+      text-align: start;
+      margin-bottom: 1rem;
+    }
+  
+    .list-container {
+      display: flex;
+      flex-direction: column;
+  
+      .list-row-wrapper {
+        margin-bottom: 1rem;
+        @include mediaquery(tablet) {
+            margin-bottom: .5rem;
+        }
+        .divider {
+          border-bottom: 1px solid #B6C6C6;
+          margin-bottom: 1rem;
+          @include mediaquery(tablet) {
+            margin-bottom: .5rem;
+        }
+        }
+        .divider-dark {
+          border-bottom: 1px solid #444F4F;
+          margin-bottom: 1rem;
+          @include mediaquery(tablet) {
+            margin-bottom: .5rem;
+        }
+        }
+        .list-row {
+          display: grid;
+          grid-template-columns: 2fr 2fr 1fr 1fr; /* Grid layout: 2fr for the first two, 1fr for the last two */
+          gap: 1rem; /* Space between columns */
+          min-height: 48px;
+          @include mediaquery(tablet) {
+            min-height: 32px;
+        }
+        }
+        .list-item {
+            font-family: 'degular-display', Arial, Helvetica;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%; /* 0.975rem */
+            letter-spacing: 0.0075rem;
+            text-transform: uppercase;
+            @include mediaquery(tablet) {
+                font-size: 0.8rem;
+            }
+            &:last-of-type {
+                text-align: end;
+            }
+        }
+      }
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .list-row {
+      grid-template-columns: 1fr 1fr; /* Stack into two columns on smaller screens */
+      gap: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .list-row {
+      grid-template-columns: 1fr; /* Stack into one column on extra small screens */
+    }
+  }

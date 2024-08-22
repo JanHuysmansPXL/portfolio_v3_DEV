@@ -12,6 +12,6 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const app = createApp(App);
-app.use(router);
 app.use(Vue3Marquee);
+app.use(router);
 app.mount('#app');

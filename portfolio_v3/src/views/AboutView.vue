@@ -1,22 +1,26 @@
 <template>
-  <div id="pagewrapper">
-    <main class="maintest pt-lg">
+  <div  id="pagewrapper">
+    <main ref="mainContent" class="maintest pt-lg">
       <div class="about-head">
         <div class="about-bar-top">
           <h4 class="txt-ss-h4">This is my personal story. Like every good movie it has some ups and downs.</h4>
         </div>
         <div class="about-bar-bottom">
           <p class="txt-body-2 txt-gr-50">No time to read?</p>
-          <router-link to="/work" class="view-button-box mb-xs">
-            <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
-            <span class="link-text">{{ buttonText }}</span>
-          </router-link>
+          <router-link
+          class="view-button-box mb-xs"
+          :to="{ path: '/about', hash: '#bottomSection' }">
+          <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
+          <span class="link-text">{{ buttonText }}</span>
+        </router-link>
+
+
         </div>
         <div class="divider"></div>
       </div>
 
       <!-- *** PART I - 1992 *** -->
-      <div class="about-container">
+      <div class="about-container mt-xl">
         <div class="date-row">
           <span class="date txt-ss-sub1 txt-gr-50">1992</span>
         </div>
@@ -213,6 +217,10 @@
         </div>     
       </div>
 
+      <div id="bottomSection">.</div>
+
+      <CurriculumComponent />
+    
       <MarqueeBar />
       <FooterComponent />
     </main>
@@ -223,25 +231,41 @@
 <script>
 import FooterComponent from "@/components/FooterComponent.vue";
 import MarqueeBar from "@/components/MarqueeBar.vue";
+import CurriculumComponent from "@/components/CurriculumComponent.vue";
 
 export default {
   data() {
     return {
-      buttonText: "View my Curriculum"
+      buttonText: "View my Curriculum",
     };
   },
-  computed: {
-
+  mounted() {
+    if (this.$route.hash) {
+      this.scrollToSection(this.$route.hash.substring(1));
+    }
   },
   methods: {
+    scrollToSection(sectionId) {
+      this.$nextTick(() => {
+        console.log(`Scrolling to section: ${sectionId}`);
+        const section = document.querySelector(`#${sectionId}`);
+        if (section) {
+          console.log('Section found:', section);
+          section.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          console.log('Section not found');
+        }
+      });
+    }
   },
   components: {
     FooterComponent,
     MarqueeBar,
+    CurriculumComponent,
   },
 };
 </script>
 
-<style lang="scss">
+<style scoped>
 
 </style>
