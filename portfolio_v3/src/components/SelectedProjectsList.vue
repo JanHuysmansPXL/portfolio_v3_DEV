@@ -2,6 +2,7 @@
 export default {
   data() {
     return {
+      viewAllText: "See all projects",
       projects: [
         {
           title: "MADE DIGITAL BRAND BOOK",
@@ -72,6 +73,12 @@ export default {
 
 <template>
   <section class="mt-md">
+  <!-- TITLE BOX-->
+  <div class="selectedwork-title-box">
+    <p class="selectedwork-title-text txt-nt-100">Selected work</p>
+  </div>  
+
+  <!-- WORK LIST-->
   <div class="work-list">
     <router-link
       v-for="(item, index) in projects"
@@ -98,9 +105,20 @@ export default {
       </div>
     </transition>
   </div>
+  
+  <!-- LINK BOX -->
+  <div class="selectedwork-title-box">
+    <router-link class="view-button-box" to="/work">
+      <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
+      <span class="link-text">{{ viewAllText }}</span>
+    </router-link>
+  </div>  
+
 </section>
 </template>
 
 <style scoped lang="scss">
+
+
 
 </style>
