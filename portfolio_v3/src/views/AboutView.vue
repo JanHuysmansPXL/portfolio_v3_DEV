@@ -20,7 +20,7 @@
       </div>
 
       <!-- *** PART I - 1992 *** -->
-      <div class="about-container mt-xl">
+      <div class="about-container">
         <div class="date-row">
           <span class="date txt-ss-sub1 txt-gr-50">1992</span>
         </div>
@@ -56,7 +56,7 @@
           <!-- Left block with text -->
           <div class="box-right">
             <img src="/assets/images/about/about-senegal-1.png" class="image image-fluid" alt="portrait">
-            <span class="subtext txt-gr-50">The village where I lived.</span>
+            <span class="caption txt-gr-50">The village where I lived.</span>
           </div>
           <!-- Right block with image -->
           <div class="box-right">
@@ -87,9 +87,7 @@
         <div class="double-box">
           <!-- Left block with text -->
           <div class="box-left align-start">
-            <h6 class="full-text txt-ss-body2 txt-nt-60">This was my father’s house in Meerhout, Belgium. I spent part
-              of my youth here, when I wasn’t couchsurfing with friends. The house is gone now. My dad built a new one
-              in 2017, after busting his ass for decades.</h6>
+            <h6 class="full-text caption txt-gr-50">This was my father’s house in Meerhout, Belgium. I spent part of my youth here, when I wasn’t couchsurfing with friends.</h6>
           </div>
           <!-- Right block with image -->
           <div class="box-right">
@@ -111,7 +109,7 @@
           </div>
           <!-- R block with text -->
           <div class="box-left">
-            <h6 class="full-text txt-ss-body2 txt-nt-60">This is an impression of my mom’s place. It was a trashy place
+            <h6 class="caption txt-gr-50">This is an impression of my mom’s place. It was a trashy place
               to say the least.</h6>
           </div>
         </div>
@@ -139,7 +137,7 @@
         <div class="double-box">
           <!-- L block with text -->
           <div class="box-left">
-            <h6 class="full-text txt-ss-body2 txt-nt-60">In 2012 I studied the audiovisual arts in Genk. Among other
+            <h6 class="caption txt-gr-50">In 2012 I studied the audiovisual arts in Genk. Among other
               things I made an intriguing incognito documentary.</h6>
           </div>
           <!-- R block with image -->
@@ -171,7 +169,7 @@
           </div>
           <!-- R block with text -->
           <div class="box-left">
-            <h6 class="full-text txt-ss-body2 txt-nt-60">Life happens. I’m not afraid of speaking out my failures. They've given me the chance to grow.</h6>
+            <h6 class="full-text caption txt-gr-50">Life happens. I’m not afraid of speaking out my failures. They've given me the chance to grow.</h6>
           </div>
         </div>
         <!-- Full-width body text -->
