@@ -230,6 +230,8 @@
 import FooterComponent from "@/components/FooterComponent.vue";
 import MarqueeBar from "@/components/MarqueeBar.vue";
 import CurriculumComponent from "@/components/CurriculumComponent.vue";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default {
   data() {
@@ -241,6 +243,54 @@ export default {
     if (this.$route.hash) {
       this.scrollToSection(this.$route.hash.substring(1));
     }
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animate each container
+    const containers = document.querySelectorAll(".about-container");
+
+    containers.forEach((container) => {
+      // Animate the container's opacity and position
+      gsap.fromTo(container, 
+        { opacity: 0, y: 80 }, // Starting state
+        {
+          opacity: 1,
+          y: 0, // Ending state
+          duration: 1.2,
+          scrollTrigger: {
+            trigger: container,
+            ease: "power2.out", // Easing applied here
+            start: "top 80%",
+            end: "bottom 60%",
+            toggleActions: "play none none none",
+            scrub: false,
+            markers: false, // You can enable markers for debugging
+          }
+        }
+      );
+
+      // Animate the images separately inside each container
+      const images = container.querySelectorAll(".image");
+      images.forEach((image, index) => {
+        gsap.fromTo(image, 
+          { opacity: .25, x: index % 2 === 0 ? -32 : 32 }, // Start state, different for odd/even images
+          {
+            opacity: 1,
+            x: 0,
+            duration: 1,
+            scrollTrigger: {
+              trigger: container,
+              ease: "power2.out", // Easing applied here
+              start: "top 75%",
+              end: "bottom 0%",
+              toggleActions: "play none none none",
+              scrub: false,
+              markers: false,
+            }
+          }
+        );
+      });
+    });
   },
   methods: {
     scrollToSection(sectionId) {
