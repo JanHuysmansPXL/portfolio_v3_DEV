@@ -1,0 +1,176 @@
+@use "base" as *;
+
+// ARCHIVE CONTAINERS -- WITH IMAGES ETC..
+
+.archive-container {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: -1px;
+  @include mediaquery(tablet) {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: -1px;
+  }
+  .block-divider{
+    height: 1px;
+    width: 100%;
+    background-color: #212323;
+  }
+  .block-divider:last-of-type{
+    display: none;
+  }
+  .top-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 8px;
+    @include mediaquery(tablet) {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 8px;
+    }
+    .work-title {
+      font-family: $font-display;
+      font-size: 2rem;
+      color: $color-purple--80;
+      @include mediaquery(tablet) {
+        font-size: 1.414rem;
+    }
+  }
+}
+
+  /* Two symmetrical blocks (side by side) */
+  .double-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem; /* Space between the two blocks */
+    align-items: flex-start;
+    @include mediaquery(tablet) {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1rem; /* Space between the two blocks */
+
+    }
+
+    .box-left, .box-right {
+      width: 70%;
+      @include mediaquery(tablet) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }  /* Both blocks take up 48% of the container's width */
+    }
+
+    .box-left {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      justify-content: flex-end;
+      flex: 1;
+      @include mediaquery(tablet) {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      &.align-end {
+        align-items: flex-end;
+      }
+      &.align-start {
+        align-items: flex-start;
+      }
+      .summary {
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: #212323;
+      }
+    }
+    .box-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      @include mediaquery(tablet) {
+        align-items: flex-start;
+      } 
+      &.wider {
+        flex:2;
+      }
+
+      .image {
+        min-width: 100%;
+        max-width: 320px;
+        
+        height: auto;
+        max-height: 480px;
+        border-radius: 1px;
+        align-self: flex-end;
+        object-fit: cover;
+        @include mediaquery(tablet) {
+          max-width: 100%;
+          min-height: 240px;
+        } 
+        &.height-full {
+          height: 100%;
+        }
+        &.height-third {
+          height: 66%;
+        }
+        &.height-half {
+          height: 50%;
+        }
+        &.square-gif {
+          height: 244px;
+        }
+      }
+      .subtext {
+        font-size: 0.875rem;
+        color: #6e8383;
+        @include mediaquery(tablet) {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+.caption {
+  font-family: $font-text;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.005rem;
+  margin-top: 4px; 
+  max-width: 45ch;       
+  @include mediaquery(tablet) {
+    font-size: 0.75rem;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .double-box {
+    .box-left, .box-right {
+      width: 48%;  /* Keep symmetrical blocks on smaller screens */
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .double-box {
+    .box-left, .box-right {
+      width: 48%;  /* Maintain the 50-50 split even on mobile */
+    }
+  }
+}

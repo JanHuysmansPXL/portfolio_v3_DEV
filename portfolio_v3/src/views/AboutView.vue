@@ -3,7 +3,7 @@
     <main ref="mainContent" class="maintest pt-lg">
       <div class="about-head">
         <div class="about-bar-top">
-          <h4 class="txt-ss-h4">This is my personal story. Like every good movie it has some ups and downs.</h4>
+          <h4 class="about-title txt-ss-h3">This is my personal story. Like every good movie it has some ups and downs.</h4>
         </div>
         <div class="about-bar-bottom">
           <p class="txt-body-2 txt-gr-50">No time to read?</p>

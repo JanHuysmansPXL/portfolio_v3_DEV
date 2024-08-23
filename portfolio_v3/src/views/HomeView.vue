@@ -2,6 +2,7 @@
 import FooterComponent from '@/components/FooterComponent.vue';
 import MarqueeBar from "@/components/MarqueeBar.vue";
 import SelectedProjectsList from "@/components/SelectedProjectsList.vue";
+import CurriculumComponent from '@/components/CurriculumComponent.vue';
 
 
     export default {
@@ -27,6 +28,7 @@ import SelectedProjectsList from "@/components/SelectedProjectsList.vue";
             FooterComponent,
             MarqueeBar,
             SelectedProjectsList,
+            CurriculumComponent,
         },
     }
 </script>
@@ -191,6 +193,8 @@ import SelectedProjectsList from "@/components/SelectedProjectsList.vue";
                     </button>
                 </div>
             </div>
+            
+            <CurriculumComponent />
 
 
                             <!-- *** METRICS *** -->

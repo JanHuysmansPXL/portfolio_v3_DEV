@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
 import AboutView from '@/views/AboutView.vue'
+import ArchiveView from '@/views/ArchiveView.vue'
 
 /* PROJECTS IMPORT */
 import AuroView from '@/views/AuroView.vue'
@@ -40,6 +41,11 @@ const router = createRouter({
       path: '/about',
       name: 'AboutView',
       component: AboutView,
+    },
+    {
+      path: '/archive',
+      name: 'ArchiveView',
+      component: ArchiveView,
     },
     {
       path: '/auro',

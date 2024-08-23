@@ -3,7 +3,7 @@
 .about-head {
   width: 100%;
   margin: 0 auto;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 1rem 2rem 2rem 2rem;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -19,6 +19,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    .about-title {
+      max-width: 67%;
+      @include mediaquery(tablet) {
+        max-width: 100%;
+      }
+    }
   }
   .about-bar-bottom{
     width: 100%;
@@ -114,7 +120,7 @@
 
 .about-container {
   width: 100%;
-  padding: $padding-lg 1rem;
+  padding: $padding-lg 2rem;
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -133,13 +139,15 @@
       text-align: left;
       margin-bottom: 8px;
     }
-
     .date {
-      font-size: 1.5rem;
-      color: #6e8383;
-      font-family: 'Degular Display', sans-serif;
+      font-family: $font-display;
+      font-size: 4rem;
+      color: $color-purple--80;
+      @include mediaquery(tablet) {
+        font-size: 1.414rem;
     }
   }
+}
 
   /* Two symmetrical blocks (side by side) */
   .double-box {
