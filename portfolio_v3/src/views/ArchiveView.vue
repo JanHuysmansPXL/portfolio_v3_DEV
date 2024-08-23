@@ -153,6 +153,10 @@
 <script>
 import FooterComponent from "@/components/FooterComponent.vue";
 import MarqueeBar from "@/components/MarqueeBar.vue";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default {
   data() {
@@ -161,10 +165,32 @@ export default {
     };
   },
   mounted() {
-
+    this.initScrollAnimations();
   },
   methods: {
-
+    initScrollAnimations() {
+      gsap.utils.toArray(".archive-container").forEach((container) => {
+        gsap.fromTo(
+          container,
+          {
+            opacity: 0,
+            y: 16, // Start animation: translateY 50px down
+          },
+          {
+            opacity: 1,
+            y: 0, // End animation: move to its normal position
+            duration: .5,
+            scrollTrigger: {
+              trigger: container, // Each archive container will trigger its animation
+              start: "top 80%", // Starts when the top of the element hits 80% of the viewport
+              end: "bottom 60%", // Animation ends when bottom hits 60%
+              toggleActions: "play none none none", // Only plays once when it enters the viewport
+              once: true, // Disable re-triggering when scrolling back
+            },
+          }
+        );
+      });
+    },
   },
   components: {
     FooterComponent,
@@ -174,5 +200,9 @@ export default {
 </script>
 
 <style scoped>
-
+.archive-container {
+  opacity: 0; /* Start with invisible elements */
+  transform: translateY(32px); /* Position before the animation */
+  transition: all 0.3s ease-in-out;
+}
 </style>

@@ -2635,26 +2635,13 @@
 }
 
 /* Extra large devices -- VANAF 1440 PIXELS */
-@media (min-width: 1440px) {
+@media (min-width: 1921px) {
     .menu-toggle {
         display: none;
     }
-
-    .sidebar {
-        position: sticky;
-        left: 0;
-        top: 0;
-        width: 250px;
-        height: 100%;
-        z-index: auto;
-        transition-property: left;
-        transition-duration: 0.7s;
-        transition-timing-function: cubic-bezier(0.64, 0, 0.78, 0);
-        z-index: 1000;
-    }
 }
 
-@media (max-width: 780px) {
+@media (min-width: 1920px) {
     .menu-toggle {
         display: none;
     }

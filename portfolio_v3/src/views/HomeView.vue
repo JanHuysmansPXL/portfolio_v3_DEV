@@ -193,7 +193,7 @@ import CurriculumComponent from '@/components/CurriculumComponent.vue';
                     </button>
                 </div>
             </div>
-            
+
             <CurriculumComponent />
 
 
