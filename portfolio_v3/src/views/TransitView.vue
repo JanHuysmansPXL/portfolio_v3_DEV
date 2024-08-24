@@ -3,6 +3,8 @@ import FooterComponent from "@/components/FooterComponent.vue";
 import MarqueeBar from "@/components/MarqueeBar.vue";
 import transitVideoImport from '/assets/images/projects/transit/transit_video.mp4';
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default {
   data() {
@@ -18,11 +20,89 @@ export default {
   },
   methods: {
     scrollPrev() {
-            this.$refs.imageWrapper.scrollBy({ left: -376, behavior: 'smooth' });
-            },
-            scrollNext() {
-            this.$refs.imageWrapper.scrollBy({ left: 376, behavior: 'smooth' });
-            },
+      this.$refs.imageWrapper.scrollBy({ left: -376, behavior: 'smooth' });
+      },
+      scrollNext() {
+      this.$refs.imageWrapper.scrollBy({ left: 376, behavior: 'smooth' });
+    },
+  },
+  mounted() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animate video
+  gsap.from(".project-heading-vid", {
+    opacity: 0.9,
+    scale: 1.05,
+    duration: 1.2,
+    ease: "power2.out",
+  });
+
+  // IMAGES BOX ANIMATIONS
+  gsap.from(".grid-box", {
+  opacity: 0,
+  x: 32, // Slide from the right
+  duration: .8,
+  stagger: 0.04,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".grid-images-wrapper",
+    start: "top 80%",
+    end: "bottom 80%",
+    scrub: false, // Creates a smooth parallax effect
+    }, 
+  });
+
+  // QUOTE DELAY
+  gsap.from(".quote-block-wrapper", {
+  opacity: 0,
+  y: 16,
+  duration: .8,
+  delay: 0.2,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".quote-block-wrapper",
+    start: "top 80%",
+    end: "bottom 60%",
+    toggleActions: "play none none none",
+  },
+});
+
+  // Timeline with ScrollTrigger
+  const scrollTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".project-title-block",
+      start: "top 85%",
+      end: "bottom 60%",
+      scrub: true,
+    },
+    defaults: { duration: 1, ease: "power2.out" }
+  });
+
+  scrollTl
+    .from(".project-title-block-title", { opacity: 0, y: 32 })
+    .from(".about-text", { opacity: 0, y: 16 }, "+=0.3")
+    .from(".intro-title", { opacity: 0, y: 8 }, "-=0.3")
+    .from(".intro-subtitle", { opacity: 0, y: 8 }, "-=0.5")
+    .from(".details-block", { opacity: 0, y: 8 }, "-=0.3");
+
+    // Stagger example for text wraps
+    scrollTl.from(".details-wrap .text-wrap", {
+      opacity: 0,
+      y: 8,
+      stagger: 0.2, // Elements animate with a 0.2 second delay between each
+    });
+
+    gsap.to(".project-heading-img", {
+    scale: 1.15,   // Increase the image scale
+    y: -40,       // Move the image upward as it scrolls
+    scrollTrigger: {
+      trigger: ".project-heading-img",
+      start: "top 80%",  // When the image is in view
+      end: "bottom top", // End when the image is off-screen
+      scrub: true,       // Smoothly animate while scrolling
+    }
+  });
+
   }
 };
 </script>

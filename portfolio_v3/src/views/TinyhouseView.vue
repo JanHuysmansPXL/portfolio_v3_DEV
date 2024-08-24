@@ -4,6 +4,9 @@ import MarqueeBar from "@/components/MarqueeBar.vue";
 import transitVideoImport from '/assets/images/projects/tinyhouse/TinyHouse - Instagram Posts/TinyHouse---Instagram-Story-1080x1920-n2.gif';
 import TinyHouseBrandSlides from '@/components/TinyHouseBrandSlides.vue';
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 export default {
   data() {
@@ -19,11 +22,79 @@ export default {
   },
   methods: {
     scrollPrev() {
-            this.$refs.imageWrapper.scrollBy({ left: -316, behavior: 'smooth' });
-            },
-            scrollNext() {
-            this.$refs.imageWrapper.scrollBy({ left: 316, behavior: 'smooth' });
-            },
+    this.$refs.imageWrapper.scrollBy({ left: -316, behavior: 'smooth' });
+    },
+    scrollNext() {
+    this.$refs.imageWrapper.scrollBy({ left: 316, behavior: 'smooth' });
+    },
+  },
+  mounted() {
+  gsap.registerPlugin(ScrollTrigger);
+
+
+    // Animate video
+    gsap.from(".project-heading-img", {
+    opacity: 0.9,
+    scale: 1.05,
+    duration: 1.2,
+    ease: "power2.out",
+  });
+
+  // Timeline with ScrollTrigger
+  const scrollTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".project-title-block",
+      start: "top 85%",
+      end: "bottom 60%",
+      scrub: true,
+    },
+    defaults: { duration: 1, ease: "power2.out" }
+  });
+
+  scrollTl
+    .from(".project-title-block-title", { opacity: 0, y: 32 })
+    .from(".about-text", { opacity: 0, y: 16 }, "+=0.1")
+    .from(".intro-title", { opacity: 0, y: 8 }, "-=0.1")
+    .from(".intro-subtitle", { opacity: 0, y: 8 }, "-=0.3")
+    .from(".details-block", { opacity: 0, y: 8 }, "-=0.1");
+
+    // Stagger example for text wraps
+    scrollTl.from(".details-wrap .text-wrap", {
+      opacity: 0,
+      y: 8,
+      stagger: 0.2, // Elements animate with a 0.2 second delay between each
+    });
+
+  // QUOTE DELAY
+  gsap.from(".quote-block-wrapper", {
+  opacity: 0,
+  y: 16,
+  duration: .8,
+  delay: 0.2,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".quote-block-wrapper",
+    start: "top 60%",
+    end: "bottom 80%",
+    toggleActions: "play none none none",
+  },
+});
+
+  // IMAGES BOX ANIMATIONS
+  gsap.from(".grid-box", {
+  opacity: 0,
+  x: 32, // Slide from the right
+  duration: .8,
+  stagger: 0.04,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".grid-images-wrapper",
+    start: "top 80%",
+    end: "bottom 80%",
+    scrub: false, // Creates a smooth parallax effect
+    }, 
+  });
+
   }
 };
 </script>
@@ -188,7 +259,7 @@ export default {
       </section>
 
       <!-- NEXT PROJECT BAR -->
-      <div class="next-project-bar mt-lg">
+      <div class="next-project-bar">
         <router-link to="/holycow" class="next-project-link">
           <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right-dark.png" /></span>Next Project
         </router-link>
