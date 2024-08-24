@@ -39,7 +39,7 @@ export default {
 
   // IMAGES BOX ANIMATIONS
   gsap.from(".grid-box", {
-  opacity: 0,
+  opacity: 0.8,
   x: 32, // Slide from the right
   duration: .8,
   stagger: 0.04,
