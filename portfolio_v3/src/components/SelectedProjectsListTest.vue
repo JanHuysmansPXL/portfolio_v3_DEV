@@ -2,12 +2,13 @@
 export default {
   data() {
     return {
+      viewAllText: "See all projects",
       projects: [
         {
           title: "MADE DIGITAL BRAND BOOK",
           year: 2024,
           details: "BRANDING / UI / UX / MOTION",
-          image: "/assets/images/covers/coverimage.png", // path to your image
+          image: "/assets/images/covers/coverimage.png",
           link: "/made-digital-brand-book",
         },
         {
@@ -18,20 +19,6 @@ export default {
           link: "/kronolith",
         },
         {
-          title: "AURO",
-          year: 2024,
-          details: "UI / UX / Webdevelopment",
-          image: "/assets/images/covers/coverimage-3.png", // path to your image
-          link: "/auro",
-        },
-        {
-          title: "BUILDR",
-          year: 2023,
-          details: "Branding / INTERFACE / UX",
-          image: "/assets/images/covers/coverimage-2.png", // path to your image
-          link: "/buildr",
-        },
-        {
           title: "TINY HOUSE",
           year: 2023,
           details: "BRANDING / SOCIAL CONTENT",
@@ -39,25 +26,11 @@ export default {
           link: "/tinyhouse",
         },
         {
-          title: "HOLY COW!",
+          title: "BUILDR",
           year: 2023,
-          details: "BRANDING / UX / UI DESIGN",
-          image: "/assets/images/covers/coverimage-5.png",
-          link: "/holycow",
-        },
-        {
-          title: "ONYX DISPLAY",
-          year: 2023,
-          details: "Typography / Font Design",
-          image: "/assets/images/covers/coverimage-7.png", // path to your image
+          details: "Branding / INTERFACE / UX",
+          image: "/assets/images/covers/coverimage-2.png",
           link: "/buildr",
-        },
-        {
-          title: "COLLIDER",
-          year: "2020-2023",
-          details: "ART / PRINT / AXIDRAW PLOT",
-          image: "/assets/images/covers/coverimage-8.png",
-          link: "/collider",
         },
         {
           title: "TRANSIT",
@@ -66,14 +39,6 @@ export default {
           image: "/assets/images/projects/transit/transit-loop-animation-sm.gif",
           link: "/transit",
         },
-        {
-          title: "LINE DRAWINGS",
-          year: 2017-2021,
-          details: "ART / DRAWING",
-          image: "/assets/images/covers/coverimage-9.png",
-          link: "/collider",
-        },
-        // Add more projects as needed
       ],
       hoveredImage: null,
       imageStyles: {
@@ -83,7 +48,7 @@ export default {
     };
   },
   methods: {
-    showImage(image) {
+    showImage(image, event) {
       this.hoveredImage = image;
       this.updateImagePosition();
     },
@@ -91,31 +56,25 @@ export default {
       this.hoveredImage = null;
     },
     updateImagePosition() {
-  const windowWidth = window.innerWidth;
-  const windowHeight = window.innerHeight;
+      // Get the dimensions of the screen
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
 
-  // Set image size based on screen width
-  let imageWidth = 480;
-  let imageHeight = 480;
+      // Assuming the image size is approximately 400x400px for example
+      const imageWidth = 400;
+      const imageHeight = 400;
 
-  if (windowWidth < 768) {
-    imageWidth = 320;
-    imageHeight = 320;
-  }
+      // Calculate the center position
+      const centerX = (windowWidth - imageWidth) / 2;
+      const centerY = (windowHeight - imageHeight) / 2;
 
-  // Calculate the centered position
-  const centerX = (windowWidth - imageWidth) / 2;
-  const centerY = (windowHeight - imageHeight) / 2;
-
-  // Update the imageStyles to position the image at the center of the window
-  this.imageStyles = {
-    top: `${centerY}px`,
-    left: `${centerX}px`,
-    width: `${imageWidth}px`,
-    height: `${imageHeight}px`,
-    position: 'fixed', // Make sure the image is positioned relative to the viewport
-  };
-}
+      // Update the imageStyles to center the image
+      this.imageStyles = {
+        top: `${centerY}px`,
+        left: `${centerX}px`,
+        position: 'fixed', // Ensures the image stays centered while scrolling
+      };
+    },
   },
 };
 </script>
@@ -123,14 +82,20 @@ export default {
 
 
 <template>
-  <section style="margin-top: -1px;">
+  <section class="mt-md">
+    <!-- TITLE BOX-->
+    <div class="selectedwork-title-box">
+      <p class="selectedwork-title-text txt-nt-100">Selected work</p>
+    </div>  
+
+    <!-- WORK LIST-->
     <div class="work-list">
       <router-link
         v-for="(item, index) in projects"
         :key="index"
         :to="item.link"
         class="row"
-        @mouseenter="showImage(item.image)"
+        @mouseenter="showImage(item.image, $event)"
         @mouseleave="hideImage"
       >
         <div class="row-content">
@@ -149,10 +114,18 @@ export default {
         </div>
       </transition>
     </div>
+    
+    <!-- LINK BOX -->
+    <div class="selectedwork-title-box">
+      <router-link class="view-button-box" to="/work">
+        <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
+        <span class="link-text">{{ viewAllText }}</span>
+      </router-link>
+    </div>  
   </section>
 </template>
 
-
+<!-- -->
 <style scoped lang="scss">
 .hover-image {
   width: 400px; /* Or adjust to your image size */
@@ -162,3 +135,4 @@ export default {
   pointer-events: none; /* Prevent the image from interfering with mouse events */
 }
 </style>
+

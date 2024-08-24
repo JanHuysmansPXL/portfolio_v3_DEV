@@ -60,7 +60,7 @@ export default {
       this.updateImagePosition(event);
     },
     updateImagePosition(event) {
-      const offset = 40; // Offset the image from the mouse pointer
+      const offset = 20; // Offset the image from the mouse pointer
       this.imageStyles = {
         top: `${event.clientY - offset }px`,
         left: `${event.clientX + offset}px`,

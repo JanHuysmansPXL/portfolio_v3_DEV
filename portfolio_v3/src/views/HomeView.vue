@@ -2,6 +2,7 @@
 import FooterComponent from '@/components/FooterComponent.vue';
 import MarqueeBar from "@/components/MarqueeBar.vue";
 import SelectedProjectsList from "@/components/SelectedProjectsList.vue";
+import SelectedProjectsListTest from '@/components/SelectedProjectsListTest.vue';
 import CurriculumComponent from '@/components/CurriculumComponent.vue';
 
 import gsap from "gsap";
@@ -22,6 +23,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
             FooterComponent,
             MarqueeBar,
             SelectedProjectsList,
+            SelectedProjectsListTest,
             CurriculumComponent,
         },
         methods: {
@@ -34,6 +36,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
         },
         mounted() {
             gsap.registerPlugin(ScrollTrigger);
+
+            setTimeout(() => {
+                ScrollTrigger.refresh();
+            }, 200);
 
   // H4 / H5 HEADINGS
   // Animates ALL h4 and h5 headings op the page on scroll.
@@ -71,7 +77,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
     });
   });
 
-
         },
     }
 </script>
@@ -83,18 +88,17 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
         <main class="maintest pt-lg">
 
             <!-- INTRO TEXT + CTA BUTTONS -->
-            <section class="home-intro-block">
+            <section class="home-intro-block mt-lg">
                 <div class="home-intro-title-bar ps-md">
-                    <h3 class="home-intro-title">Jan Huysmans is a digital designer & artist living in the diamond city
-                        of Antwerp.</h3>
+                    <h3 class="home-intro-title">Digital designer & artist.<br>Find me in Antwerp.</h3>
                 </div>
                 <div class="home-intro-box mt-md">
                     <div class="home-intro-column-left">
-                        <h4 class="quote-block-text mt-md">I love building brands, user interfaces or any design
+                        <h4 class="quote-block-text mt-lg">I love building brands, user interfaces or any design
                             oriënted system. I'm a designer who likes to create new experiences, products or websites.
                         </h4>
                         <h4 class="quote-block-text">I strongly believe design is a democratic force of change.
-                            Finding solutions to user needs is something I value a lot.</h4>
+                            Finding viable solutions for actual people is something I value a lot.</h4>
                         <h4 class="quote-block-text">Sometimes I dabble in art. My artistic work is based on
                             studies of rhythm, color and pattern. Mostly on themes like repetition, modularity and
                             automation.
@@ -122,7 +126,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
                 </div>
             </section>
 
-            <SelectedProjectsList class="py-xl"/>
+            <SelectedProjectsListTest class="py-lg"/>
+
+            <!-- 
+            <SelectedProjectsList class="py-xl"/>-->
 
             <!-- *** DOUBLE IMAGES *** BLOCK  
             <section class="story-block container-fluid mt-xl">
@@ -180,8 +187,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
             >>> ENDS HERE -->
 
             <!-- QUOTE - Experience -->
-            <section class="copy-block mt-xl">
-                <h3 class="copy-block-text-full txt-ss-h3 text-width-60">Find me for
+            <section class="copy-block mt-md">
+                <h3 class="copy-block-text-full txt-ss-h4 text-width-60">Find me for
                 </h3>
             </section>
             <!-- SERVICE 1 -->
@@ -240,7 +247,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
             <CurriculumComponent />
 
 
-                            <!-- *** METRICS *** -->
+                <!-- *** METRICS *** 
                 <section id="metrics" class="metrics-box container-fluid bg-pp-30 mt-md">
                 <div class="metric-column">
                     <p class="metric-label">Awards</p>
@@ -257,7 +264,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
                     <h1 class="metric-number txt-ss-h0">11</h1>
                     <p class="metric-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum fuga quae excepturi illum, ullam dolorem laborum cumque id..</p>
                 </div>
-            </section> 
+            </section> -->
 
         <!-- *** MARQUEE BAR *** -->
         <MarqueeBar />

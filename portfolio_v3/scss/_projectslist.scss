@@ -128,11 +128,14 @@
     z-index: 1000;
     pointer-events: none; // Ensure the image does not interfere with hover detection
     img {
-      width: 360px;
+      width: 480px;
       height: auto;
       border-radius: 1px;
       box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
       transition: transform 0.3s ease, opacity 0.3s ease; // Add transition for smooth scaling and fading
+      @include mediaquery (tablet){
+        width: 320px;
+      }
     }
   }
 

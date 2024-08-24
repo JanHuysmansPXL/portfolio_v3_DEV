@@ -104,6 +104,12 @@ const router = createRouter({
     }
     return savedPosition || { top: 0 };
   },
-})
+});
+
+router.afterEach((to, from) => {
+  setTimeout(() => {
+    ScrollTrigger.refresh();
+  }, 150); // You can adjust the delay if needed
+});
 
 export default router

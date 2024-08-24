@@ -299,7 +299,7 @@ gsap.utils.toArray('.images-wrapper').forEach((wrapper) => {
           How 'bout the cow?
         </h4>
         <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm mb-md">
-          I prototyped an app for Holy Cow, and made a brand bible. A collection of guidelines for the brand. Checkit
+          I prototyped an app for Holy Cow, and made a brand bible, a collection of guidelines for the brand. Check it
           below.
         </p>
       </section>

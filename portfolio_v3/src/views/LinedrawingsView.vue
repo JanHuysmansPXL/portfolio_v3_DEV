@@ -44,9 +44,13 @@ export default {
     scrollNextDig() {
       this.$refs.imageWrapperDigital.scrollBy({ left: 376, behavior: 'smooth' });
     },
-  },  
+  },
   mounted() {
   gsap.registerPlugin(ScrollTrigger);
+
+  setTimeout(() => {
+    ScrollTrigger.refresh();
+  }, 200);
 
   // PROJECT HEADING IMAGE -- FULL WIDTH
   // Animates the full-width project header image.
