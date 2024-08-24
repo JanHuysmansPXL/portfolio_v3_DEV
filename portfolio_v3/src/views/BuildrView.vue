@@ -53,8 +53,8 @@ export default {
   const scrollTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".project-title-block",
-      start: "top 85%",
-      end: "bottom 60%",
+      start: "top 90%",
+      end: "bottom 80%",
       scrub: true,
     },
     defaults: { duration: 1, ease: "power2.out" }
@@ -74,52 +74,37 @@ export default {
       stagger: 0.2, // Elements animate with a 0.2 second delay between each
     });
 
-  // Animate Copy Block Texts (Buildr Brief + Mockup)
-  gsap.from(".copy-block-text-half", {
-    opacity: 0,
-    y: 30,
-    duration: 1,
-    ease: "power2.out",
-    stagger: 0.2,
-    scrollTrigger: {
-      trigger: ".copy-block",
-      start: "top 80%",
-      end: "bottom 60%",
-      scrub: true,
-    }
+    gsap.utils.toArray([".txt-ss-h4", ".txt-ss-h5"]).forEach((element) => {
+    gsap.from(element, {
+      scrollTrigger: {
+        trigger: element, // Each element will animate when it enters the viewport
+        start: "top 90%", // Start animation when the top of the element is 80% into the viewport
+        end: "bottom 40%", // End when the bottom reaches 60%
+        scrub: true, // Smooth scrolling effect
+      },
+      opacity: 0, // Start with hidden text
+      y: 16, // Slide text up by 50px
+      duration: .8, // 1-second animation duration
+      ease: "power2.out", // Smooth easing for subtle effect
+    });
   });
 
-
-  gsap.from(".copy-block-text", {
-    opacity: 0,
-    y: 30,
-    duration: 1,
-    ease: "power2.out",
-    stagger: 0.2,
-    scrollTrigger: {
-      trigger: ".copy-block",
-      start: "top 80%",
-      end: "bottom 60%",
-      scrub: true,
-    }
+  // Animate Centered Mockup Image Scaling on Scroll -->
+   // Animate all .mockup-image elements
+   gsap.utils.toArray('.mockup-image').forEach((mockup) => {
+    gsap.from(mockup, {
+      scrollTrigger: {
+        trigger: mockup.closest('.mockup-center'), // Target the parent container for each mockup
+        start: "top 100%",   // Start animation when the top of the mockup container is 75% in the viewport
+        end: "bottom 25%",  // End when the bottom of the container is 25% in the viewport
+        scrub: true,        // Enable smooth reverse scrolling
+      },
+      opacity: 0.5,  // Start from transparent
+      y: 80,         // Slide the image up by 50px
+      duration: 1.2, // Duration of the animation
+      ease: "power2.out",  // Smooth easing effect
+    });
   });
-
-  // Animate Centered Mockup Image Scaling on Scroll
-  gsap.from(".mockup-image", {
-  scrollTrigger: {
-    trigger: '.mockup-center', // The container holding the mockup
-    start: "top 75%", // Start animation when the top of the mockup container is 75% in the viewport
-    end: "bottom 25%", // End the animation when the bottom of the container is 25% in the viewport
-    scrub: true, // Enable smooth reverse scrolling
-    onEnter: () => console.log('Entered the trigger area'),
-    onLeave: () => console.log('Left the trigger area'),
-  },
-  opacity: 0, // Start the image from being transparent
-  y: 50, // Slide the image up by 50px
-  duration: 1.2, // Duration of the animation
-  ease: "power2.out", // Easing function for smooth effect
-});
-
 
   // Animate Quote Block
   gsap.from(".quote-block-wrapper", {
@@ -135,6 +120,38 @@ export default {
       toggleActions: "play none none none",
     },
   });
+
+  // ANIMATE DUO IMAGES IN COPY - TEXT WRAPPER
+  // Animate the first image from the left (odd images)
+  gsap.from(".images-wrapper .half-image:nth-child(odd)", {
+    opacity: 0,
+    x: -32,               // Slide in from the left (-100px)
+    duration: .7,           // Animation duration
+    ease: "power2.out",    // Smooth easing effect
+    stagger: 0.2,          // Stagger effect for multiple images
+    scrollTrigger: {
+      trigger: ".images-wrapper",  // Trigger animation on scroll
+      start: "top 90%",            // Start when top of wrapper is 80% in view
+      end: "bottom 60%",           // End when bottom of wrapper is 60% in view
+      scrub: true,                 // Enable smooth scroll and reverse
+    }
+  });
+
+  // Animate the second image from the right (even images)
+  gsap.from(".images-wrapper .half-image:nth-child(even)", {
+    opacity: 0,
+    x: 32,                // Slide in from the right (+100px)
+    duration: .5,           // Animation duration
+    ease: "power2.out",    // Smooth easing effect
+    stagger: 0.2,          // Stagger effect for multiple images
+    scrollTrigger: {
+      trigger: ".images-wrapper",  // Trigger animation on scroll
+      start: "top 90%",            // Start when top of wrapper is 80% in view
+      end: "bottom 60%",           // End when bottom of wrapper is 60% in view
+      scrub: true,                 // Enable smooth scroll and reverse
+    }
+  });
+
 
   // Animate the dual images in the full-width image block
   gsap.from(".img-halfwidth", {
@@ -155,12 +172,12 @@ export default {
   gsap.from(".cta-button", {
     opacity: 0,
     scale: 0.95,
-    duration: 0.8,
+    duration: 0.5,
     ease: "power2.out",
     scrollTrigger: {
       trigger: ".cta-wrapper",
-      start: "top 80%",
-      end: "bottom 60%",
+      start: "top 95%",
+      end: "bottom 80%",
       scrub: true,
     }
   });
@@ -359,7 +376,10 @@ export default {
 </template>
 
 <style lang="scss">
-
+.text-mask {
+  overflow: hidden; /* Hide content that overflows */
+  height: 100%; /* Keep text fully hidden initially */
+}
 
 </style>
 

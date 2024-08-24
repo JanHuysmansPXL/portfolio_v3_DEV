@@ -52,7 +52,58 @@ export default {
     }, 
   });
 
-  // QUOTE DELAY
+  // TIMELINE ANIMATION FOR TITLE BLOCK.
+  const scrollTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".project-title-block",
+      start: "top 90%",
+      end: "bottom 80%",
+      scrub: true,
+    },
+    defaults: { duration: 1, ease: "power2.out" }
+  });
+
+  scrollTl
+    .from(".project-title-block-title", { opacity: 0, y: 32 })
+    .from(".about-text", { opacity: 0, y: 16 }, "+=0.1")
+    .from(".intro-title", { opacity: 0, y: 8 }, "-=0.1")
+    .from(".intro-subtitle", { opacity: 0, y: 8 }, "-=0.3")
+    .from(".details-block", { opacity: 0, y: 8 }, "-=0.1");
+
+    // STAGGER example for text wraps
+    scrollTl.from(".details-wrap .text-wrap", {
+      opacity: 0,
+      y: 8,
+      stagger: 0.2, // Elements animate with a 0.2 second delay between each
+    });
+
+    gsap.utils.toArray([".txt-ss-h4", ".txt-ss-h5"]).forEach((element) => {
+    gsap.from(element, {
+      scrollTrigger: {
+        trigger: element, // Each element will animate when it enters the viewport
+        start: "top 90%", // Start animation when the top of the element is 80% into the viewport
+        end: "bottom 40%", // End when the bottom reaches 60%
+        scrub: true, // Smooth scrolling effect
+      },
+      opacity: 0, // Start with hidden text
+      y: 16, // Slide text up by 50px
+      duration: .8, // 1-second animation duration
+      ease: "power2.out", // Smooth easing for subtle effect
+    });
+  });
+
+    gsap.to(".project-heading-img", {
+    scale: 1.10,   // Increase the image scale
+    y: -40,       // Move the image upward as it scrolls
+    scrollTrigger: {
+      trigger: ".project-heading-img",
+      start: "top 90%",  // When the image is in view
+      end: "bottom top", // End when the image is off-screen
+      scrub: true,       // Smoothly animate while scrolling
+    }
+  });
+
+  // QUOTE WITH DELAY
   gsap.from(".quote-block-wrapper", {
   opacity: 0,
   y: 16,
@@ -67,41 +118,6 @@ export default {
   },
 });
 
-  // Timeline with ScrollTrigger
-  const scrollTl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".project-title-block",
-      start: "top 85%",
-      end: "bottom 60%",
-      scrub: true,
-    },
-    defaults: { duration: 1, ease: "power2.out" }
-  });
-
-  scrollTl
-    .from(".project-title-block-title", { opacity: 0, y: 32 })
-    .from(".about-text", { opacity: 0, y: 16 }, "+=0.3")
-    .from(".intro-title", { opacity: 0, y: 8 }, "-=0.3")
-    .from(".intro-subtitle", { opacity: 0, y: 8 }, "-=0.5")
-    .from(".details-block", { opacity: 0, y: 8 }, "-=0.3");
-
-    // Stagger example for text wraps
-    scrollTl.from(".details-wrap .text-wrap", {
-      opacity: 0,
-      y: 8,
-      stagger: 0.2, // Elements animate with a 0.2 second delay between each
-    });
-
-    gsap.to(".project-heading-img", {
-    scale: 1.15,   // Increase the image scale
-    y: -40,       // Move the image upward as it scrolls
-    scrollTrigger: {
-      trigger: ".project-heading-img",
-      start: "top 80%",  // When the image is in view
-      end: "bottom top", // End when the image is off-screen
-      scrub: true,       // Smoothly animate while scrolling
-    }
-  });
 
   }
 };
