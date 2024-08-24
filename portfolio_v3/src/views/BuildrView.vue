@@ -190,11 +190,13 @@ export default {
   <div id="pagewrapper">
     <main class="maintest">
 
-
-      <!-- FULL IMAGE  -->
-      <div class="container-fluid">
-        <img class="img-fluid project-heading-img" src="/assets/images/projects/buildr/buildr_mockupsgrid.png"
-          alt="An image of the made icon graphic language">
+          <!-- HEADING COVER WITH SCREEN RESPONSIVE IMAGE (PICTURE) -->
+     <div class="container-fluid">
+        <picture>
+          <source media="(max-width: 768px)" srcset="/assets/images/projects/buildr/buildr_mockupsgrid.png" /> <!-- SAME !!-->
+          <img class="img-fluid project-heading-img mid" src="/assets/images/projects/buildr/buildr_mockupsgrid.png"
+            alt="An image of the made icon graphic language">
+        </picture>
       </div>
 
 

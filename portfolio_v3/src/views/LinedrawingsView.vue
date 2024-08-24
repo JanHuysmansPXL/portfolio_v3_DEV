@@ -183,19 +183,22 @@ export default {
 });
 
   // CTA BUTTON
-  // Animates the CTA Button for the entire website.
-  gsap.from(".cta-button", {
-    opacity: 0,
-    scale: 0.95,
-    duration: 0.5,
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: ".cta-wrapper",
-      start: "top 95%",
-      end: "bottom 80%",
-      scrub: true,
-    }
+  // Animate each CTA button individually
+  gsap.utils.toArray('.cta-button').forEach((button) => {
+    gsap.from(button, {
+      opacity: 0,
+      scale: 0.95,
+      duration: 0.5,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: button.closest('.cta-wrapper'), // Use closest cta-wrapper for each button
+        start: "top 95%", // Start when the top of the wrapper is 95% in view
+        end: "bottom 80%", // End when the bottom of the wrapper is 80% in view
+        scrub: true, // Scrub the animation based on the scroll
+      }
+    });
   });
+
 },
 };
 </script>

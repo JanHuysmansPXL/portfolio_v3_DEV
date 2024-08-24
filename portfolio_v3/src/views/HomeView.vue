@@ -4,6 +4,8 @@ import MarqueeBar from "@/components/MarqueeBar.vue";
 import SelectedProjectsList from "@/components/SelectedProjectsList.vue";
 import CurriculumComponent from '@/components/CurriculumComponent.vue';
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
     export default {
     data() {
@@ -16,6 +18,12 @@ import CurriculumComponent from '@/components/CurriculumComponent.vue';
             isSidebarOpen: false,
             }
         },
+        components: {
+            FooterComponent,
+            MarqueeBar,
+            SelectedProjectsList,
+            CurriculumComponent,
+        },
         methods: {
             toggleSidebar() {
             this.isSidebarOpen = !this.isSidebarOpen;
@@ -24,11 +32,46 @@ import CurriculumComponent from '@/components/CurriculumComponent.vue';
         computed: {
             
         },
-        components: {
-            FooterComponent,
-            MarqueeBar,
-            SelectedProjectsList,
-            CurriculumComponent,
+        mounted() {
+            gsap.registerPlugin(ScrollTrigger);
+
+  // H4 / H5 HEADINGS
+  // Animates ALL h4 and h5 headings op the page on scroll.
+    gsap.utils.toArray([".txt-ss-h4", ".txt-ss-h5"]).forEach((element) => {
+    gsap.from(element, {
+      scrollTrigger: {
+        trigger: element, // Each element will animate when it enters the viewport
+        start: "top 90%", // Start animation when the top of the element is 80% into the viewport
+        end: "bottom 40%", // End when the bottom reaches 60%
+        scrub: true, // Smooth scrolling effect
+      },
+      opacity: 0, // Start with hidden text
+      y: 16, // Slide text up by 50px
+      duration: .8, // 1-second animation duration
+      ease: "power2.out", // Smooth easing for subtle effect
+    });
+  });
+
+
+
+  // CTA BUTTON
+  // Animate each CTA button individually
+  gsap.utils.toArray('.cta-button').forEach((button) => {
+    gsap.from(button, {
+      opacity: 0,
+      scale: 0.95,
+      duration: 0.5,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".cta-wrapper",
+        start: "top 95%", // Start when the top of the wrapper is 95% in view
+        end: "bottom 80%", // End when the bottom of the wrapper is 80% in view
+        scrub: true, // Scrub the animation based on the scroll
+      }
+    });
+  });
+
+
         },
     }
 </script>
@@ -62,11 +105,11 @@ import CurriculumComponent from '@/components/CurriculumComponent.vue';
                             <div class="cta-buttonbar">
                                 <button class="cta-button">
                                     <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
-                                    <router-link to="/work" class="link-text">{{ buttonAboutText }}</router-link>
+                                    <router-link to="/about" class="link-text">{{ buttonAboutText }}</router-link>
                                 </button>
                                 <button class="cta-button">
                                     <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
-                                    <router-link to="/home" class="link-text">{{ buttonContactText }}</router-link>
+                                    <router-link to="/" class="link-text">{{ buttonContactText }}</router-link>
                                 </button>
                             </div>
 

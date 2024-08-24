@@ -18,9 +18,6 @@ import TransitView from '@/views/TransitView.vue'
 import TinyhouseView from '@/views/TinyhouseView.vue'
 import LinedrawingsView from '@/views/LinedrawingsView.vue'
 
-import AuroViewTest from '@/views/AuroViewTest.vue'
-
-
 
 /* ROUTER SETUP */
 
@@ -96,11 +93,6 @@ const router = createRouter({
       path: '/transit',
       name: 'TransitView',
       component: TransitView,
-    },
-    {
-      path: '/aurotest',
-      name: 'AuroViewTest',
-      component: AuroViewTest,
     },
   ],
   scrollBehavior(to, from, savedPosition) {
