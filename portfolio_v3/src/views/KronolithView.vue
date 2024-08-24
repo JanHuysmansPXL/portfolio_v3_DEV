@@ -3,6 +3,8 @@ import FooterComponent from "@/components/FooterComponent.vue";
 import MarqueeBar from "@/components/MarqueeBar.vue";
 import kronolithVideoImport from '/assets/images/projects/kronolith/kronolith-mockup-video.mp4';
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default {
   data() {
@@ -17,11 +19,105 @@ export default {
   },
   methods: {
     scrollPrev() {
-            this.$refs.imageWrapper.scrollBy({ left: -316, behavior: 'smooth' });
-            },
-            scrollNext() {
-            this.$refs.imageWrapper.scrollBy({ left: 316, behavior: 'smooth' });
-            },
+      this.$refs.imageWrapper.scrollBy({ left: -316, behavior: 'smooth' });
+      },
+      scrollNext() {
+      this.$refs.imageWrapper.scrollBy({ left: 316, behavior: 'smooth' });
+      },
+  },
+  mounted() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animate video
+  gsap.from(".project-heading-img", {
+    opacity: 0.9,
+    scale: 1.05,
+    duration: 1.2,
+    ease: "power2.out",
+  });
+
+  // IMAGES BOX ANIMATIONS
+  gsap.from(".image", {
+  opacity: 0,
+  x: 32, // Slide from the right
+  duration: .8,
+  stagger: 0.04,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".image-wrapper",
+    start: "top 80%",
+    end: "bottom 80%",
+    scrub: false, // Creates a smooth parallax effect
+    }, 
+  });
+
+  // Animate text in the Info Block - Socials
+  const textTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".copy-block", // Trigger the animation when this section is in view
+      start: "top 80%", // Start animation when the top of the section is 80% in the viewport
+      end: "bottom 60%", // End when the bottom of the section is 60% in the viewport
+      scrub: true, // Smooth animation
+    }
+  });
+
+  textTl.from(".copy-block-text-half", { opacity: 0, y: 30, duration: 1, ease: "power2.out", stagger: 0.2 })
+    .from(".copy-block-text", { opacity: 0, y: 30, duration: 1, ease: "power2.out", stagger: 0.2 }, "-=0.5");
+
+  // Animate image scaling on scroll
+  gsap.from(".img-pagewidth", {
+    scale: 0.95, // Slight scale effect
+    duration: .8,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".img-pagewidth", // Trigger animation when the image comes into view
+      start: "top 90%",
+      end: "top 60%",
+      scrub: true, // Smooth transition as the user scrolls
+    }
+  });
+
+  // QUOTE DELAY
+  gsap.from(".quote-block-wrapper", {
+  opacity: 0,
+  y: 16,
+  duration: .8,
+  delay: 0.2,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".quote-block-wrapper",
+    start: "top 80%",
+    end: "bottom 60%",
+    toggleActions: "play none none none",
+  },
+});
+
+  // Timeline with ScrollTrigger
+  const scrollTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".project-title-block",
+      start: "top 85%",
+      end: "bottom 60%",
+      scrub: true,
+    },
+    defaults: { duration: 1, ease: "power2.out" }
+  });
+
+  scrollTl
+    .from(".project-title-block-title", { opacity: 0, y: 32 })
+    .from(".about-text", { opacity: 0, y: 16 }, "+=0.3")
+    .from(".intro-title", { opacity: 0, y: 8 }, "-=0.3")
+    .from(".intro-subtitle", { opacity: 0, y: 8 }, "-=0.5")
+    .from(".details-block", { opacity: 0, y: 8 }, "-=0.3");
+
+    // Stagger example for text wraps
+    scrollTl.from(".details-wrap .text-wrap", {
+      opacity: 0,
+      y: 8,
+      stagger: 0.2, // Elements animate with a 0.2 second delay between each
+    });
+
+
   }
 };
 </script>

@@ -3,6 +3,9 @@ import BuildrBrandSlides from "@/components/BuildrBrandSlides.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
 import MarqueeBar from "@/components/MarqueeBar.vue";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 export default {
   data() {
     return {
@@ -35,7 +38,134 @@ export default {
         const scrollWidth = this.getScrollWidth();
         this.$refs.imageWrapper.scrollBy({ left: scrollWidth, behavior: 'smooth' });
       },
-  }
+  },
+  mounted() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animate Full Image (Heading)
+  gsap.from(".project-heading-img", {
+    opacity: 0.9,
+    scale: 1.05,
+    duration: 1.2,
+    ease: "power2.out",
+  });
+
+  const scrollTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".project-title-block",
+      start: "top 85%",
+      end: "bottom 60%",
+      scrub: true,
+    },
+    defaults: { duration: 1, ease: "power2.out" }
+  });
+
+  scrollTl
+    .from(".project-title-block-title", { opacity: 0, y: 32 })
+    .from(".about-text", { opacity: 0, y: 16 }, "+=0.1")
+    .from(".intro-title", { opacity: 0, y: 8 }, "-=0.1")
+    .from(".intro-subtitle", { opacity: 0, y: 8 }, "-=0.3")
+    .from(".details-block", { opacity: 0, y: 8 }, "-=0.1");
+
+    // Stagger example for text wraps
+    scrollTl.from(".details-wrap .text-wrap", {
+      opacity: 0,
+      y: 8,
+      stagger: 0.2, // Elements animate with a 0.2 second delay between each
+    });
+
+  // Animate Copy Block Texts (Buildr Brief + Mockup)
+  gsap.from(".copy-block-text-half", {
+    opacity: 0,
+    y: 30,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: ".copy-block",
+      start: "top 80%",
+      end: "bottom 60%",
+      scrub: true,
+    }
+  });
+
+
+  gsap.from(".copy-block-text", {
+    opacity: 0,
+    y: 30,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: ".copy-block",
+      start: "top 80%",
+      end: "bottom 60%",
+      scrub: true,
+    }
+  });
+
+  // Animate Centered Mockup Image Scaling on Scroll
+  gsap.from(".mockup-image", {
+  scrollTrigger: {
+    trigger: '.mockup-center', // The container holding the mockup
+    start: "top 75%", // Start animation when the top of the mockup container is 75% in the viewport
+    end: "bottom 25%", // End the animation when the bottom of the container is 25% in the viewport
+    scrub: true, // Enable smooth reverse scrolling
+    onEnter: () => console.log('Entered the trigger area'),
+    onLeave: () => console.log('Left the trigger area'),
+  },
+  opacity: 0, // Start the image from being transparent
+  y: 50, // Slide the image up by 50px
+  duration: 1.2, // Duration of the animation
+  ease: "power2.out", // Easing function for smooth effect
+});
+
+
+  // Animate Quote Block
+  gsap.from(".quote-block-wrapper", {
+    opacity: 0,
+    y: 16,
+    duration: 0.8,
+    delay: 0.2,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".quote-block-wrapper",
+      start: "top 80%",
+      end: "bottom 60%",
+      toggleActions: "play none none none",
+    },
+  });
+
+  // Animate the dual images in the full-width image block
+  gsap.from(".img-halfwidth", {
+    opacity: 0,
+    x: 32, // Slide from right
+    duration: 0.8,
+    ease: "power2.out",
+    stagger: 0.2, // Stagger the animation
+    scrollTrigger: {
+      trigger: ".double-block",
+      start: "top 80%",
+      end: "bottom 80%",
+      scrub: true,
+    },
+  });
+
+  // Animate the CTA Button for the website
+  gsap.from(".cta-button", {
+    opacity: 0,
+    scale: 0.95,
+    duration: 0.8,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".cta-wrapper",
+      start: "top 80%",
+      end: "bottom 60%",
+      scrub: true,
+    }
+  });
+}
+
 };
 </script>
 
@@ -52,7 +182,7 @@ export default {
 
 
       <!-- TITLE BLOCK  -  1. WORDMARK -->
-      <section id="AuroHead" class="project-title-block bg-nt-10">
+      <section class="project-title-block bg-nt-10">
         <h2 class="project-title-block-title">Buildr</h2>
         <!-- INFO SECTION -->
         <div class="project-info-block mt-md">
