@@ -378,6 +378,8 @@
                     line-height: 125%;
                     /* 1.25rem */
                     letter-spacing: -0.01rem;
+                    text-decoration: none;
+                    color: $color-neutral--60;
                 }
             }
         }
@@ -863,7 +865,11 @@
         gap: 2rem;
         padding-top: $padding-lg;
         padding-bottom: $padding-lg;
-
+        &.padding-md {
+            gap: 2rem;
+            padding-top: $padding-md;
+            padding-bottom: $padding-md;
+        }
         @include mediaquery (tablet) {
             gap: 1rem;
             padding-top: $padding-md;
@@ -984,17 +990,29 @@
 /* Mockup BAR */
 
 .mockup-center {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: $padding-lg;
+    padding: $padding-md;
     gap: 32px;
-
+    &.start {
+        justify-content: flex-start;
+    }
     .mockup-image {
         max-height: 480px;
         width: auto;
         object-fit: cover;
+        opacity: 1;
+        /* Ensure there's no initial opacity set to 0 */
+        transform: none;
+        /* Reset any existing transform properties */
+    }
+    .mockup-auto {
+        flex-grow: stretch;
+        max-height: 560px;
+        object-fit: contain;
         opacity: 1;
         /* Ensure there's no initial opacity set to 0 */
         transform: none;

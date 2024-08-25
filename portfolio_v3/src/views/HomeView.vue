@@ -41,24 +41,22 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
                 ScrollTrigger.refresh();
             }, 200);
 
-  // H4 / H5 HEADINGS
-  // Animates ALL h4 and h5 headings op the page on scroll.
-    gsap.utils.toArray([".txt-ss-h4", ".txt-ss-h5"]).forEach((element) => {
-    gsap.from(element, {
-      scrollTrigger: {
-        trigger: element, // Each element will animate when it enters the viewport
-        start: "top 90%", // Start animation when the top of the element is 80% into the viewport
-        end: "bottom 40%", // End when the bottom reaches 60%
-        scrub: true, // Smooth scrolling effect
-      },
-      opacity: 0, // Start with hidden text
-      y: 16, // Slide text up by 50px
-      duration: .8, // 1-second animation duration
-      ease: "power2.out", // Smooth easing for subtle effect
-    });
-  });
-
-
+            // H4 / H5 HEADINGS
+            // Animates ALL h4 and h5 headings op the page on scroll.
+                gsap.utils.toArray([".txt-ss-h4", ".txt-ss-h5"]).forEach((element) => {
+                gsap.from(element, {
+                scrollTrigger: {
+                    trigger: element, // Each element will animate when it enters the viewport
+                    start: "top 90%", // Start animation when the top of the element is 80% into the viewport
+                    end: "bottom 40%", // End when the bottom reaches 60%
+                    scrub: true, // Smooth scrolling effect
+                },
+                opacity: 0, // Start with hidden text
+                y: 16, // Slide text up by 50px
+                duration: .8, // 1-second animation duration
+                ease: "power2.out", // Smooth easing for subtle effect
+                });
+            });
 
   // CTA BUTTON
   // Animate each CTA button individually

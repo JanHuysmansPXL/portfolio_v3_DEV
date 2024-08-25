@@ -100,6 +100,10 @@ body {
     display: inline;
 }
 
+.border-4px {
+    border-radius: 4px;
+}
+
 /* UTILITY CLASSES FOR STYLES  */
 
 .img-fluid {
@@ -209,6 +213,13 @@ body {
         @include mediaquery(tablet) {
             padding: 1rem;
         }
+    }
+    &.desktop {
+        object-fit: cover;
+        object-position: top;
+        min-height: auto;
+        max-height: 640px;
+        border-radius: 2px;
     }
 }
 
