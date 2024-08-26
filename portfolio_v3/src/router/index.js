@@ -18,7 +18,6 @@ import TransitView from '@/views/TransitView.vue'
 import TinyhouseView from '@/views/TinyhouseView.vue'
 import LinedrawingsView from '@/views/LinedrawingsView.vue'
 
-
 /* ROUTER SETUP */
 
 const router = createRouter({
@@ -104,12 +103,6 @@ const router = createRouter({
     }
     return savedPosition || { top: 0 };
   },
-});
-
-router.afterEach((to, from) => {
-  setTimeout(() => {
-    ScrollTrigger.refresh();
-  }, 150); // You can adjust the delay if needed
 });
 
 export default router

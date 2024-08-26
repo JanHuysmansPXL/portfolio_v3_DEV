@@ -864,6 +864,14 @@
         }
     }
 
+    .copy-block-text-quarter {
+        max-width: calc(25% - 16px);
+
+        @include mediaquery (tablet) {
+            max-width: 100%;
+        }
+    }
+
     .copy-block-text-indent {
         max-width: 80%;
         text-indent: 160px;
