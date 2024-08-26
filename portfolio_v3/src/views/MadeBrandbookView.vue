@@ -13,7 +13,7 @@ export default {
       madeWebsiteText: 'Made Website',
       vidOne: "/assets/images/projects/made/made-vid-mock-1.mov",
       vidTwo: "/assets/images/projects/made/made-vid-mock-2.mov",
-      vidThree: "/assets/images/projects/made/made-desktop-vid-1.mov"
+      vidThree: "/assets/images/projects/made/mockups/made-dbb-desktop-capture_1.mp4"
 
     };
   },
@@ -175,7 +175,7 @@ const scrollTl = gsap.timeline({
             <!-- Info Block - HOLY COW'S SKETCHES -->
             <section class="copy-block bg-nt-100 pb-lg">
         <div class="images-wrapper padding-md no-stack">
-                <video class="vid-pagewidth" autoplay loop>
+                <video class="vid-pagewidth" autoplay loop playsinline muted>
               <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
             </video>
             <video class="vid-pagewidth" autoplay loop>
@@ -186,9 +186,9 @@ const scrollTl = gsap.timeline({
           How I designed Made’s online brand book to boost brand consistency in 8 weeks.</h4>
       </section>
 
-            <!-- FULL VIDEO -->
+            <!-- FULL VIDEO -- MOCKUP iMAC SCREEN-->
       <div class="container-fluid bg-nt-100">
-            <video class="vid-pagewidth padded desktop" autoplay loop>
+            <video class="vid-pagewidth padded desktop" autoplay loop playsinline muted>
               <source :src="vidThree" type="video/mp4"> Your browser does not support the video tag.
             </video>
       </div>  
@@ -208,6 +208,13 @@ const scrollTl = gsap.timeline({
         <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">There was a need for a reference that is accessible to the various profiles within Made, regardless of their background or toolkit. An online 'brand guide' could prove to be valuable for different users at Made, enhancing brand consistency and serving as a useful onboarding tool for new colleagues to quickly become familiar with existing methods.</p>
       </section>
 
+                <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
+                <div class="container-fluid">
+        <img class="img-fluid project-banner-img"
+          src="/assets/images/projects/made/made-context-banner.webp"
+          alt="An image of the made company">
+      </div>
+
       <!-- 01 / POSTS  -->
       <div class="mini-title-container bg-nt-10">
         <div class="mini-title-box pt-md">
@@ -215,21 +222,28 @@ const scrollTl = gsap.timeline({
         </div>
       </div>
 
+
+            <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
+            <div class="container-fluid bg-nt-10">
+        <img class="img-fluid img-pagewidth padded fillheight"
+          src="/assets/images/projects/made/made-dbb-design.png"
+          alt="An image of the Made brand guide UX-process">
+      </div>
+
+
       <!-- Heading Block - II -->
       <section class="quote-block bg-nt-10 pb-lg">
         <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
-          I used Midjourney to generate a consistent line of products that reflect the Auro philosophy.
+          Add info here on a important design artifact..
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">Midjourney is an AI-tool to generate creative
-          images. To visualise the Auro products I studied the use of advanced Midjourney settings. Experiments with
-          prompting helped met to further align a total of 20 Auro products.</p>
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">For example, the test results with some key insights on the subject and how implemented them in the design. Show this in a relevant image later or above.</p>
       </section>
 
-      <!-- FULL VIDEO  -->
-      <div class="container-fluid bg-pp-30">
-        <video class="vid-pagewidth padded" autoplay loop>
-          <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
-        </video>
+      <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
+      <div class="container-fluid bg-nt-10">
+        <img class="img-fluid img-pagewidth padded fillheight"
+          src="/assets/images/projects/made/made-dbb-rtb-artifact.png"
+          alt="An image of the Made brand guide UX-process">
       </div>
 
            <!-- 01 / POSTS  -->
@@ -272,14 +286,14 @@ const scrollTl = gsap.timeline({
         </div>
       </div>
 
-      <div class="container-fluid mockup-center bg-pp-30 mt-md">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
+      <div class="container-fluid mockup-center bg-nt-10 mt-md">
+        <img class="mockup-image" src="/assets/images/projects/made/mockups/made-dbb-iphone-1.png" alt="Made Digital brandbook iphone Mockup">
+        <img class="mockup-image" src="/assets/images/projects/made/mockups/made-dbb-iphone-2.png" alt="Made Digital brandbook iphone Mockup">
+        <img class="mockup-image" src="/assets/images/projects/made/mockups/made-dbb-iphone-3.png" alt="Made Digital brandbook iphone Mockup">
       </div>
 
       <!-- NEXT PROJECT BAR -->
-      <div class="next-project-bar mt-lg">
+      <div class="next-project-bar">
         <router-link to="/kronolith" class="next-project-link">
           <span class="arrow-box"><img class="link-arrow" src="/assets/arrow-right-dark.png" /></span>Next Project
         </router-link>

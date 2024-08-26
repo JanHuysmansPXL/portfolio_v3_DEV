@@ -215,10 +215,11 @@ body {
         }
     }
     &.desktop {
+        min-width: 100%;
         object-fit: cover;
         object-position: top;
-        min-height: auto;
-        max-height: 640px;
+        max-height: auto;
+        height: auto;
         border-radius: 2px;
     }
 }
