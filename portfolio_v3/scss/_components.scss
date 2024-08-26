@@ -891,6 +891,8 @@
 
         @include mediaquery (mobile) {
             flex-direction: column;
+            padding-top: $padding-sm;
+            padding-bottom: $padding-md;
             gap: 1rem;
         }
 

@@ -11,8 +11,8 @@ export default {
     return {
       transitVideo: transitVideoImport,
       madeWebsiteText: 'Made Website',
-      vidOne: "/assets/images/projects/made/made-vid-mock-1.mov",
-      vidTwo: "/assets/images/projects/made/made-vid-mock-2.mov",
+      vidOne: "/assets/images/projects/made/mockups/made-dbb-mobile-mockup-color-1.mp4",
+      vidTwo: "/assets/images/projects/made/mockups/made-dbb-mobile-mockup-socials-1.mp4",
       vidThree: "/assets/images/projects/made/mockups/made-dbb-desktop-capture_1.mp4"
 
     };
@@ -174,11 +174,11 @@ const scrollTl = gsap.timeline({
 
             <!-- Info Block - HOLY COW'S SKETCHES -->
             <section class="copy-block bg-nt-100 pb-lg">
-        <div class="images-wrapper padding-md no-stack">
+        <div class="images-wrapper padding-md">
                 <video class="vid-pagewidth" autoplay loop playsinline muted>
               <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
             </video>
-            <video class="vid-pagewidth" autoplay loop>
+            <video class="vid-pagewidth" autoplay loop playsinline muted>
               <source :src="vidTwo" type="video/mp4"> Your browser does not support the video tag.
             </video>
         </div>
@@ -215,18 +215,10 @@ const scrollTl = gsap.timeline({
           alt="An image of the made company">
       </div>
 
-      <!-- 01 / POSTS  -->
-      <div class="mini-title-container bg-nt-10">
-        <div class="mini-title-box pt-md">
-          <p class="mini-title-label txt-nt-100">Define</p>
-        </div>
-      </div>
-
-
             <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
             <div class="container-fluid bg-nt-10">
         <img class="img-fluid img-pagewidth padded fillheight"
-          src="/assets/images/projects/made/made-dbb-design.png"
+          src="/assets/images/projects/made/made-dbb-rtb-artifact.png"
           alt="An image of the Made brand guide UX-process">
       </div>
 
@@ -242,7 +234,7 @@ const scrollTl = gsap.timeline({
       <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
       <div class="container-fluid bg-nt-10">
         <img class="img-fluid img-pagewidth padded fillheight"
-          src="/assets/images/projects/made/made-dbb-rtb-artifact.png"
+          src="/assets/images/projects/made/made-dbb-design.png"
           alt="An image of the Made brand guide UX-process">
       </div>
 

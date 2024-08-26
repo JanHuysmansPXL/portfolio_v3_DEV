@@ -317,14 +317,9 @@ export default {
       <!-- *** COPY BLOCK - DOUBLE TEXT ON AXIDRAW *** -->
       <section class="copy-block bg-nt-100">
         <div class="images-wrapper no-stack py-sm">
-          <p class="copy-block-text-half txt-ss-body2 txt-gr-30">This series started in 2022, I got an Axidraw SE
-            drawing machine. I digitized some of my work with Adobe Illustrator and Inkscape. I was aiming for a more
-            economical approach to drawing, opposed to manual labour. This resulted in using robotics as a new creative
-            tool.</p>
-          <p class="copy-block-text-half txt-ss-body2 txt-gr-30">This series started in 2022, I saved some cash and
-            bought an Axidraw SE drawing machine. I digitized some of my work with Adobe Illustrator and Inkscape. I was
-            aiming for a more economical approach to drawing, opposed to manual labour. This resulted in using robotics
-            as a new creative tool.</p>
+          <p class="copy-block-text-half txt-ss-body2 txt-gr-30">From 2018 on I've collected several notebooks filled with sketches. Most of these works were put down at a rapid pace, and were supposed to be executed in more detail afterwards. I soon realised that it was a huge challenge to develop all my ideas into finished artwork. </p>
+          <p class="copy-block-text-half txt-ss-body2 txt-gr-30">This series of digitized works started in 2022, when I got an Axidraw SE
+            plotter. I digitized some of my work with Adobe Illustrator and Inkscape. I was aiming for a more economical approach to drawing, opposed to manual labour. This resulted in using robotics as a new creative tool.</p>
         </div>
         <!-- *** Work Title Block - COLLIDER PRINTS *** -->
         <h4 class="copy-block-text txt-ss-h4 txt-nt-10">Collider Prints</h4>
@@ -403,7 +398,7 @@ export default {
       <!-- *** Work Title Block - 80X60  -->
       <section class="copy-block bg-white pb-md">
         <h4 class="copy-block-text-half txt-ss-h6 txt-nt-100">I did a few digital experiments based oh my analogous work.</h4>
-        <p class="copy-block-text-half txt-ss-body1 txt-pp-80 mt-sm">I try to apply a systemic approach to each
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-60 mt-sm">I try to apply a systemic approach to each
           drawing, as I'm searching for patterns or images. Each work has been executed in ink. Some were executed by hand, others
           digitally, combining Adobe Illustrator and Inkscape with my Axidraw plotter.</p>
       </section>
