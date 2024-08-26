@@ -235,9 +235,7 @@ export default {
           <div class="intro-block">
             <h6 class="intro-title txt-ss-h6">Webdesign and development of a wearables brand, powered by Midjourney.
             </h6>
-            <p class="intro-subtitle txt-ss-body1">Lorem ipsum dolor sit amet consectetur. At posuere aliquet sit
-              sagittis ornare id cras magna. Pellentesque tincidunt enim aliquam elit .Lorem ipsum dolor sit amet
-              consectetur.</p>
+            <p class="intro-subtitle txt-ss-body1">I was responsible for the webdesign and development of Auro, a conceptual brand that blends cutting-edge technology with futurist style. The brand was brought to life using AI-generated designs to shape a visionary line of products.</p>
           </div>
           <div class="details-block">
             <h5 class="details-title txt-ss-sub2">Branding / Social Marketing</h5>
@@ -253,7 +251,7 @@ export default {
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Cliënt</p>
-                  <p class="bar-text">PXL Digital*</p>
+                  <p class="bar-text">PXL Digital*<span class="bar-caption">Academic</span></p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Website</p>
@@ -279,8 +277,7 @@ export default {
         <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
           Auro is a fictional wearables brand with a futuristic product line.
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">The idea behind the Auro was to create a
-          collection of high-tech wearables to complement contemporary lifestyles.</p>
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">The concept behind Auro was to create a collection of high-tech wearables that seamlessly integrate with everyday living. Through Midjourney, an AI image-generation tool, I developed a cohesive range of products that reflect Auro's forward-thinking design philosophy.</p>
       </section>
 
       <!-- CAROUSEL SLIDER FOR AURO PRODUCTS GRID  -->
@@ -313,11 +310,9 @@ export default {
       <!-- Heading Block - II -->
       <section class="quote-block bg-nt-100 pb-lg">
         <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
-          I used Midjourney to generate a consistent line of products that reflect the Auro philosophy.
+          Leveraging Midjourney.
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">Midjourney is an AI-tool to generate creative
-          images. To visualise the Auro products I studied the use of advanced Midjourney settings. Experiments with
-          prompting helped met to further align a total of 20 Auro products.</p>
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">To achieve this, I explored advanced Midjourney settings and fine-tuned prompts to generate 20 unique Auro products. The process allowed me to hone my skills in creative AI application, resulting in a product line that feels futuristic, sleek, and innovative.</p>
       </section>
 
       <!-- FULL VIDEO  -->
@@ -332,9 +327,8 @@ export default {
         <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
           To develop the website I used Craft CMS, Vue and Wordpress.
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">This website was made as an exercise mostly. I
-          developed
-          the website three times. Once in Vue, another time with Wordpress and a third time with Craft CMS.</p>
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">To build the Auro website, I utilized a range of platforms and technologies, including Craft CMS, Vue.js, and WordPress. The site was developed in multiple iterations to explore these platforms' capabilities.
+This project served as an experimental exercise, allowing me to compare frameworks and development techniques in real-time application.</p>
       </section>
 
       <!-- CTA BUTTONS -->

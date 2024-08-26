@@ -214,9 +214,7 @@ gsap.utils.toArray('.images-wrapper').forEach((wrapper) => {
           </div>
           <div class="intro-block">
             <h6 class="intro-title txt-ss-h6">Building a kick-ass burger brand with a conscience.</h6>
-            <p class="intro-subtitle txt-ss-body1 txt-pp-80">Lorem ipsum dolor sit amet consectetur. At posuere aliquet
-              sit sagittis ornare id cras magna. Pellentesque tincidunt enim aliquam elit .Lorem ipsum dolor sit amet
-              consectetur.</p>
+            <p class="intro-subtitle txt-ss-body1 txt-pp-80">I created the branding and interface for Holy Cow!, an innovative fast-food brand with a mission. The goal was to craft a brand that delivers delicious burgers while remaining environmentally conscious.</p>
           </div>
           <div class="details-block">
             <h5 class="details-title txt-ss-sub2">BRANDING / SOCIAL MARKETING</h5>
@@ -232,7 +230,7 @@ gsap.utils.toArray('.images-wrapper').forEach((wrapper) => {
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Cliënt</p>
-                  <p class="bar-text">PXL*</p>
+                  <p class="bar-text">PXL DIGITAL*<span class="bar-caption">Academic</span></p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Tools</p>
@@ -257,8 +255,7 @@ gsap.utils.toArray('.images-wrapper').forEach((wrapper) => {
       <!-- Info Block - HOLY COW'S MISSION -->
       <section class="copy-block bg-white">
         <h4 class="copy-block-text txt-ss-h5 txt-nt-100">
-          Holy Cow's mission is to create a world where people can enjoy a healthy and guilt-free meal. We want to be
-          the most ecological fastfood-chain in the industry by spearheading innovation.
+          Holy Cow! envisions a world where people can enjoy tasty, guilt-free meals that prioritize both their health and the environment. Our mission is to be the most eco-friendly fast-food chain by bringing the latest food and retail innovations to the masses.
         </h4>
         <div class="images-wrapper">
           <img src="/assets/images/projects/holycow/holycow_branding/brand_benchmark1.jpg" alt="Onyx Sketch 1"
@@ -296,11 +293,13 @@ gsap.utils.toArray('.images-wrapper').forEach((wrapper) => {
       <!-- Info Block - HOLY COW'S MISSION -->
       <section class="copy-block bg-white mt-md">
         <h4 class="copy-block-text txt-ss-h5 txt-nt-100">
-          How 'bout the cow?
+          Design process
         </h4>
         <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm mb-md">
-          I prototyped an app for Holy Cow, and made a brand bible, a collection of guidelines for the brand. Check it
-          below.
+          Visualizing the user experience was a crucial step in aligning the brand’s identity with its eco-friendly values. From interface sketches to app wireframes, my goal was to create a zesty, fresh interface that users would love as much as the food.
+        </p>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm mb-md">
+          I prototyped the Holy Cow! app and developed a brand bible, which contains all the essential guidelines, from logo usage to color palettes, ensuring brand consistency across all platforms.
         </p>
       </section>
 
@@ -310,17 +309,14 @@ gsap.utils.toArray('.images-wrapper').forEach((wrapper) => {
       <div class="container-fluid mockup-triple bg-nt-100 mt-sm">
         <div class="textbox">
           <h4 class="copy-block-text-half txt-ss-h5 txt-nt-10 mb-sm">Get flowing.</h4>
-          <p class="txt-ss-body2 txt-gr-30">I designed a large part of the Holy Cow-interface. Our goal was to create an
-            app where people could easily order and pick-up our delicious burgers. Designing the Holy-Cow interface was
-            a smash. We tried to uphold an idea of zesty freshness, while trying to communicate our love for our planet,
-            and it’s 4-bellied beings.</p>
+          <p class="txt-ss-body2 txt-gr-30 txt-width-65ch">The Holy Cow! app was designed with an easy-to-use interface where customers can browse the menu, customize their burgers, and seamlessly order for pickup. We wanted the interface to feel fresh and fun, while subtly communicating our love for the planet.</p>
         </div>
         <div class="image-wrapper">
-          <img class="image" src="/assets/images/projects/holycow/holycow_interface/holycow_mockup_app4.png"
+          <img class="image" src="/assets/images/projects/holycow/holycow-mobile-1.png"
             alt="HolyCow Interface Detail Image - Shop">
-          <img class="image" src="/assets/images/projects/holycow/holycow_interface/holycow_mockup_app2.png"
+          <img class="image" src="/assets/images/projects/holycow/holycow-mobile-3.png"
             alt="HolyCow Interface Detail Image - Checkout">
-          <img class="image" src="/assets/images/projects/holycow/holycow_interface/holycow_mockup_app3.png"
+          <img class="image" src="/assets/images/projects/holycow/holycow-mobile-2.png"
             alt="HolyCow Interface Detail Image - Confirmed">
         </div>
       </div>

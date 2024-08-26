@@ -373,10 +373,10 @@ export default {
       <!-- CAROUSEL SLIDER 2 - AXIDRAW PLOTS  -->
       <div class="container-fluid bg-nt-100 py-md">
         <div class="grid-images-wrapper" ref="imageWrapper2">
-          <div class="grid-box sm">
-            <img class="grid-image"src="/assets/images/projects/line_drawings/line_herfst_kleur.jpg" alt="Autumn - Colour Study - P1">
-          </div>
-            <div class="grid-box sm"><img class="grid-image" src="/assets/images/projects/line_drawings/line_grey110.jpg" alt="Untitled - Colour Study - P1"></div>
+          <div class="grid-box sm"><img class="grid-image"src="/assets/images/projects/line_drawings/lines-herfst-color-1@2x.png" alt="Autumn - Colour Study - P1"></div>
+          <div class="grid-box sm"><img class="grid-image" src="/assets/images/projects/line_drawings/lines-herfst-color-detail@2x.png" alt="Untitled - Colour Study - P1"></div>
+          <div class="grid-box sm"><img class="grid-image" src="/assets/images/projects/line_drawings/lines-herfst-color-detail-3@2x.png" alt="Untitled - Colour Study - P1"></div>
+
           </div>
         <div class="scroll-buttons mt-sm">
           <button class="scroll-button prev" @click="scrollPrevAlt">

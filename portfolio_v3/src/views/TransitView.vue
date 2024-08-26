@@ -147,10 +147,8 @@ export default {
             <p class="about-text txt-ss-sub2 txt-gr-50">About</p>
           </div>
           <div class="intro-block">
-            <h6 class="intro-title txt-ss-h6">I designed 5 sculptures for Transit, a techno/house-event with headliners like Mall Grab.</h6>
-            <p class="intro-subtitle txt-ss-body1 txt-pp-80">Lorem ipsum dolor sit amet consectetur. At posuere aliquet sit
-              sagittis ornare id cras magna. Pellentesque tincidunt enim aliquam elit .Lorem ipsum dolor sit amet
-              consectetur.</p>
+            <h6 class="intro-title txt-ss-h6">Five sculptures for Transit, a techno/house-event with headliners like Mall Grab.</h6>
+            <p class="intro-subtitle txt-ss-body1 txt-nt-60">In 2018, I had the opportunity to design five large-scale sculptures for Transit, a techno/house event that brought big names like Mall Grab to the stage. The aim was to capture the energy of the event and elevate the space with striking installations.</p>
           </div>
           <div class="details-block">
             <h5 class="details-title txt-ss-sub2">ART / SCULPTURE / 3D</h5>
@@ -181,10 +179,9 @@ export default {
       <!-- TRANSIT COPY - INTRO TEXT -->
       <section class="copy-block bg-white mt-md">
         <h4 class="copy-block-text-half txt-ss-h4 txt-nt-100">
-          In 2018 I designed five sculptures for Transit, a techno/house-event with headliners like Mall Grab.
+          Cutting-edge cardboard.
         </h4>
-        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">The idea behind the Auro was to create a
-          collection of high-tech wearables to complement contemporary lifestyles.</p>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">The sculptures, each standing at 2.4 meters, were produced by a specialized team in the Netherlands using eco-friendly cardboard. These towering forms were positioned throughout the venue, transforming the space into a visual playground.</p>
       </section>
 
       <!-- CAROUSEL SLIDER FOR TRANSIT IMAGES  -->
@@ -225,7 +222,10 @@ export default {
         <h4 class="copy-block-text txt-ss-h4 txt-nt-100">
           The forms were designed in Cinema 4D, and edited in Rhino to a waffle-grid structure. 
         </h4>
-        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">The cardboard cut-outs measure about 2.4 meters and were made by a specialised firm in the Netherlands.</p>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">The designs came to life using Cinema 4D, where I played with forms and structures to create the five pieces. I further refined them in Rhino, introducing a waffle-grid pattern that provides aesthetic and the structure of the object.</p>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">The sculptures weren’t just background decor — they were a focal point, setting the stage for an amazing night. They helped shape the look and feel of the event Transit, blending the music to create a high-energy atmosphere.
+        </p>
+
       </section>
       <!-- CTA BUTTONS -->
       <div class="cta-wrapper container-fluid">
@@ -236,7 +236,6 @@ export default {
           </button>
         </div>
       </div>
-
       <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
       <div class="container-fluid mt-md">
         <img class="img-fluid project-heading-img mid" src="/assets/images/projects/transit/transit-context-1.png"
