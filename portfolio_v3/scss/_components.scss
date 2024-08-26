@@ -882,7 +882,12 @@
             gap: 2rem;
             padding-top: $padding-md;
             padding-bottom: $padding-md;
-        }
+
+        @include mediaquery (tablet) {
+            padding-top: $padding-sm;
+            padding-bottom: $padding-sm;
+            gap: 1rem;       
+        }}
         @include mediaquery (tablet) {
             gap: .5rem;
             padding-top: $padding-md;

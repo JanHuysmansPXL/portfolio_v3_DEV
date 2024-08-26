@@ -174,7 +174,7 @@ const scrollTl = gsap.timeline({
 
             <!-- Info Block - HOLY COW'S SKETCHES -->
             <section class="copy-block bg-nt-100 pb-lg">
-        <div class="images-wrapper">
+        <div class="images-wrapper padding-md">
                 <video class="vid-pagewidth" autoplay loop playsinline muted>
               <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
             </video>
