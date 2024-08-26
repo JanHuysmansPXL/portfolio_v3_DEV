@@ -1464,6 +1464,31 @@
     }
 }
 
+// BANNER BOX
+.bannerbox {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    @include mediaquery (mobile) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: $padding-xs;
+    }
+    img {
+        display: flex;
+        flex: flex-grow;
+      height: 80px;
+      width: auto;
+      object-fit: contain;
+      margin-right: 24px;
+      align-content: flex-start;
+    }
+  }
+
 /* FONT EXPLAINER -- BLOCK COMPONENT */
 
 .font-block {

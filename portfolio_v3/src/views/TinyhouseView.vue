@@ -119,9 +119,7 @@ export default {
           </div>
           <div class="intro-block">
             <h6 class="intro-title txt-ss-h6">Inspiring people to live smaller trough joyful branding.</h6>
-            <p class="intro-subtitle txt-ss-body1 txt-nt-60">TinyHouse is an ecological brand that brings affordable and
-              durable tiny houses to the masses. For this project I made the logo and brand guide, online banners and
-              Instagram content.</p>
+            <p class="intro-subtitle txt-ss-body1 txt-nt-60">TinyHouse is an eco-friendly brand dedicated to making sustainable living accessible and affordable. For this project, I crafted the logo and brand guide, and developed online banners and Instagram content to spread their message..</p>
           </div>
           <div class="details-block">
             <h5 class="details-title txt-ss-sub2">Branding / SOCIAL MARKETING</h5>
@@ -164,9 +162,8 @@ export default {
         <h4 class="copy-block-text-half txt-ss-h4 txt-nt-100">
           Living smaller and greener.
         </h4>
-        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">TinyHouse is about inspiring people to live
-          smaller and greener. For this brand I wanted a fresh and youthful image. I developed the logo, brand guide and
-          social content for the brand.</p>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">
+          TinyHouse aims to encourage a more sustainable lifestyle through living smaller and greener. I focused on creating a youthful image for the brand. This included the logo, a brand guide, and social media content. The design was kept simple and impactful, with posts and Google banners that communicate the brand's core values.</p>
       </section>
 
       <!-- CAROUSEL SLIDER FOR INSTA SLIDES GRID  -->
@@ -209,12 +206,14 @@ export default {
       <!-- Heading Block - II -->
       <section class="quote-block bg-white py-lg">
         <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
-          A few Insta posts and Google banners. I wrote the copy in Dutch and went for a simple and to-the-point design.</h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-pp-80 mt-sm">Figma ipsum component variant main layer. Layer
-          stroke prototype comment share invite strikethrough. Figma fill opacity plugin vector fill. Link image inspect
-          share draft group.</p>
+          A few Insta posts and Google banners. I wrote the copy and went for a simple and to-the-point design.</h4>
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-60 mt-sm">The copy was written in Dutch to engage the local audience directly. I integrated targeted messaging and visual elements to optimize online marketing campaigns. By aligning design with key advertising principles, the project aimed to boost visibility and engagement.</p>
       </section>
 
+     <!-- <div class="container-fluid bannerbox">
+            <img src="/assets/images/projects/tinyhouse/TinyHouse - Google Banners/leaderboard-lg.jpg" alt="alt">
+            <img src="/assets/images/projects/tinyhouse/TinyHouse - Google Banners/mobile-sm.jpg" alt="alt">
+          </div> -->
       <div class="container-fluid mockup-triple bg-white">
         <div class="textbox">
           <h4 class="copy-block-text-half txt-ss-h5 txt-nt-100 mb-sm">Photoshop keyframes.</h4>
@@ -237,8 +236,8 @@ export default {
       <!-- Heading Block - II -->
       <section class="quote-block bg-white py-lg">
         <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
-          Tiny House has a dedicated brandguide where the identity of the brand is elaborated. </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-60 mt-sm">Have a look at some exerpts from the finished brand guide here.</p>
+          I defined a brandguide where the identity of Tiny House is elaborated. </h4>
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-60 mt-sm">Explore some highlights from the guide.</p>
       </section>
 
       <!-- BRAND SLIDES-->
@@ -250,13 +249,13 @@ export default {
         <img class="img-fluid project-heading-img auto"
           src="/assets/images/projects/tinyhouse/tinyhouse-mockup-banner.png" alt="An image of some tinyhouse mockups">
       </div>
-      <!-- QUOTE BLOCK "" -->
+      <!-- QUOTE BLOCK ""
       <section class="container-fluid bg-nt-10">
         <div class="quote-block-wrapper">
           <h6 class="txt-ss-h5 txt-gr-80">“I got a free student upgrade after I needed over 500 elements to place on my
             boards. — Thank you, Whimsical.”</h6>
         </div>
-      </section>
+      </section> -->
 
       <!-- NEXT PROJECT BAR -->
       <div class="next-project-bar">
@@ -276,7 +275,6 @@ export default {
 </template>
 
 <style lang="scss">
-
 
 </style>
 
