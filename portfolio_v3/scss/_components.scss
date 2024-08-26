@@ -206,6 +206,7 @@
 
 .project-heading-vid {
     min-height: 480px;
+    max-height: 480px;
     object-position: 50% 50%;
 
     @include mediaquery(tablet) {

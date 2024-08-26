@@ -23,7 +23,7 @@
         <!-- TOP -->
         <div class="top-row">
           <h6 class="work-title txt-ss-sub1">Lorigin</h6>
-          <h6 class="work-title txt-ss-sub1">2014</h6>
+          <h6 class="work-title txt-ss-sub1">2015</h6>
         </div>
         <!-- BLOCKS -->
         <div class="double-box">
@@ -49,7 +49,7 @@
         <!-- TOP -->
         <div class="top-row">
           <h6 class="work-title txt-ss-sub1">LIBERTAD</h6>
-          <h6 class="work-title txt-ss-sub1">2014</h6>
+          <h6 class="work-title txt-ss-sub1">2015</h6>
         </div>
         <!-- BLOCKS -->
         <div class="double-box">
@@ -85,8 +85,8 @@
           </div>
           <!-- R block -- image and caption-->
           <div class="box-right">
-            <img src="/assets/images/projects/media/libertad2.jpg" class="image image-fluid" alt="portrait">
-            <span class="subtext txt-gr-50">Images of the actual artwork in Brussels Gare de XXXX.</span>
+            <img src="/assets/images/projects/archive/paper-brussels.png" class="image image-fluid" alt="portrait">
+            <span class="subtext txt-gr-50">Image of a paper work exhibited in Brussels.</span>
           </div>
         </div>
         <!-- DIVIDER -->

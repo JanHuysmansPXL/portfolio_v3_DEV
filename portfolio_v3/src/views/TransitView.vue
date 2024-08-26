@@ -131,7 +131,7 @@ export default {
       <!-- FULL IMAGE  -->
       <div class="container-fluid">
         <div class="container-fluid bg-white">
-        <video class=" project-heading-vid vid-pagewidth" autoplay loop playsinline muted>
+        <video class="vid-pagewidth project-heading-vid " autoplay loop playsinline muted>
           <source :src="transitVideo" type="video/mp4"> Your browser does not support the video tag.
         </video>
       </div>

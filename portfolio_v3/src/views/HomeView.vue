@@ -7,6 +7,8 @@ import CurriculumComponent from '@/components/CurriculumComponent.vue';
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 
     export default {
     data() {
@@ -35,7 +37,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
             
         },
         mounted() {
-            gsap.registerPlugin(ScrollTrigger);
 
             setTimeout(() => {
                 ScrollTrigger.refresh();
@@ -74,6 +75,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
       }
     });
   });
+
+  ScrollTrigger.refresh(true);
 
         },
     }

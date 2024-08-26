@@ -309,7 +309,7 @@ export default {
       <div class="container-fluid mt-md">
         <picture>
           <source media="(max-width: 450px)" srcset="/assets/images/projects/collider/collider-banner-1-mobile.png" />
-          <img class="img-fluid project-heading-img mid" src="/assets/images/projects/collider/collider-banner-1-lg.png"
+          <img class="img-fluid project-heading-img mid" src="/assets/images/projects/collider/collider-banner-2.png"
             alt="An image of the made icon graphic language">
         </picture>
       </div>
