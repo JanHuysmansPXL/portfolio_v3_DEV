@@ -247,7 +247,7 @@ const scrollTl = gsap.timeline({
 
 
             <!-- Info Block - WEBSITE -->
-            <section class="quote-block bg-gr-80">
+            <section class="quote-block bg-gr-80 pb-md">
         <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
           Fully responsive and actionable.
         </h4>
@@ -255,9 +255,11 @@ const scrollTl = gsap.timeline({
         </p>
       </section>
 
-      <div class="container-fluid mockup-center start pt-md pb-lg bg-gr-80">
-        <img class="mockup-auto border-4px" src="/assets/images/projects/made/made-desktop-dark.png" alt="arrow">
-        <img class="mockup-auto border-4px" src="/assets/images/projects/made/made-mobile-dark.png" alt="arrow">
+                      <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
+                      <div class="container-fluid">
+        <img class="img-fluid project-banner-img auto"
+          src="/assets/images/projects/made/mockups/made-dbb-duo-mockup-img.png"
+          alt="An image of the made company">
       </div>
       <!-- Info Block - WEBSITE -->
       <section class="quote-block bg-white mt-md">
