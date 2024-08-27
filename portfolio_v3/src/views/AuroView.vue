@@ -341,10 +341,11 @@ This project served as an experimental exercise, allowing me to compare framewor
         </div>
       </div>
 
-      <div class="container-fluid mockup-center bg-nt-10 mt-md">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
-        <img class="mockup-image" src="/assets/images/projects/auro/auro-mockup-mobile-1.png" alt="arrow">
+      <div class="container-fluid mockup-center between bg-nt-10 mt-md">
+        <img class="mockup-image mockup-fourth" src="/assets/images/projects/auro/mockups/auro-mockup-mobile-2.png" alt="arrow">
+        <img class="mockup-image mockup-fourth" src="/assets/images/projects/auro/mockups/auro-mockup-mobile-3.png" alt="arrow">
+        <img class="mockup-image mockup-fourth" src="/assets/images/projects/auro/mockups/auro-mockup-mobile-4.png" alt="arrow">
+        <img class="mockup-image mockup-fourth" src="/assets/images/projects/auro/mockups/auro-mockup-mobile-5.png" alt="arrow">
       </div>
 
       <!-- QUOTE BLOCK "" -->

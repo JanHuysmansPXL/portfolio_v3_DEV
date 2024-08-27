@@ -1026,8 +1026,15 @@
     justify-content: center;
     padding: $padding-md;
     gap: 32px;
+    @include mediaquery (tablet) {
+        gap: 16px;
+        padding: $padding-md 16px;
+    }
     &.start {
         justify-content: flex-start;
+    }
+    &.between {
+        justify-content: space-between;
     }
     .mockup-image {
         max-height: 480px;
@@ -1040,12 +1047,22 @@
     }
     .mockup-auto {
         flex-grow: stretch;
+        height: 100%;
         max-height: 560px;
         object-fit: contain;
         opacity: 1;
         /* Ensure there's no initial opacity set to 0 */
         transform: none;
         /* Reset any existing transform properties */
+    }
+    .mockup-fourth {
+        flex: 1;
+        width: 25%;
+        max-height: 540px;
+        object-fit: contain;
+        opacity: 1;
+        transform: none;
+        align-self: center;
     }
 }
 
