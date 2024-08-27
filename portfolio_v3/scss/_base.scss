@@ -38,7 +38,7 @@ $bp : (
 
 $font-text: 'degular-text', Arial, Helvetica;
 $font-display: 'degular-display', Arial, Helvetica;
-$font-variable: 'degular-variable', Arial, Helvetica;
+$font-variable: 'degular variable', Arial, Helvetica;
 $font-piazzolla-italic: 'degular', serif, Helvetica;
 
 /* MAIN HTML + BODY PAGE + SETTINGS */
@@ -376,7 +376,7 @@ $color-transparant: rgba(255,255,255,0.02);
     font-size: 8rem;
     font-weight: 650;
     line-height: 85%; /* 42.986px */
-    letter-spacing: 0.08rem;
+    letter-spacing: 0.04rem;
     font-feature-settings: 'salt' on, 'rvrn' on, 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
     font-style: normal;
     @include mediaquery(tablet) {
@@ -575,6 +575,8 @@ $color-transparant: rgba(255,255,255,0.02);
 .bg-pp-80 {background-color: $color-purple--80;}
 
 .bg-transparant {background-color: $color-transparant;}
+
+.bg-yellow {background-color: rgb(255, 243, 12);}
 
 /* BG COLORS - ADDED STYLE FOR ITALIC ACCENT TEXTS */ 
 /* BACKGROUND COLORS */

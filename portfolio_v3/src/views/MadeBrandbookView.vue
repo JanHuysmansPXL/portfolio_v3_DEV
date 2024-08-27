@@ -259,7 +259,7 @@ const scrollTl = gsap.timeline({
                       <div class="container-fluid">
         <img class="img-fluid project-banner-img auto"
           src="/assets/images/projects/made/mockups/made-dbb-duo-mockup-img.png"
-          alt="An image of the made company">
+          alt="An image of 2 mockups comparing the mobile and desktop Brand Book Website.">
       </div>
       <!-- Info Block - WEBSITE -->
       <section class="quote-block bg-white mt-md">

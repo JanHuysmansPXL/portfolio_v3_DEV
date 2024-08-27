@@ -68,7 +68,7 @@ export default {
         },
         {
           title: "LINE DRAWINGS",
-          year: 2017-2021,
+          year: "2017-2021",
           details: "ART / DRAWING",
           image: "/assets/images/covers/coverimage-9.png",
           link: "/collider",

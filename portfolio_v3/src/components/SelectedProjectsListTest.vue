@@ -82,7 +82,7 @@ export default {
 
 
 <template>
-  <section class="mt-md">
+  <section class="mt-lg">
     <!-- TITLE BOX-->
     <div class="selectedwork-title-box">
       <p class="selectedwork-title-text txt-nt-100">Selected work</p>
@@ -116,7 +116,7 @@ export default {
     </div>
     
     <!-- LINK BOX -->
-    <div class="selectedwork-title-box">
+    <div class="selectedwork-title-box mt-xs">
       <router-link class="view-button-box" to="/work">
         <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
         <span class="link-text">{{ viewAllText }}</span>

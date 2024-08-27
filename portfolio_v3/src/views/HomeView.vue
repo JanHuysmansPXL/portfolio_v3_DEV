@@ -86,23 +86,22 @@ gsap.registerPlugin(ScrollTrigger);
     <div id="pagewrapper">
 
         <!-- THIS IS THE MAIN BODY -> RIGHT SIDE -- FILLS 100% WIDTH -->
-        <main class="maintest pt-lg">
+        <main class="maintest">
 
             <!-- INTRO TEXT + CTA BUTTONS -->
-            <section class="home-intro-block mt-lg">
+            <section class="home-intro-block">
                 <div class="home-intro-title-bar ps-md">
-                    <h3 class="home-intro-title">Digital designer & artist.<br>Find me in Antwerp.</h3>
+                    <h3 class="home-intro-title txt-nt-100">Digital designer & artist, based in Antwerp.</h3>
                 </div>
                 <div class="home-intro-box mt-md">
                     <div class="home-intro-column-left">
-                        <h4 class="quote-block-text mt-lg">I love building brands, user interfaces or any design
+                        <h4 class="quote-block-text txt-nt-60 mt-lg">I love building brands, user interfaces or any design
                             oriënted system. I'm a designer who likes to create new experiences, products or websites.
                         </h4>
-                        <h4 class="quote-block-text">I strongly believe design is a democratic force of change.
+                        <h4 class="quote-block-text txt-nt-60">I strongly believe design is a force of change.
                             Finding viable solutions for actual people is something I value a lot.</h4>
-                        <h4 class="quote-block-text">Sometimes I dabble in art. My artistic work is based on
-                            studies of rhythm, color and pattern. Mostly on themes like repetition, modularity and
-                            automation.
+                        <h4 class="quote-block-text txt-nt-60">Sometimes I dabble in art. My artistic work is based on
+                            studies of rhythm, color, modularity and automation.
                         </h4>
 
                         <!-- CTA BUTTONS -->
@@ -127,29 +126,10 @@ gsap.registerPlugin(ScrollTrigger);
                 </div>
             </section>
 
-            <SelectedProjectsListTest class="py-lg"/>
-
-            <!-- <SelectedProjectsList class="py-xl"/>-->
-
-            <!-- *** DOUBLE IMAGES *** BLOCK  
-            <section class="story-block container-fluid mt-xl">
-                <div class="story-title-bar ps-md">
-                    <h3 class="txt-ss-body2 txt-gr-60">Services</h3>
-                </div>
-                <div class="story-box-images mt-sm">
-                    <div class="story-images-third">
-                        <img class="story-img--sm img-fluid" src="/assets/portrait.png"
-                            alt="Simon Explaining something">
-                    </div>
-                    <div class="story-images-full">
-                        <img class="story-img--sm img-fluid" src="/assets/images/projects/collider/collider_plotted1@0.5x.jpg"
-                            alt="a pen writing on a whiteboard">
-                    </div>
-                </div>
-            </section> -->
+            <SelectedProjectsListTest />
 
             <!-- QUOTE - Experience -->
-            <section class="copy-block mt-md">
+            <section class="copy-block mt-lg">
                 <h3 class="copy-block-text-full txt-ss-h4 text-width-60">Find me for
                 </h3>
             </section>
@@ -193,7 +173,7 @@ gsap.registerPlugin(ScrollTrigger);
             </section>
 
             <!-- CTA BUTTONS -->
-            <div class="cta-wrapper container-fluid mt-md">
+            <div class="cta-wrapper container-fluid mt-sm mb-md">
                 <div class="cta-buttonbar">
                     <button class="cta-button">
                         <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">

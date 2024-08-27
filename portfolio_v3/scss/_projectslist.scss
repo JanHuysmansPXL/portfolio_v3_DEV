@@ -26,9 +26,26 @@
       padding: 0 1rem;
     }
 
+    // Hover state for the row
     &:hover {
-      background-color: #C1C1E5; // Light purple on hover
-      border-color: #212323;
+      background-color: $color-neutral--60; // Light purple on hover
+      border-color: $color-neutral--100;
+
+      // Change the text and divider colors on hover
+      .row-content {
+        color: $color-neutral--10; // Adjust the color variable for text on hover
+
+        .divider {
+          background-color: $color-neutral--100; // Change divider color on hover
+        }
+        .title {
+         color: $color-neutral--10; 
+         margin-left: 16px;
+        }
+        .year, .details {
+          color: $color-green--30; // Ensure these text elements change color
+        }
+      }
     }
     // Remove default link styling for router-link
     .row-content {
@@ -45,6 +62,7 @@
         height: .5px;
         margin-top: 0;
         background-color: #444F4F;
+        transition: background-color 0.7s ease-in-out; // Smooth transition for divider color change
         &:first-of-type {
           height: 1px;
         }
@@ -90,6 +108,7 @@
           line-height: 95%; /* 3.8rem */
           text-transform: uppercase;
           text-decoration: none;
+          transition: margin 0.4s ease-in-out; // Smooth transition for divider color change
           @include mediaquery (tablet){
             font-size: 1.75rem;
           }

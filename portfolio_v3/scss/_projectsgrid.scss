@@ -159,8 +159,6 @@
   transition: transform 0.2s, box-shadow 0.2s;
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 230, 4, 0.05);
-    background-color: $color-neutral--10;
   }
   @media (max-width: 540px) {
     margin-bottom: 16px;
@@ -196,6 +194,8 @@
       font-style: normal;
       line-height: 125%; /* 1.25rem */
       letter-spacing: -0.01rem;
+      margin-top: 4px;
+      color: $color-neutral--60;
       @include mediaquery(tablet) {
           font-size: 14px;
           letter-spacing: -0.01rem;
