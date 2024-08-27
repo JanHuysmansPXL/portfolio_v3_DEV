@@ -194,7 +194,19 @@
       align-items: flex-start;
       @include mediaquery(tablet) {
         align-items: flex-start;
-      } 
+      }
+      &.align-end {
+        align-items: flex-end;
+      }
+      &.justify-end {
+        align-items: flex-end;
+      }
+      &.align-start {
+        align-items: flex-start;
+      }
+      &.justify-start {
+        justify-items: flex-start;
+      }
       &.wider {
         flex:2;
       }
@@ -247,6 +259,14 @@
       background: none;
       .full-text {
         display: block;
+      }
+      .inline-link {
+        display: block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-neutral--60;
+        &:hover {
+          font-weight: 500;
+        }
       }
     }
   }

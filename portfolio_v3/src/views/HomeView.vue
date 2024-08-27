@@ -38,45 +38,45 @@ gsap.registerPlugin(ScrollTrigger);
         },
         mounted() {
 
-            setTimeout(() => {
-                ScrollTrigger.refresh();
-            }, 200);
+        setTimeout(() => {
+            ScrollTrigger.refresh();
+        }, 200);
 
-            // H4 / H5 HEADINGS
-            // Animates ALL h4 and h5 headings op the page on scroll.
-                gsap.utils.toArray([".txt-ss-h4", ".txt-ss-h5"]).forEach((element) => {
-                gsap.from(element, {
-                scrollTrigger: {
-                    trigger: element, // Each element will animate when it enters the viewport
-                    start: "top 90%", // Start animation when the top of the element is 80% into the viewport
-                    end: "bottom 40%", // End when the bottom reaches 60%
-                    scrub: true, // Smooth scrolling effect
-                },
-                opacity: 0, // Start with hidden text
-                y: 16, // Slide text up by 50px
-                duration: .8, // 1-second animation duration
-                ease: "power2.out", // Smooth easing for subtle effect
-                });
+        // H4 / H5 HEADINGS
+        // Animates ALL h4 and h5 headings op the page on scroll.
+            gsap.utils.toArray([".txt-ss-h4", ".txt-ss-h5"]).forEach((element) => {
+            gsap.from(element, {
+            scrollTrigger: {
+                trigger: element, // Each element will animate when it enters the viewport
+                start: "top 90%", // Start animation when the top of the element is 80% into the viewport
+                end: "bottom 40%", // End when the bottom reaches 60%
+                scrub: true, // Smooth scrolling effect
+            },
+            opacity: 0, // Start with hidden text
+            y: 16, // Slide text up by 50px
+            duration: .8, // 1-second animation duration
+            ease: "power2.out", // Smooth easing for subtle effect
             });
+        });
 
-  // CTA BUTTON
-  // Animate each CTA button individually
-  gsap.utils.toArray('.cta-button').forEach((button) => {
-    gsap.from(button, {
-      opacity: 0,
-      scale: 0.95,
-      duration: 0.5,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: ".cta-wrapper",
-        start: "top 95%", // Start when the top of the wrapper is 95% in view
-        end: "bottom 80%", // End when the bottom of the wrapper is 80% in view
-        scrub: true, // Scrub the animation based on the scroll
-      }
-    });
-  });
+        // CTA BUTTON
+        // Animate each CTA button individually
+        gsap.utils.toArray('.cta-button').forEach((button) => {
+            gsap.from(button, {
+            opacity: 0,
+            scale: 0.95,
+            duration: 0.5,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".cta-wrapper",
+                start: "top 95%", // Start when the top of the wrapper is 95% in view
+                end: "bottom 80%", // End when the bottom of the wrapper is 80% in view
+                scrub: true, // Scrub the animation based on the scroll
+            }
+            });
+        });
 
-  ScrollTrigger.refresh(true);
+        ScrollTrigger.refresh(true);
 
         },
     }
@@ -129,8 +129,7 @@ gsap.registerPlugin(ScrollTrigger);
 
             <SelectedProjectsListTest class="py-lg"/>
 
-            <!-- 
-            <SelectedProjectsList class="py-xl"/>-->
+            <!-- <SelectedProjectsList class="py-xl"/>-->
 
             <!-- *** DOUBLE IMAGES *** BLOCK  
             <section class="story-block container-fluid mt-xl">
@@ -148,44 +147,6 @@ gsap.registerPlugin(ScrollTrigger);
                     </div>
                 </div>
             </section> -->
-
-            <!-- SERVICES BLOCK *** DEPRECATED ***
-            <section class="actions-box">
-                <div class="actions-column-left">
-                    <span>
-                        <p class="txt-ss-h6 me-md">◆</p>
-                    </span>
-                    <p class="actions-label txt-ss-h5">Branding<br>& Identity</p>
-                </div>
-                <div class="actions-column-right">
-                    <h3 class="actions-column-txt txt-ss-body1">I help businesses stand out by creating unique brand identities that capture their essence. From logos to color palettes, I design cohesive visual systems that tell your brand's story and leave a lasting impression.</h3>
-                </div>
-            </section>  -->
-            <!-- SERVICES BLOCK *** DEPRECATED *** 
-            <section class="actions-box">
-                <div class="actions-column-left">
-                    <span>
-                        <p class="txt-ss-h6 me-md">◆</p>
-                    </span>
-                    <p class="actions-label txt-ss-h5">Interface<br>Design</p>
-                </div>
-                <div class="actions-column-right">
-                    <h3 class="actions-column-txt txt-ss-body1">I specialize in creating user-friendly interfaces that are both beautiful and functional. By focusing on user needs and behavior, I design digital experiences that are seamless, engaging, and visually stunning.</h3>
-                </div>
-            </section>-->
-            <!-- SERVICES BLOCK *** DEPRECATED ***
-            <section class="actions-box">
-                <div class="actions-column-left">
-                    <span>
-                        <p class="txt-ss-h6 me-md">◆</p>                    </span>
-                    <p class="actions-label txt-ss-h5">Webdesign<br>& Development</p>
-                </div>
-                <div class="actions-column-right">
-                    <h3 class="actions-column-txt txt-ss-body1">I design and develop responsive websites that not only look great but also perform exceptionally well. From concept to launch, I ensure your site is optimized for all devices and delivers a smooth user experience.</h3>
-                </div>
-            </section> 
-            
-            >>> ENDS HERE -->
 
             <!-- QUOTE - Experience -->
             <section class="copy-block mt-md">

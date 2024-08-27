@@ -31,7 +31,7 @@
           </div>
           <!-- Right block with image -->
           <div class="box-right">
-            <img src="/assets/images/about/about-baby-me.png" class="image image-fluid" alt="portrait">
+            <img src="/assets/images/about/about-baby-me.png" class="image image-fluid" alt="baby me">
             <span class="subtext txt-gr-50">The younger me.</span>
           </div>
         </div>
@@ -55,12 +55,12 @@
         <div class="double-box">
           <!-- Left block with text -->
           <div class="box-right">
-            <img src="/assets/images/about/about-senegal-1.png" class="image image-fluid" alt="portrait">
+            <img src="/assets/images/about/about-senegal-1.png" class="image image-fluid" alt="me-in-senegal">
             <span class="caption txt-gr-50">The village where I lived.</span>
           </div>
           <!-- Right block with image -->
           <div class="box-right">
-            <img src="/assets/images/about/about-senegal-2.png" class="image image-fluid height-full" alt="portrait">
+            <img src="/assets/images/about/about-senegal-2.png" class="image image-fluid height-full" alt="me-in-senegal">
           </div>
         </div>
         <!-- Full-width body text -->
@@ -91,7 +91,7 @@
           </div>
           <!-- Right block with image -->
           <div class="box-right">
-            <img src="/assets/images/about/about-house-dad-1.png" class="image image-fluid" alt="portrait">
+            <img src="/assets/images/about/about-house-dad-1.png" class="image image-fluid" alt="dad's house">
           </div>
         </div>
         <!-- Full-width body text -->
@@ -105,7 +105,7 @@
         <div class="double-box">
           <!-- L block with image -->
           <div class="box-right">
-            <img src="/assets/images/about/about-house-mom-1.png" class="image image-fluid" alt="portrait">
+            <img src="/assets/images/about/about-house-mom-1.png" class="image image-fluid" alt="mom's house">
           </div>
           <!-- R block with text -->
           <div class="box-left">
@@ -142,7 +142,7 @@
           </div>
           <!-- R block with image -->
           <div class="box-right">
-            <img src="/assets/images/about/about-antwerp-1.png" class="image image-fluid" alt="portrait">
+            <img src="/assets/images/about/about-antwerp-1.png" class="image image-fluid" alt="The city of Antwerp.">
           </div>
 
         </div>
@@ -165,7 +165,7 @@
         <div class="double-box">
           <!-- L block with image -->
           <div class="box-right wider">
-            <img src="/assets/images/about/about-rocky-2.gif" class="image image-fluid square-gif" alt="portrait">
+            <img src="/assets/images/about/about-rocky-2.gif" class="image image-fluid square-gif" alt="Rocky getting punched.">
           </div>
           <!-- R block with text -->
           <div class="box-left">
@@ -192,13 +192,13 @@
            <!-- *** PART VIII - 2021 - ROCKY ON *** -->
            <div class="about-container">
         <div class="date-row">
-          <span class="date txt-ss-sub1 txt-gr-50">2021</span>
+          <span class="date txt-ss-sub1 txt-gr-50">2022</span>
         </div>
 
         <div class="double-box mt-sm">
           <!-- L block with image -->
           <div class="box-right wider">
-            <img src="/assets/images/about/about-rocky-1.gif" class="image image-fluid" alt="portrait">
+            <img src="/assets/images/about/about-rocky-1.gif" class="image image-fluid" alt="Rocky getting pumped.">
             <span class="full-text caption txt-gr-50">
               Getting my Rocky on - Digital Design @ PXL Digital.</span>
           </div>
@@ -214,6 +214,48 @@
           </div>
         </div>     
       </div>
+
+      <!-- *** PART IX - 2024 - What’s Next *** -->
+<div class="about-container">
+  <div class="date-row">
+    <span class="date txt-ss-sub1 txt-gr-50">2024</span>
+  </div>
+  <div class="double-box">
+    <!-- L block with text -->
+    <div class="box-left">
+      <h6 class="caption txt-gr-50">After facing life's challenges, I'm ready to take on new creative ventures.</h6>
+    </div>
+    <!-- R block with image -->
+    <div class="box-right">
+      <img src="/assets/images/about/yoda-training.webp" class="image image-fluid" alt="portrait">
+      <span class="caption txt-gr-50">Find your Yoda and take their advice.</span>
+    </div>
+  </div>
+  <!-- Full-width body text -->
+  <div class="text-row">
+    <div class="frame">
+      <span class="full-text txt-ss-h5 txt-nt-60 mt-sm">
+        '24 has been a great year. In july I graduated Magna Cum Laude in Digital Design. Finally I'm ready to dive deep and make a meaningful impact.
+      </span>
+      <span class="full-text txt-body-2 txt-nt-60 mt-md">
+        I had the opportunity to be an intern at <span><a class="txt-nt-60" href="https://www.made.be">Made</a></span>, a leading design agency in Antwerp. Kudos to my mentors Craig, Olga and Robin. I concluded my digital design studies with a best-in-class result, realising the high ambitions I have set for myself. 
+      </span>
+      <span class="full-text txt-body-2 txt-nt-60 mt-sm">
+        <b>What's next? </b>Let's find out.
+      </span>
+        <!-- CTA BUTTONS -->
+  <div class="cta-wrapper container-fluid no-x-padding mt-md">
+      <div class="cta-buttonbar">
+          <button class="cta-button">
+              <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
+              <a href="mailto:jan_huysmans@outlook.com" class="link-text">Get in touch</a>
+          </button>
+      </div>
+  </div>
+    </div>
+  </div>
+</div>
+
 
       <div id="bottomSection">.</div>
 
