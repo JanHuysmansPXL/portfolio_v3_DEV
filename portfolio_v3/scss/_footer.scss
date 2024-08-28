@@ -58,6 +58,7 @@
                 .location-text {
                     color: $color-neutral--10;
                     margin-top: $margin-xs;
+                    text-decoration: none;
                     @include mediaquery (tablet) {
                         margin-top: 4px;
                     }

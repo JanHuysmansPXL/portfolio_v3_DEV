@@ -5,7 +5,7 @@
                 <div class="location-col">
                     <p class="location-label txt-ss-body2">Find me</p>
                     <p class="location-text txt-ss-body1">Antwerp, Belgium</p>
-                    <p class="location-text txt-ss-body1">jan_huysmans@outlook.com</p>
+                    <a  href="mailto:jan_huysmans@outlook.com" class="location-text txt-ss-body1">jan_huysmans@outlook.com</a>
                 </div>
                 <div class="socials-col">
                     <p class="social-label txt-ss-sub2 txt-nt-10">LINKEDIN</p>
