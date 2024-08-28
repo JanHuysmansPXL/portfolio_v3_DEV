@@ -53,7 +53,7 @@ gsap.registerPlugin(ScrollTrigger);
                 scrub: true, // Smooth scrolling effect
             },
             opacity: 0, // Start with hidden text
-            y: 16, // Slide text up by 50px
+            y: 16, // Slide text up by 16px
             duration: .8, // 1-second animation duration
             ease: "power2.out", // Smooth easing for subtle effect
             });
@@ -95,13 +95,17 @@ gsap.registerPlugin(ScrollTrigger);
                 </div>
                 <div class="home-intro-box mt-md">
                     <div class="home-intro-column-left">
-                        <h4 class="quote-block-text txt-nt-60 mt-lg">I love building brands, user interfaces or any design
-                            oriënted system. I'm a designer who likes to create new experiences, products or websites.
+                        <h4 class="quote-block-text txt-nt-60 mt-lg">
+                            I create brands, build user interfaces, and design experiences. 
+                            From websites to products, my work is about crafting meaningful interactions that resonate with people.
                         </h4>
-                        <h4 class="quote-block-text txt-nt-60">I strongly believe design is a force of change.
-                            Finding viable solutions for actual people is something I value a lot.</h4>
-                        <h4 class="quote-block-text txt-nt-60">Sometimes I dabble in art. My artistic work is based on
-                            studies of rhythm, color, modularity and automation.
+                        <h4 class="quote-block-text txt-nt-60">
+                            I strongly believe design is a force of change.
+                            Finding viable solutions for actual people is something I value a lot.
+                        </h4>
+                        <h4 class="quote-block-text txt-nt-60">
+                            Beyond design, I explore art —focusing on rhythm, color, and modularity. 
+                            It’s another way for me to push my creative boundaries.
                         </h4>
 
                         <!-- CTA BUTTONS -->
@@ -139,9 +143,7 @@ gsap.registerPlugin(ScrollTrigger);
                     <p class="service-label txt-ss-sub2 txt-nt-60">Branding & Identity</p>
                 </div>
                 <div class="service-column-right">
-                    <h3 class="txt-ss-h5 txt-pp-80 indent-xl .txt-width-65ch">I help businesses stand out by creating
-                        unique brand identities that capture their essence. From logos to color palettes, I design
-                        cohesive visual systems that tell your brand's story and leave a lasting impression.
+                    <h3 class="txt-ss-h5 txt-pp-80 indent-xl .txt-width-65ch">I help businesses stand out with distinctive branding. From logos to color schemes, I create visuals that tell a story and stick with people.
                     </h3>
                 </div>
             </section>
@@ -152,9 +154,9 @@ gsap.registerPlugin(ScrollTrigger);
                     <p class="service-label txt-ss-sub2 txt-nt-60">Interface design</p>
                 </div>
                 <div class="service-column-right">
-                    <h3 class="txt-ss-h5 txt-pp-80 indent-xl .txt-width-65ch">I specialize in creating user-friendly
+                    <h3 class="txt-ss-h5 txt-pp-80 indent-xl .txt-width-65ch">I build user-friendly
                         interfaces that are both beautiful and functional. By focusing on user needs and behavior, I
-                        design digital experiences that are seamless, engaging, and visually stunning.
+                        design digital experiences that are engaging and visually striking.
                     </h3>
                 </div>
             </section>
@@ -165,9 +167,7 @@ gsap.registerPlugin(ScrollTrigger);
                     <p class="service-label txt-ss-sub2 txt-nt-60">Webdesign & Development</p>
                 </div>
                 <div class="service-column-right">
-                    <h3 class="txt-ss-h5 txt-pp-80 indent-xl .txt-width-65ch">I design and develop responsive websites
-                        that not only look great but also perform exceptionally well. From concept to launch, I ensure
-                        your site is optimized for all devices and delivers a smooth user experience.
+                    <h3 class="txt-ss-h5 txt-pp-80 indent-xl .txt-width-65ch">I craft websites that look good and feel effortless to navigate. They’re fast, responsive, and crafted to work smoothly across all devices, putting the user first.
                     </h3>
                 </div>
             </section>
@@ -187,26 +187,6 @@ gsap.registerPlugin(ScrollTrigger);
             </div>
 
             <CurriculumComponent />
-
-
-                <!-- *** METRICS *** 
-                <section id="metrics" class="metrics-box container-fluid bg-pp-30 mt-md">
-                <div class="metric-column">
-                    <p class="metric-label">Awards</p>
-                    <h1 class="metric-number txt-ss-h0">3</h1>
-                    <p class="metric-text">Over the years I've received a few awards by notable cultural organisations for my analogous work. I have however made a shift to digital in the past years.</p>
-                </div>
-                <div class="metric-column">
-                    <p class="metric-label">Exhibitions</p>
-                    <h1 class="metric-number txt-ss-h0">+15</h1>
-                    <p class="metric-text">I took part in a few group exhibitions. In some I took part as a co-curator or organiser.</p>
-                </div>
-                <div class="metric-column">
-                    <p class="metric-label">Volume</p>
-                    <h1 class="metric-number txt-ss-h0">11</h1>
-                    <p class="metric-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum fuga quae excepturi illum, ullam dolorem laborum cumque id..</p>
-                </div>
-            </section> -->
 
         <!-- *** MARQUEE BAR *** -->
         <MarqueeBar />
