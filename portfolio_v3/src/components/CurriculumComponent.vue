@@ -21,7 +21,7 @@
       <div class="cta-buttonbar">
         <button class="cta-button">
           <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
-          <a download target="_blank" href="portfolio_v3/public/assets/JanHuysmans_CV_v3.pdf" class="link-text">Download my resume</a>
+          <a download target="_blank" href="/assets/janhuysmans-curriculum-vitae@pdf.pdf" class="link-text">Download my resume</a>
         </button>
       </div>
     </div>
@@ -49,7 +49,7 @@
       <div class="cta-buttonbar">
         <button class="cta-button">
           <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
-          <a download target="_blank" href="portfolio_v3/public/assets/JanHuysmans_CV_v3.pdf" class="link-text">Download my resume</a>
+          <a download target="_blank" href="/assets/janhuysmans-curriculum-vitae@pdf.pdf" class="link-text">Download my resume</a>
         </button>
       </div>
     </div>
@@ -121,17 +121,17 @@
         
         // Exhibitions data array
         exhibitions: [
-          { title: "EXIT", location: "C-Mine", city: "Genk", year: "2015" },
-          { title: "no title", location: "Kuiperskaai", city: "Ghent", year: "2017" },
-          { title: "Gallery Show", location: "Jan Colle", city: "Ghent", year: "2017" },
-          { title: "Poetry Sessions", location: "Fatima", city: "Ghent", year: "2017" },
-          { title: "Shape to Come", location: "KC België", city: "Hasselt", year: "2018" },
+          { title: "EXIT", location: "C-Mine", city: "Genk", year: "2014" },
+          { title: "no title", location: "Kuiperskaai", city: "Ghent", year: "2015" },
+          { title: "Gallery Show", location: "Jan Colle", city: "Ghent", year: "2015" },
+          { title: "Poetry Sessions", location: "Fatima", city: "Ghent", year: "2016" },
           { title: "M-ART", location: "CC-Getouw", city: "Mol", year: "2016" },
-          { title: "Strange Loops", location: "Gare Brussels", city: "Brussels", year: "2017" },
+          { title: "Strange Loops", location: "Gare Brussels", city: "Brussels", year: "2016" },
+          { title: "Shape to Come", location: "KC België", city: "Hasselt", year: "2017" },
           { title: "M-ART Residence", location: "M-ART", city: "Mol", year: "2016" },
           { title: "M-ART Takeover", location: "Jakob Smitsmuseum", city: "Mol", year: "2017" },
-          { title: "Chaos Studio", location: "A Warehouse", city: "Antwerp", year: "2018" },
           { title: "Nuits Blanches", location: "Gare Brussels", city: "Brussels", year: "2017" },
+          { title: "Chaos Studio", location: "A Warehouse", city: "Antwerp", year: "2019" },
           { title: "Transit", location: "Ampere", city: "Antwerp", year: "2019" },
           { title: "Print Fair", location: "Antwerp Tower", city: "Antwerp", year: "2021" },
         ]

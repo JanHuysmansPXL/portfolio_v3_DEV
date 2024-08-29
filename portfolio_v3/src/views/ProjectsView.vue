@@ -26,7 +26,7 @@
       </transition>
 
       <div class="suggestion-bar mt-lg">
-        <router-link to="/buildr" class="suggestion-link">
+        <router-link to="/made-digital-brand-book" class="suggestion-link">
           <span class="arrow-box">
             <img class="link-arrow" src="/assets/arrow-right-purple.png" />
           </span>

@@ -125,8 +125,8 @@ const scrollTl = gsap.timeline({
            <!-- HEADING COVER WITH SCREEN RESPONSIVE IMAGE (PICTURE) -->
            <div class="container-fluid">
         <picture>
-          <source media="(max-width: 768px)" srcset="/assets/images/projects/made/made-dbb-cover-mobile.png" />
-          <img class="img-fluid project-heading-img mid" src="/assets/images/projects/made/made-dbb-cover-1.png"
+          <source media="(max-width: 768px)" srcset="/assets/images/projects/made/made-dbb-cover-mobile-1@2x.png" />
+          <img class="img-fluid project-heading-img mid" src="/assets/images/projects/made/made-dbb-cover-desktop-1@2x.png"
             alt="An image of the Made Digital Brand Book project.">
         </picture>
       </div>
