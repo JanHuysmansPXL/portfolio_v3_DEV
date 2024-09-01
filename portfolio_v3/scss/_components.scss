@@ -1218,13 +1218,14 @@
     }
 
     .home-intro-title {
-        font-family: $font-variable;
+        font-family: 'degular-variable', Arial, sans-serif;
         font-size: 8rem;
-        font-weight: 650;
         line-height: 85%; /* 42.986px */
-        letter-spacing: 0.04rem;
         font-feature-settings: 'salt' on, 'rvrn' on, 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
         font-style: normal;
+        text-decoration: none;
+        font-variation-settings: "wght" 650, "ital" 0;
+        letter-spacing: 0.02825rem;
         max-width: 100%;
         margin-top: 32px;
         @include mediaquery(tablet) {

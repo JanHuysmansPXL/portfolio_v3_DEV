@@ -38,7 +38,7 @@ $bp : (
 
 $font-text: 'degular-text', Arial, Helvetica;
 $font-display: 'degular-display', Arial, Helvetica;
-$font-variable: 'degular variable';
+$font-variable: 'degular-variable', 'degular-display', Arial, sans-serif;
 $font-piazzolla-italic: 'degular', serif, Helvetica;
 
 /* MAIN HTML + BODY PAGE + SETTINGS */
@@ -372,13 +372,14 @@ $color-transparant: rgba(255,255,255,0.02);
     }
 }
 .txt-ss-h2 {
-    font-family: $font-variable;
+    font-family: 'degular-variable', Arial, sans-serif;
     font-size: 8rem;
-    font-weight: 650;
     line-height: 85%; /* 42.986px */
-    letter-spacing: 0.04rem;
     font-feature-settings: 'salt' on, 'rvrn' on, 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
     font-style: normal;
+    text-decoration: none;
+    font-variation-settings: "wght" 650, "ital" 0;
+    letter-spacing: 0.02825rem;
     @include mediaquery(tablet) {
         font-size: 5.656rem;
     }
