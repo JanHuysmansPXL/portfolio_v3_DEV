@@ -339,12 +339,12 @@ export default {
       <!-- *** CAROUSEL SLIDER 3 - A3 DRAWINGS ***  -->
       <div class="container-fluid pb-md bg-white pt-md">
         <div class="grid-images-wrapper" ref="imageWrapperDigital">
-          <div class="grid-box sm"><img class="grid-image" src="/assets/images/projects/line_drawings/line_herfst.jpg"
-              alt="Line Drawings -  The Four Seasons, Autumn"></div>
           <div class="grid-box sm"><img class="grid-image" src="/assets/images/projects/line_drawings/line_lente.jpg"
               alt="Line Drawings -  The Four Seasons, Spring"></div>
           <div class="grid-box sm"><img class="grid-image" src="/assets/images/projects/line_drawings/line_zomer.jpg"
               alt="Line Drawings -  The Four Seasons, Summer"></div>
+              <div class="grid-box sm"><img class="grid-image" src="/assets/images/projects/line_drawings/line_herfst.jpg"
+                alt="Line Drawings -  The Four Seasons, Autumn"></div>
           <div class="grid-box sm"><img class="grid-image" src="/assets/images/projects/line_drawings/line_winter.jpg"
               alt="Line Drawings -  The Four Seasons, Winter"></div>
         </div>
@@ -372,10 +372,7 @@ export default {
             alt="An image of the made icon graphic language">
         </picture>
         <div class="copy-block d-flex end">
-          <p class="copy-block-text-quarter txt-width-65ch txt-ss-body2 txt-gr-50 mt-sm">I try to apply a systemic
-            approach to each
-            drawing, as I'm searching for patterns or images. Each work has been executed in ink. Some were executed by
-            hand, others digitally, combining Adobe Illustrator and Inkscape with my Axidraw plotter.</p>
+          <p class="copy-block-text-quarter txt-width-65ch txt-ss-body2 txt-gr-50 mt-sm">Detail of the 'Summer'. Images are built up trough a repetition of lines and ink trails that are sporadically left behind during the process. Note the variable line thickness in highlights or shaded areas.</p>
         </div>
       </div>
 
@@ -411,7 +408,7 @@ export default {
         <section class="copy-block bg-nt-100 mt-md">
             <p class="copy-block-text-half txt-ss-body2 txt-gr-30">The Autumn piece was a painstaking test in figuration
               with alternating colors. In this work the process entails a mechanical approach to drawing. The drawing
-              measures only 21 by 27 centimeters.The work served as a study towards a group exhibition
+              measures only 21 by 27 centimeters. The work served as a study towards a group exhibition
               in the Jakob Smitsmuseum, dedicated to the Belgian painter and draftsman. This drawing is now in the
               property of the museum. </p>
             <p class="copy-block-text-half txt-ss-body1 txt-gr-30"></p>

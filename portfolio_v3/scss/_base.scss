@@ -596,4 +596,8 @@ $color-transparant: rgba(255,255,255,0.02);
 .fill-pp-75 {fill: $color-purple--75;}
 .fill-pp-80 {fill: $color-purple--80;}
 
-
+@media (max-width: 420px) {
+    .pb-mobile-sm {
+        padding-bottom: $padding-sm;
+    }
+}

@@ -23,6 +23,13 @@ export default {
     scrollNext() {
       this.$refs.imageWrapper.scrollBy({ left: 376, behavior: 'smooth' });
     },
+    scrollPrevSec() {
+      this.$refs.imageWrapperSec.scrollBy({ left: -376, behavior: 'smooth' });
+    },
+
+    scrollNextSec() {
+      this.$refs.imageWrapperSec.scrollBy({ left: 376, behavior: 'smooth' });
+    },
     scrollPrevAlt() {
       this.$refs.imageWrapper2.scrollBy({ left: -376, behavior: 'smooth' });
     },
@@ -40,7 +47,6 @@ export default {
     scrollPrevDig() {
       this.$refs.imageWrapperDigital.scrollBy({ left: -376, behavior: 'smooth' });
     },
-
     scrollNextDig() {
       this.$refs.imageWrapperDigital.scrollBy({ left: 376, behavior: 'smooth' });
     },
@@ -266,8 +272,7 @@ export default {
         <h4 class="copy-block-text txt-ss-h4 txt-nt-100">Collider 80x60</h4>
         <p class="copy-block-text txt-ss-sub2 txt-gr-50 mt-xs">2018</p>
         <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">This set was made between 2021 and 2022. Each
-          drawing
-          is done freehanded in ink, 32x24cm on 220g Ca' Grain paper.</p>
+          drawing is done freehanded in Pentel-ink, 80x60cm on Waterford 320g paper.</p>
       </section>
 
       <div class="container-fluid py-md bg-white">
@@ -305,6 +310,44 @@ export default {
           digitally, combining Adobe Illustrator and Inkscape with my Axidraw plotter.</p>
       </section>
 
+      <!-- *** Work Title Block - 80X60 *** -->
+      <section class="copy-block bg-white mt-md">
+        <h4 class="copy-block-text txt-ss-h4 txt-nt-100">Collider A3</h4>
+        <p class="copy-block-text txt-ss-sub2 txt-gr-50 mt-xs">2020</p>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">This set was made between 2021 and 2022. Each drawing is done freehanded in ink, 32x24cm on 220g Ca' Grain paper.</p>
+      </section>
+
+      <div class="container-fluid py-md bg-white">
+        <div class="grid-images-wrapper" ref="imageWrapperSec">
+          <div class="grid-box sm"><img class="grid-image" src="/assets/images/projects/collider/collider_pen6@0.5x.jpg"
+              alt="Collider A3 - P1">
+          </div>
+          <div class="grid-box sm"><img class="grid-image" src="/assets/images/projects/collider/collider_pen3@0.5x.jpg"
+              alt="Collider A3 - P1">
+          </div>
+          <div class="grid-box sm"><img class="grid-image" src="/assets/images/projects/collider/collider_pen2@0.5x.jpg"
+              alt="Collider A3 - P1">
+          </div>
+          <div class="grid-box sm"><img class="grid-image" src="/assets/images/projects/collider/collider_pen1@0.5x.jpg"
+              alt="Collider A3 - P1">
+          </div>
+          <div class="grid-box sm"><img class="grid-image" src="/assets/images/projects/collider/collider_pen5@0.5x.jpg"
+              alt="Collider A3 - P1">
+          </div>
+          <div class="grid-box sm"><img class="grid-image" src="/assets/images/projects/collider/collider_pen4@0.5x.jpg"
+              alt="Collider A3 - P1">
+          </div>
+        </div>
+        <div class="scroll-buttons mt-sm">
+          <button class="scroll-button prev" @click="scrollPrev">
+            <img class="scroll-arrow" src="/assets/arrow-right-link.png" alt="arrow">
+          </button>
+          <button class="scroll-button next" @click="scrollNext">
+            <img class="scroll-arrow" src="/assets/arrow-right-link.png" alt="arrow">
+          </button>
+        </div>
+      </div>
+
       <!-- *** FULL IMAGE -- FULL SCREEN WIDTH *** -->
       <div class="container-fluid mt-md">
         <picture>
@@ -324,9 +367,7 @@ export default {
         <!-- *** Work Title Block - COLLIDER PRINTS *** -->
         <h4 class="copy-block-text txt-ss-h4 txt-nt-10">Collider Prints</h4>
         <p class="copy-block-text txt-ss-sub2 txt-gr-50 mt-xs">2021-2022</p>
-        <p class="copy-block-text-half txt-ss-body1 txt-nt-10 mt-sm">This set was made between 2021 and 2022. Each
-          drawing
-          is done freehanded in ink, 32x24cm on 220g Ca' Grain paper.</p>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-10 mt-sm">This set was made between 2021 and 2022. Each piece was made on a Axidraw SE A3 plotter. Canson Bristol A3 224g paper and Stabilo ink.</p>
       </section>
       <!-- CAROUSEL SLIDER 2 - AXIDRAW PLOTS  -->
       <div class="container-fluid pb-lg bg-nt-100 pt-md">
@@ -369,10 +410,9 @@ export default {
 
       <!-- *** Work Title Block - A3 *** -->
       <section class="copy-block bg-white pt-lg">
-        <h4 class="copy-block-text txt-ss-h4 txt-nt-100">Collider A3</h4>
+        <h4 class="copy-block-text txt-ss-h4 txt-nt-100">Collider D</h4>
         <p class="copy-block-text txt-ss-sub2 txt-gr-50 mt-xs">2021-2022</p>
-        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">This set was made between 2021 and 2022. Each
-          drawing is done freehanded in ink, 32x24cm on 220g Ca' Grain paper.</p>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">Collages and digitally transformed pattern sketches. Mostly executed in mobile Adobe apps.</p>
       </section>
 
       <!-- *** CAROUSEL SLIDER 3 - A3 DRAWINGS ***  -->
@@ -398,9 +438,7 @@ export default {
       <!-- *** Work Title Block - 80X60  -->
       <section class="copy-block bg-white pb-md">
         <h4 class="copy-block-text-half txt-ss-h6 txt-nt-100">I did a few digital experiments based oh my analogous work.</h4>
-        <p class="copy-block-text-half txt-ss-body1 txt-nt-60 mt-sm">I try to apply a systemic approach to each
-          drawing, as I'm searching for patterns or images. Each work has been executed in ink. Some were executed by hand, others
-          digitally, combining Adobe Illustrator and Inkscape with my Axidraw plotter.</p>
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-60 mt-sm">The digital works have another texture, and show a plethora of color. By layering and blending red, green and blue hues, these RGB stacks create intricate patterns, reminiscent of textiles or traditional cultures.</p>
       </section>
 
 

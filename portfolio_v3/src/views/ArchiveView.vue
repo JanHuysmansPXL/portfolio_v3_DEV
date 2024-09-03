@@ -99,48 +99,23 @@
         <div class="block-divider"></div>
         <!-- TOP -->
         <div class="top-row">
-          <h6 class="work-title txt-ss-sub1">Poetry</h6>
-          <h6 class="work-title txt-ss-sub1">2016</h6>
+          <h6 class="work-title txt-ss-sub1">Midjourney Studio</h6>
+          <h6 class="work-title txt-ss-sub1">2023</h6>
         </div>
         <!-- BLOCKS -->
         <div class="double-box">
           <!-- L block -- info -->
           <div class="box-left">
-            <span class="txt-ss-h5 txt-nt-100">Reading big words on a small stage.</span>
+            <span class="txt-ss-h5 txt-nt-100">Defining a desktop layout for Midjourney as an alternative to the Discord prompting GUI.</span>
           </div>
           <!-- R block -- image and caption-->
           <div class="box-right">
-            <img src="/assets/images/projects/media/libertad2.jpg" class="image image-fluid" alt="portrait">
-            <span class="subtext txt-gr-50">Images of the actual artwork in Brussels Gare de XXXX.</span>
+            <img src="/assets/images/projects/archive/midjourney-studio-mockup.png" class="image image-fluid" alt="portrait">
+            <span class="subtext txt-gr-50">Proof of concept of the prompting window and creative tools.</span>
           </div>
         </div>
         <!-- DIVIDER -->
         <div class="divider"></div>
-      </div>
-
-       <!-- *** PROJECT IV - PAPER WORKS *** -->
-       <div class="archive-container bg-white">
-        <!-- DIVIDER -->
-        <div class="block-divider"></div>
-        <!-- TOP -->
-        <div class="top-row">
-          <h6 class="work-title txt-ss-sub1">Poetry</h6>
-          <h6 class="work-title txt-ss-sub1">2016</h6>
-        </div>
-        <!-- BLOCKS -->
-        <div class="double-box">
-          <!-- L block -- info -->
-          <div class="box-left">
-            <span class="txt-ss-h5 txt-nt-100">Reading big words on a small stage.</span>
-          </div>
-          <!-- R block -- image and caption-->
-          <div class="box-right">
-            <img src="/assets/images/projects/media/libertad2.jpg" class="image image-fluid" alt="portrait">
-            <span class="subtext txt-gr-50">Images of the actual artwork in Brussels Gare de XXXX.</span>
-          </div>
-        </div>
-        <!-- DIVIDER -->
-        <div class="block-divider"></div>
       </div>
 
       <MarqueeBar class="mt-lg"/>

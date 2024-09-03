@@ -137,11 +137,8 @@ const scrollTl = gsap.timeline({
             <p class="about-text txt-ss-sub2 txt-gr-50">About</p>
           </div>
           <div class="intro-block">
-            <h6 class="intro-title txt-ss-h6">The Kronolith is a wall mounted clock with a clickable and rotating outer
-              rim.</h6>
-            <p class="intro-subtitle txt-ss-body1 txt-nt-60">The clock is designed to have multiple states: always-on,
-              active, as well as digital and analog display. It has personalisation options and a live circadian
-              background.</p>
+            <h6 class="intro-title txt-ss-h6">The Kronolith is a wall mounted clock with a clickable and rotating outer rim.</h6>
+            <p class="intro-subtitle txt-ss-body1 txt-nt-60">The clock has multiple states, personalisation options and a live circadian background. The singular controls of the product were the main constraint for this concept.</p>
           </div>
           <div class="details-block">
             <h5 class="details-title txt-ss-sub2">Interface / Product Design / 3D Animation</h5>

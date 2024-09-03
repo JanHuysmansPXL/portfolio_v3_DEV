@@ -268,20 +268,19 @@ export default {
       <!-- METRICS Tabs-->
       <section id="metrics" class="metrics-box container-fluid bg-nt-100">
         <div class="metric-column">
+          <p class="metric-label txt-ss-sub2 txt-nt-10">Weights</p>
+          <h1 class="metric-number txt-ss-h2 txt-nt-10">1</h1>
+          <p class="metric-text txt-gr-50">Only black.</p>
+        </div>
+        <div class="metric-column">
           <p class="metric-label txt-ss-sub2 txt-nt-10">Characters</p>
           <h1 class="metric-number txt-ss-h2 txt-nt-10">40+</h1>
-          <p class="metric-text txt-gr-50">The typeface contains a full set of capitals and some of the most used glyphs.</p>
+          <p class="metric-text txt-gr-50">The typeface contains a full set of capitals and the most commonly used glyphs.</p>
         </div>
         <div class="metric-column">
           <p class="metric-label txt-ss-sub2 txt-nt-10">Symbols</p>
           <h1 class="metric-number txt-ss-h2 txt-nt-10">9</h1>
-          <p class="metric-text txt-gr-50">I took part in a few group exhibitions. In some I took part as a co-curator or
-            organiser.</p>
-        </div>
-        <div class="metric-column">
-          <p class="metric-label txt-ss-sub2 txt-nt-10">Weights</p>
-          <h1 class="metric-number txt-ss-h2 txt-nt-10">1</h1>
-          <p class="metric-text txt-gr-50">Only black.</p>
+          <p class="metric-text txt-gr-50">The custom symbols allow Onyx to be used in a more versatile and expressive manner.</p>
         </div>
       </section>
 

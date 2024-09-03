@@ -210,8 +210,8 @@ const scrollTl = gsap.timeline({
           impact.
         </h4>
         <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">There was a need for a reference that is
-          accessible to the various profiles within Made, regardless of their background or toolkit. An online 'brand
-          guide' could prove to be valuable for different users at Made, enhancing brand consistency and serving as a
+          accessible to the various profiles within Made, regardless of their background or toolkit. An online brand
+          guide could prove to be valuable for different users at Made, enhancing brand consistency and serving as a
           useful onboarding tool for new colleagues to quickly become familiar with existing methods.</p>
       </section>
 
@@ -222,32 +222,27 @@ const scrollTl = gsap.timeline({
       </div>
 
       <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
-      <div class="container-fluid bg-nt-10">
+      <div class="container-fluid bg-nt-10 pb-md pb-mobile-sm">
         <img class="img-fluid img-pagewidth padded fillheight"
           src="/assets/images/projects/made/made-dbb-rtb-artifact.png"
           alt="An image of the Made brand guide UX-process">
-      </div>
-      <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
-      <div class="container-fluid bg-nt-10">
-        <img class="img-fluid img-pagewidth padded fillheight"
+          <img class="img-fluid img-pagewidth padded-side fillheight"
           src="/assets/images/projects/made/made-dbb-sitemap.png"
           alt="An image of the Made brand guide UX-process">
       </div>
 
-
-
       <!-- Heading Block - II -->
-      <section class="quote-block bg-nt-10 pb-lg">
-        <h4 class="quote-block-text-half txt-ss-h5 txt-nt-100">
+      <section class="quote-block bg-nt-100 pb-md pt-md">
+        <h4 class="quote-block-text-half txt-ss-h5 txt-nt-10">
           The general brand overview was a major deliverable. I mapped all existing touchpoints and added an overall
           structure in Whimsical and Figma.
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">This resulted in a wireframe model and visual design. During the design sprint iterations were made based on guerilla tests in the office. We also defined an MVP in order to keep a good balance between value and scope.
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">This resulted in a wireframe model and visual design. During the design sprint iterations were made based on guerilla tests in the office. We also defined an MVP in order to keep a good balance between value and scope.
         </p>
       </section>
 
       <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
-      <div class="container-fluid bg-nt-10">
+      <div class="container-fluid bg-nt-100">
         <img class="img-fluid img-pagewidth padded fillheight" src="/assets/images/projects/made/made-dbb-design.png"
           alt="An image of the Made brand guide UX-process">
       </div>

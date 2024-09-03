@@ -8,8 +8,8 @@
                     <a  href="mailto:jan_huysmans@outlook.com" class="location-text txt-ss-body1">jan_huysmans@outlook.com</a>
                 </div>
                 <div class="socials-col">
-                    <p class="social-label txt-ss-sub2 txt-nt-10">LINKEDIN</p>
-                    <p class="social-label txt-ss-sub2 txt-nt-10 mt-xs">INSTAGRAM</p>
+                    <a href="https://www.linkedin.com/in/anotherjanhuysmans/" target="_blank" class="social-label txt-ss-sub2 txt-nt-10">LINKEDIN</a>
+                    <a href="https://www.instagram.com/studiowudio/" target="_blank" class="social-label txt-ss-sub2 txt-nt-10">NONSTAGRAM</a>
                 </div>
             </div>
             <div class="footer-right">

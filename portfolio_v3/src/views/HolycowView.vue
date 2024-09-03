@@ -214,7 +214,7 @@ gsap.utils.toArray('.images-wrapper').forEach((wrapper) => {
           </div>
           <div class="intro-block">
             <h6 class="intro-title txt-ss-h6">Building a kick-ass burger brand with a conscience.</h6>
-            <p class="intro-subtitle txt-ss-body1 txt-pp-80">I created the branding and interface for Holy Cow!, an innovative fast-food brand with a mission. The goal was to craft a brand that delivers delicious burgers while remaining environmentally conscious.</p>
+            <p class="intro-subtitle txt-ss-body1 txt-nt-60">I created the branding and interface for Holy Cow!, an innovative fast-food brand with a mission. The goal was to craft a brand that delivers delicious burgers while remaining environmentally conscious.</p>
           </div>
           <div class="details-block">
             <h5 class="details-title txt-ss-sub2">BRANDING / SOCIAL MARKETING</h5>
@@ -255,7 +255,7 @@ gsap.utils.toArray('.images-wrapper').forEach((wrapper) => {
       <!-- Info Block - HOLY COW'S MISSION -->
       <section class="copy-block bg-white">
         <h4 class="copy-block-text txt-ss-h5 txt-nt-100">
-          Holy Cow! envisions a world where people can enjoy tasty, guilt-free meals that prioritize both their health and the environment. Our mission is to be the most eco-friendly fast-food chain by bringing the latest food and retail innovations to the masses.
+          Holy Cow! wants a world where people can enjoy tasty, guilt-free meals that benefit both their health and the environment. Our mission is to be the most eco-friendly fast-food chain by bringing the latest food and retail innovations to the table.
         </h4>
         <div class="images-wrapper">
           <img src="/assets/images/projects/holycow/holycow_branding/brand_benchmark1.jpg" alt="Onyx Sketch 1"
