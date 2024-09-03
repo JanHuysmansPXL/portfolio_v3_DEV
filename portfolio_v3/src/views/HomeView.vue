@@ -59,6 +59,21 @@ gsap.registerPlugin(ScrollTrigger);
             });
         });
 
+        // IMAGE ANIMATION (Fade-in and move on Y-axis)
+        gsap.from(".home-intro-img", {
+            scrollTrigger: {
+                trigger: ".home-intro-img", // Starts when the image is in view
+                start: "top 80%", // Animation starts when the image's top is 80% in the viewport
+                end: "bottom 60%", // Ends when the image's bottom is 60% in view
+                scrub: true, // Smooth scrolling effect
+            },
+            opacity: 0, // Fade-in effect
+            x: 120,
+            y: 0, // Move upwards by 40px
+            duration: .3, // Duration of the animation
+            ease: "power3.out", // Smooth easing
+        });
+
         // CTA BUTTON
         // Animate each CTA button individually
         gsap.utils.toArray('.cta-button').forEach((button) => {

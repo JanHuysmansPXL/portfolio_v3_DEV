@@ -10,7 +10,7 @@
     align-items: center;
     border-top: 1px solid #212323;
     border-bottom: 0px solid #212323;
-    background:  #C1C1E5;
+    background:  $color-purple--30;
     vertical-align: text-bottom;
     @include mediaquery(tablet) {
         padding: 1rem 1rem .5rem 1rem;
@@ -21,7 +21,7 @@
       text-decoration: none;
       display: flex;
       align-items: center;
-      color: #663DF9;
+      color: $color-purple--80;
       font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
       font-size: 8rem;
       font-style: normal;

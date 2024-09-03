@@ -16,57 +16,30 @@
         </div>
       </div>
 
-      <!-- *** PROJECT I - LORIGIN *** -->
-      <div class="archive-container bg-white">
+            <!-- *** PROJECT IV - PAPER WORKS *** -->
+            <div class="archive-container bg-white">
         <!-- DIVIDER -->
         <div class="block-divider"></div>
         <!-- TOP -->
         <div class="top-row">
-          <h6 class="work-title txt-ss-sub1">Lorigin</h6>
-          <h6 class="work-title txt-ss-sub1">2015</h6>
+          <h6 class="work-title txt-ss-sub1">Midjourney Studio</h6>
+          <h6 class="work-title txt-ss-sub1">2023</h6>
         </div>
         <!-- BLOCKS -->
         <div class="double-box">
           <!-- L block -- info -->
           <div class="box-left">
-            <span class="txt-ss-h5 txt-nt-100">Short film about a conflict that arises between two humanoids, when
-              confronted with an unknown entity that is destroying their home.</span>
+            <span class="txt-ss-h5 txt-nt-100">Defining a desktop layout for Midjourney as an alternative to the Discord prompting GUI.</span>
           </div>
           <!-- R block -- image and caption-->
           <div class="box-right">
-            <img src="/assets/images/projects/media/lorigin1.jpg" class="image image-fluid" alt="portrait">
-            <span class="subtext txt-gr-50">A video still from the short film.</span>
+            <img src="/assets/images/projects/archive/midjourney-studio-mockup.png" class="image image-fluid" alt="portrait">
+            <span class="subtext txt-gr-50">Proof of concept of the prompting window and creative tools.</span>
           </div>
         </div>
         <!-- DIVIDER -->
         <div class="divider"></div>
       </div>
-
-      <!-- *** PROJECT II - LIBERTAD *** -->
-      <div class="archive-container bg-white">
-        <!-- DIVIDER -->
-        <div class="block-divider"></div>
-        <!-- TOP -->
-        <div class="top-row">
-          <h6 class="work-title txt-ss-sub1">LIBERTAD</h6>
-          <h6 class="work-title txt-ss-sub1">2015</h6>
-        </div>
-        <!-- BLOCKS -->
-        <div class="double-box">
-          <!-- L block -- info -->
-          <div class="box-left">
-            <span class="txt-ss-h5 txt-nt-100">Short documentary reel about Teknival, an underground rave-event in the north of France.</span>
-          </div>
-          <!-- R block -- image and caption-->
-          <div class="box-right">
-            <img src="/assets/images/projects/media/libertad1.jpg" class="image image-fluid" alt="portrait">
-            <span class="subtext txt-gr-50">A video still from the short film.</span>
-          </div>
-        </div>
-        <!-- DIVIDER -->
-        <div class="divider"></div>
-      </div>
-
 
       <!-- *** PROJECT III - PAPER WORKS *** -->
       <div class="archive-container bg-white">
@@ -93,25 +66,51 @@
         <div class="divider"></div>
       </div>
 
-      <!-- *** PROJECT IV - PAPER WORKS *** -->
-            <div class="archive-container bg-white">
+           <!-- *** PROJECT II - LIBERTAD *** -->
+           <div class="archive-container bg-white">
         <!-- DIVIDER -->
         <div class="block-divider"></div>
         <!-- TOP -->
         <div class="top-row">
-          <h6 class="work-title txt-ss-sub1">Midjourney Studio</h6>
-          <h6 class="work-title txt-ss-sub1">2023</h6>
+          <h6 class="work-title txt-ss-sub1">LIBERTAD</h6>
+          <h6 class="work-title txt-ss-sub1">2015</h6>
         </div>
         <!-- BLOCKS -->
         <div class="double-box">
           <!-- L block -- info -->
           <div class="box-left">
-            <span class="txt-ss-h5 txt-nt-100">Defining a desktop layout for Midjourney as an alternative to the Discord prompting GUI.</span>
+            <span class="txt-ss-h5 txt-nt-100">Short documentary reel about Teknival, an underground rave-event in the north of France.</span>
           </div>
           <!-- R block -- image and caption-->
           <div class="box-right">
-            <img src="/assets/images/projects/archive/midjourney-studio-mockup.png" class="image image-fluid" alt="portrait">
-            <span class="subtext txt-gr-50">Proof of concept of the prompting window and creative tools.</span>
+            <img src="/assets/images/projects/media/libertad1.jpg" class="image image-fluid" alt="portrait">
+            <span class="subtext txt-gr-50">A video still from the short film.</span>
+          </div>
+        </div>
+        <!-- DIVIDER -->
+        <div class="divider"></div>
+      </div>
+
+      <!-- *** PROJECT I - LORIGIN *** -->
+      <div class="archive-container bg-white">
+        <!-- DIVIDER -->
+        <div class="block-divider"></div>
+        <!-- TOP -->
+        <div class="top-row">
+          <h6 class="work-title txt-ss-sub1">Lorigin</h6>
+          <h6 class="work-title txt-ss-sub1">2015</h6>
+        </div>
+        <!-- BLOCKS -->
+        <div class="double-box">
+          <!-- L block -- info -->
+          <div class="box-left">
+            <span class="txt-ss-h5 txt-nt-100">Short film about a conflict that arises between two humanoids, when
+              confronted with an unknown entity that is destroying their home.</span>
+          </div>
+          <!-- R block -- image and caption-->
+          <div class="box-right">
+            <img src="/assets/images/projects/media/lorigin1.jpg" class="image image-fluid" alt="portrait">
+            <span class="subtext txt-gr-50">A video still from the short film.</span>
           </div>
         </div>
         <!-- DIVIDER -->

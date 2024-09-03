@@ -56,11 +56,10 @@
          }
         .menu-link {
           text-decoration: none;
-          color: white;
           font-weight: bold;
           display: flex;
           align-items: center;
-          color: #F3F5F5;
+          color: $color-neutral--10;
           font-family: 'degular-display', Arial, Helvetica, sans-serif;
           font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
           font-size: 4rem;

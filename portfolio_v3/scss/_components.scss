@@ -536,7 +536,7 @@
         transition: background-color 0.7s ease-in-out;
 
         &:hover {
-            background-color: #C1C1E5; // Light purple on hover
+            background-color: $color-purple--30; // Light purple on hover
         }
 
         /* Inner container to handle padding and borders */

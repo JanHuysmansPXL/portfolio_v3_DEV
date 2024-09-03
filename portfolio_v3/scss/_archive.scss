@@ -20,7 +20,7 @@
   .block-divider{
     height: 1px;
     width: 100%;
-    background-color: #212323;
+    background-color: $color-neutral--100;
   }
   .block-divider:last-of-type{
     display: none;
@@ -92,7 +92,7 @@
       .summary {
         font-size: 1.75rem;
         font-weight: bold;
-        color: #212323;
+        color: $color-neutral--100;
       }
     }
     .box-right {
@@ -135,7 +135,7 @@
       }
       .subtext {
         font-size: 0.875rem;
-        color: #6e8383;
+        color: $color-green--30;
         @include mediaquery(tablet) {
           font-size: 0.75rem;
         }
