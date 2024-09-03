@@ -121,16 +121,17 @@ const scrollTl = gsap.timeline({
     <main class="maintest">
 
 
- <!-- FULL IMAGE  -->
-           <!-- HEADING COVER WITH SCREEN RESPONSIVE IMAGE (PICTURE) -->
-           <div class="container-fluid">
+      <!-- FULL IMAGE  -->
+      <!-- HEADING COVER WITH SCREEN RESPONSIVE IMAGE (PICTURE) -->
+      <div class="container-fluid">
         <picture>
           <source media="(max-width: 768px)" srcset="/assets/images/projects/made/made-dbb-cover-mobile-1@2x.png" />
-          <img class="img-fluid project-heading-img mid" src="/assets/images/projects/made/made-dbb-cover-desktop-1@2x.png"
+          <img class="img-fluid project-heading-img mid"
+            src="/assets/images/projects/made/made-dbb-cover-desktop-1@2x.png"
             alt="An image of the Made Digital Brand Book project.">
         </picture>
       </div>
-       
+
 
       <!-- TITLE BLOCK  -  1. WORDMARK -->
       <section id="AuroHead" class="project-title-block bg-nt-10">
@@ -141,8 +142,10 @@ const scrollTl = gsap.timeline({
             <p class="about-text txt-ss-sub2 txt-gr-30">About</p>
           </div>
           <div class="intro-block">
-            <h6 class="intro-title txt-ss-h6">An interactive online brand guide for the updated Made brand identity.</h6>
-            <p class="intro-subtitle txt-ss-body1 txt-nt-60">During my internship I was challenged to define, design and deliver an online brand guide for Made, an award-winning design agency.</p>
+            <h6 class="intro-title txt-ss-h6">An interactive online brand guide for the updated Made brand identity.
+            </h6>
+            <p class="intro-subtitle txt-ss-body1 txt-nt-60">During my internship I was challenged to define, design and
+              deliver an online brand guide for Made, an award-winning design agency.</p>
           </div>
           <div class="details-block">
             <h5 class="details-title txt-ss-sub2">UI / UX / Webdevelopment</h5>
@@ -172,102 +175,123 @@ const scrollTl = gsap.timeline({
 
       <!-- *** *** BODY *** *** -->
 
-            <!-- Info Block - HOLY COW'S SKETCHES -->
-            <section class="copy-block bg-nt-100 pb-lg">
+      <!-- Info Block - HOLY COW'S SKETCHES -->
+      <section class="copy-block bg-nt-100 pb-lg">
         <div class="images-wrapper padding-md">
-                <video class="vid-pagewidth" autoplay loop playsinline muted>
-              <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
-            </video>
-            <video class="vid-pagewidth" autoplay loop playsinline muted>
-              <source :src="vidTwo" type="video/mp4"> Your browser does not support the video tag.
-            </video>
+          <video class="vid-pagewidth" autoplay loop playsinline muted>
+            <source :src="vidOne" type="video/mp4"> Your browser does not support the video tag.
+          </video>
+          <video class="vid-pagewidth" autoplay loop playsinline muted>
+            <source :src="vidTwo" type="video/mp4"> Your browser does not support the video tag.
+          </video>
         </div>
         <h4 class="copy-block-text-half txt-ss-h5 txt-nt-10">
           How I designed Made’s online brand book to boost brand consistency in 8 weeks.</h4>
       </section>
 
-            <!-- FULL VIDEO -- MOCKUP iMAC SCREEN-->
+      <!-- FULL VIDEO -- MOCKUP iMAC SCREEN-->
       <div class="container-fluid bg-nt-100">
-            <video class="vid-pagewidth padded desktop" autoplay loop playsinline muted>
-              <source :src="vidThree" type="video/mp4"> Your browser does not support the video tag.
-            </video>
-      </div>  
+        <video class="vid-pagewidth padded desktop" autoplay loop playsinline muted>
+          <source :src="vidThree" type="video/mp4"> Your browser does not support the video tag.
+        </video>
+      </div>
 
       <!-- 01 / POSTS  -->
       <div class="mini-title-container bg-nt-100">
         <div class="mini-title-box pt-md">
-          <p class="mini-title-label txt-nt-15">Discovery</p>
+          <p class="mini-title-label txt-nt-15">Discovery: Benchmarking and interviews.</p>
         </div>
       </div>
 
       <!-- Info Block - Socials -->
-      <section class="quote-block bg-nt-100 py-lg">
+      <section class="quote-block bg-nt-100 pb-lg">
         <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
-          I organised qualitative interviews with 9 Madewerkers to uncover where I could add value. 
+          I led qualitative interviews with key stakeholders to identify where the brand book could have the most
+          impact.
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">There was a need for a reference that is accessible to the various profiles within Made, regardless of their background or toolkit. An online 'brand guide' could prove to be valuable for different users at Made, enhancing brand consistency and serving as a useful onboarding tool for new colleagues to quickly become familiar with existing methods.</p>
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">There was a need for a reference that is
+          accessible to the various profiles within Made, regardless of their background or toolkit. An online 'brand
+          guide' could prove to be valuable for different users at Made, enhancing brand consistency and serving as a
+          useful onboarding tool for new colleagues to quickly become familiar with existing methods.</p>
       </section>
 
-                <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
-                <div class="container-fluid">
-        <img class="img-fluid project-banner-img"
-          src="/assets/images/projects/made/made-context-banner.webp"
+      <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
+      <div class="container-fluid">
+        <img class="img-fluid project-banner-img" src="/assets/images/projects/made/made-context-banner.webp"
           alt="An image of the made company">
       </div>
-
-            <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
-            <div class="container-fluid bg-nt-10">
-        <img class="img-fluid img-pagewidth padded fillheight"
-          src="/assets/images/projects/made/made-dbb-rtb-artifact.png"
-          alt="An image of the Made brand guide UX-process">
-      </div>
-
-
-      <!-- Heading Block - II -->
-      <section class="quote-block bg-nt-10 pb-lg">
-        <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
-          Add info here on a important design artifact..
-        </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">For example, the test results with some key insights on the subject and how implemented them in the design. Show this in a relevant image later or above.</p>
-      </section>
 
       <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
       <div class="container-fluid bg-nt-10">
         <img class="img-fluid img-pagewidth padded fillheight"
-          src="/assets/images/projects/made/made-dbb-design.png"
+          src="/assets/images/projects/made/made-dbb-rtb-artifact.png"
+          alt="An image of the Made brand guide UX-process">
+      </div>
+      <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
+      <div class="container-fluid bg-nt-10">
+        <img class="img-fluid img-pagewidth padded fillheight"
+          src="/assets/images/projects/made/made-dbb-sitemap.png"
           alt="An image of the Made brand guide UX-process">
       </div>
 
-           <!-- 01 / POSTS  -->
-           <div class="mini-title-container bg-gr-80">
+
+
+      <!-- Heading Block - II -->
+      <section class="quote-block bg-nt-10 pb-lg">
+        <h4 class="quote-block-text-half txt-ss-h5 txt-nt-100">
+          The general brand overview was a major deliverable. I mapped all existing touchpoints and added an overall
+          structure in Whimsical and Figma.
+        </h4>
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">This resulted in a wireframe model and visual design. During the design sprint iterations were made based on guerilla tests in the office. We also defined an MVP in order to keep a good balance between value and scope.
+        </p>
+      </section>
+
+      <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
+      <div class="container-fluid bg-nt-10">
+        <img class="img-fluid img-pagewidth padded fillheight" src="/assets/images/projects/made/made-dbb-design.png"
+          alt="An image of the Made brand guide UX-process">
+      </div>
+
+      <!-- 01 / POSTS  -->
+      <div class="mini-title-container bg-gr-80">
         <div class="mini-title-box pt-md">
-          <p class="mini-title-label txt-gr-30">Deliver</p>
+          <p class="mini-title-label txt-gr-30">Deliver: developing the website.</p>
         </div>
       </div>
 
 
-            <!-- Info Block - WEBSITE -->
-            <section class="quote-block bg-gr-80 pb-md">
+      <!-- Info Block - WEBSITE -->
+      <section class="quote-block bg-gr-80 pb-md">
         <h4 class="quote-block-text-half txt-ss-h4 txt-nt-10">
           Fully responsive and actionable.
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">Content on the website can be dynamically loaded via Airtable, allowing for sustainable maintenance and expansion by Made employees. To make the website more actionable, features such as copying color codes and downloading fonts have been implemented. The website also includes do's and don’ts to encourage consistency and help avoid mistakes. This makes the website an interactive tool.
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-10 mt-sm">To make the website more
+          actionable, features such as copying color codes and downloading fonts have been implemented. The website also
+          includes do's and don’ts to encourage consistency and help avoid mistakes. This makes the website an
+          interactive tool.
         </p>
       </section>
 
-                      <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
-                      <div class="container-fluid">
+      <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
+      <div class="container-fluid">
         <img class="img-fluid project-banner-img auto"
           src="/assets/images/projects/made/mockups/made-dbb-duo-mockup-img.png"
           alt="An image of 2 mockups comparing the mobile and desktop Brand Book Website.">
       </div>
+
       <!-- Info Block - WEBSITE -->
       <section class="quote-block bg-white mt-md">
         <h4 class="quote-block-text-half txt-ss-h4 txt-nt-100">
-          Leveraging Airtable API as an alternative content management system.
+          "I integrated Airtable APIs to build a flexible, easy-to-update content management system that allows the brand to evolve over time."
         </h4>
-        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">Content on the website can be dynamically loaded via Airtable, allowing for sustainable maintenance and expansion by Made employees. To make the website more actionable, features such as copying color codes and downloading fonts have been implemented. The website also includes do's and don’ts to encourage consistency and help avoid mistakes. This makes the website an interactive tool.
+        <p class="quote-block-text-half txt-ss-body1 txt-nt-100 mt-sm">Content on the website can be dynamically loaded
+          via Airtable, allowing for sustainable maintenance and expansion by Made employees.
         </p>
+        <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
+      <div class="container-fluid bg-nt-10 mt-md">
+        <img class="img-fluid img-pagewidth fillheight" src="/assets/images/projects/made/made-dbb-airtable-api.png"
+          alt="An image of the Made brand guide UX-process">
+      </div>
       </section>
 
       <!-- CTA BUTTONS -->
@@ -281,9 +305,12 @@ const scrollTl = gsap.timeline({
       </div>
 
       <div class="container-fluid mockup-center bg-nt-10 mt-md">
-        <img class="mockup-image" src="/assets/images/projects/made/mockups/made-dbb-iphone-1.png" alt="Made Digital brandbook iphone Mockup">
-        <img class="mockup-image" src="/assets/images/projects/made/mockups/made-dbb-iphone-2.png" alt="Made Digital brandbook iphone Mockup">
-        <img class="mockup-image" src="/assets/images/projects/made/mockups/made-dbb-iphone-3.png" alt="Made Digital brandbook iphone Mockup">
+        <img class="mockup-image" src="/assets/images/projects/made/mockups/made-dbb-iphone-1.png"
+          alt="Made Digital brandbook iphone Mockup">
+        <img class="mockup-image" src="/assets/images/projects/made/mockups/made-dbb-iphone-2.png"
+          alt="Made Digital brandbook iphone Mockup">
+        <img class="mockup-image" src="/assets/images/projects/made/mockups/made-dbb-iphone-3.png"
+          alt="Made Digital brandbook iphone Mockup">
       </div>
 
       <!-- NEXT PROJECT BAR -->
@@ -293,11 +320,11 @@ const scrollTl = gsap.timeline({
         </router-link>
       </div>
 
-        <!-- MARQUEE BAR -->
-        <MarqueeBar />
+      <!-- MARQUEE BAR -->
+      <MarqueeBar />
 
-        <!-- FOOTER -->
-        <FooterComponent />
+      <!-- FOOTER -->
+      <FooterComponent />
 
     </main>
   </div>
