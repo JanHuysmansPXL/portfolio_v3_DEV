@@ -16,7 +16,7 @@
         </div>
       </div>
     </div>
-    <!-- CTA BUTTONS -->
+    <!-- CTA BUTTONS
     <div class="cta-wrapper container-fluid no-x-padding">
       <div class="cta-buttonbar">
         <button class="cta-button">
@@ -24,13 +24,13 @@
           <a download target="_blank" href="/assets/janhuysmans-curriculum-vitae@pdf.pdf" class="link-text">Download my resume</a>
         </button>
       </div>
-    </div>
+    </div> -->
   </section>
 
   <section id="work" class="container-fluid bg-nt-100 curriculum-block">
     <!-- Exhibitions Section -->
     <div class="title-wrapper">
-      <h2 class="txt-ss-h3 txt-nt-10 pt-md">Work</h2>
+      <h2 class="txt-ss-h3 txt-nt-10">Work</h2>
     </div>
     <div class="list-container">
       <!-- Looping through Exhibitions data -->
@@ -39,7 +39,7 @@
         <div class="list-row">
           <p class="list-item txt-nt-10">{{ job.company }}</p>
           <p class="list-item txt-nt-10">{{ job.title }}</p>
-          <p class="list-item txt-gr-30">{{ job.year }}</p>
+          <p class="list-item txt-gr-30">{{ job.type }}</p>
           <p class="list-item txt-gr-30">{{ job.year }}</p>
         </div>
       </div>
@@ -82,11 +82,11 @@
       return {
         // Education data array
         education: [
-          { type: "Architecture", school: "PiKoH", city: "Hasselt", year: "2012" },
-          { type: "Audiovisual Arts", school: "School of Arts", city: "Genk", year: "2012-14" },
-          { type: "Film", school: "Royal Academy of Fine Arts", city: "Ghent", year: "2014-15" },
-          { type: "Fine Arts", school: "St. Lucas, School of Arts", city: "Brussels", year: "2015-16" },
-          { type: "Industrial Design", school: "University of Antwerp", city: "Antwerp", year: "2016-18" },
+          { type: "Architecture", school: "PiKoH", city: "Hasselt", year: "2011" },
+          { type: "Audiovisual Arts", school: "School of Arts", city: "Genk", year: "2012-13" },
+          { type: "Film", school: "Royal Academy of Fine Arts", city: "Ghent", year: "2013-14" },
+          { type: "Fine Arts", school: "St. Lucas, School of Arts", city: "Brussels", year: "2014-15" },
+          { type: "Industrial Design", school: "University of Antwerp", city: "Antwerp", year: "2015-17"},
           { type: "Digital Design", school: "PXL University College", city: "Hasselt", year: "22-24" },
         ],
 
@@ -97,24 +97,24 @@
           company: "Made",
           title: "DIGITAL DESIGNER",
           year: "2023-2024",
-          type: "INTERNSHIP"
+          type: "INTERN"
         },
         {
           company: "DESCO",
           title: "Interior Sales ADVISOR",
-          year: "2018-2022",
+          year: "2019-2022",
           type: "FULLTIME"
         },
         {
           company: "IMPERMO",
           title: "Interior Sales ADVISOR",
-          year: "2016-2017",
+          year: "2018-2019",
           type: "FULLTIME"
         },
         {
           company: "IPG",
-          title: "Contact agent (nl/fr/nl)",
-          year: "2015-2016",
+          title: "CONTACT AGENT (NL/FR)",
+          year: "2017-2018",
           type: "FULLTIME"
         },
         ],

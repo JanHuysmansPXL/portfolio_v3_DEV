@@ -1231,6 +1231,7 @@
         @include mediaquery(tablet) {
             font-size: 4rem;
             max-width: 100%;
+            letter-spacing: 0.04rem;
         }
     }
 
