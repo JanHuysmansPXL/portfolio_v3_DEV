@@ -238,7 +238,7 @@
         '24 has been a great year. In july I graduated Magna Cum Laude in Digital Design. Finally I'm ready to dive deep and make a meaningful impact.
       </span>
       <span class="full-text txt-body-2 txt-nt-60 mt-md">
-        I had the opportunity to be an intern at <span><a class="txt-nt-60" href="https://www.made.be">Made</a></span>, a leading design agency in Antwerp. Kudos to my mentors Craig, Olga and Robin. I concluded my digital design studies with a best-in-class result, realising the high ambitions I have set for myself. 
+        I had the opportunity to be an intern at <span><a class="txt-nt-60" href="https://www.made.be" target="_blank">Made</a></span>, a leading design agency in Antwerp. Kudos to my mentors Craig, Olga and Robin. I concluded my digital design studies with a best-in-class result, realising the high ambitions I have set for myself. 
       </span>
       <span class="full-text txt-body-2 txt-nt-60 mt-sm">
         <b>What's next? </b>Let's find out.
