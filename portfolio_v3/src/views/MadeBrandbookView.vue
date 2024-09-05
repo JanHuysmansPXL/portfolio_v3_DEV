@@ -224,7 +224,7 @@ const scrollTl = gsap.timeline({
       <!-- FULL IMAGE -- FULL SCREEN WIDTH -->
       <div class="container-fluid bg-nt-10 pb-md pb-mobile-sm">
         <img class="img-fluid img-pagewidth padded fillheight"
-          src="/assets/images/projects/made/made-dbb-rtb-artifact.png"
+          src="/assets/images/projects/made/made-dbb-plan-artifact.png"
           alt="An image of the Made brand guide UX-process">
           <img class="img-fluid img-pagewidth padded-side fillheight"
           src="/assets/images/projects/made/made-dbb-sitemap.png"
