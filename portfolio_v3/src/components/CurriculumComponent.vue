@@ -82,14 +82,13 @@
       return {
         // Education data array
         education: [
-          { type: "Architecture", school: "PiKoH", city: "Hasselt", year: "2011" },
-          { type: "Audiovisual Arts", school: "School of Arts", city: "Genk", year: "2012-13" },
+          { type: "Digital Design", school: "PXL University College", city: "Hasselt", year: "22-24" },
           { type: "Film", school: "Royal Academy of Fine Arts", city: "Ghent", year: "2013-14" },
           { type: "Fine Arts", school: "St. Lucas, School of Arts", city: "Brussels", year: "2014-15" },
           { type: "Industrial Design", school: "University of Antwerp", city: "Antwerp", year: "2015-17"},
-          { type: "Digital Design", school: "PXL University College", city: "Hasselt", year: "22-24" },
+          { type: "Architecture", school: "PiKoH", city: "Hasselt", year: "2011" },
+          { type: "Audiovisual Arts", school: "School of Arts", city: "Genk", year: "2012-13" },
         ],
-
 
         // Work data array
         jobs: [
@@ -113,7 +112,7 @@
         },
         {
           company: "IPG",
-          title: "CONTACT AGENT (NL/FR)",
+          title: "CONTACT AGENT (NL/FR/EN)",
           year: "2017-2018",
           type: "FULLTIME"
         },
@@ -121,19 +120,19 @@
         
         // Exhibitions data array
         exhibitions: [
-          { title: "EXIT", location: "C-Mine", city: "Genk", year: "2014" },
-          { title: "no title", location: "Kuiperskaai", city: "Ghent", year: "2015" },
-          { title: "Gallery Show", location: "Jan Colle", city: "Ghent", year: "2015" },
-          { title: "Poetry Sessions", location: "Fatima", city: "Ghent", year: "2016" },
-          { title: "M-ART", location: "CC-Getouw", city: "Mol", year: "2016" },
-          { title: "Strange Loops", location: "Gare Congres", city: "Brussels", year: "2016" },
-          { title: "Shape to Come", location: "KC België", city: "Hasselt", year: "2017" },
-          { title: "M-ART Residence", location: "M-ART", city: "Mol", year: "2016" },
-          { title: "M-ART Takeover", location: "Jakob Smitsmuseum", city: "Mol", year: "2017" },
-          { title: "Nuits Blanches", location: "Place Brouckère", city: "Brussels", year: "2017" },
+          { title: "Print Fair", location: "Antwerp Tower", city: "Antwerp", year: "2021" },
           { title: "Chaos Studio", location: "A Warehouse", city: "Antwerp", year: "2019" },
           { title: "Transit", location: "Ampere", city: "Antwerp", year: "2019" },
-          { title: "Print Fair", location: "Antwerp Tower", city: "Antwerp", year: "2021" },
+          { title: "Shape to Come", location: "KC België", city: "Hasselt", year: "2017" },
+          { title: "M-ART Takeover", location: "Jakob Smitsmuseum", city: "Mol", year: "2017" },
+          { title: "Nuits Blanches", location: "Place Brouckère", city: "Brussels", year: "2017" },
+          { title: "Strange Loops", location: "Gare Congres", city: "Brussels", year: "2016" },
+          { title: "M-ART Residence", location: "M-ART", city: "Mol", year: "2016" },
+          { title: "Poetry Sessions", location: "Fatima", city: "Ghent", year: "2016" },
+          { title: "M-ART", location: "CC-Getouw", city: "Mol", year: "2016" },
+          { title: "no title", location: "Kuiperskaai", city: "Ghent", year: "2015" },
+          { title: "Gallery Show", location: "Jan Colle", city: "Ghent", year: "2015" },
+          { title: "EXIT", location: "C-Mine", city: "Genk", year: "2014" },
         ]
       };
     },
