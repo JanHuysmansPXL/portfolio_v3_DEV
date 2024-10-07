@@ -83,9 +83,9 @@
         // Education data array
         education: [
           { type: "Digital Design", school: "PXL University College", city: "Hasselt", year: "22-24" },
-          { type: "Film", school: "Royal Academy of Fine Arts", city: "Ghent", year: "2013-14" },
-          { type: "Fine Arts", school: "St. Lucas, School of Arts", city: "Brussels", year: "2014-15" },
           { type: "Industrial Design", school: "University of Antwerp", city: "Antwerp", year: "2015-17"},
+          { type: "Fine Arts", school: "St. Lucas, School of Arts", city: "Brussels", year: "2014-15" },
+          { type: "Film", school: "Royal Academy of Fine Arts", city: "Ghent", year: "2013-14" },
           { type: "Architecture", school: "PiKoH", city: "Hasselt", year: "2011" },
           { type: "Audiovisual Arts", school: "School of Arts", city: "Genk", year: "2012-13" },
         ],
