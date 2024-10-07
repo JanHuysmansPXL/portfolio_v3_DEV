@@ -110,15 +110,15 @@ gsap.registerPlugin(ScrollTrigger);
                 </div>
                 <div class="home-intro-box mt-md">
                     <div class="home-intro-column-left">
-                        <h4 class="quote-block-text txt-nt-60 mt-lg">
+                        <h4 class="quote-block-text txt-width-60 txt-nt-60 mt-lg">
                             I create brands, build user interfaces, and design experiences. 
                             From websites to products, my work is about crafting meaningful interactions that resonate with people.
                         </h4>
-                        <h4 class="quote-block-text txt-nt-60">
+                        <h4 class="quote-block-text txt-width-60 txt-nt-60">
                             I strongly believe design is a force of change.
                             Finding viable solutions for actual people is something I value a lot.
                         </h4>
-                        <h4 class="quote-block-text txt-nt-60">
+                        <h4 class="quote-block-text txt-width-60 txt-nt-60">
                             Beyond design, I explore art —focusing on rhythm, color, and modularity. 
                             It’s another way for me to push my creative boundaries.
                         </h4>

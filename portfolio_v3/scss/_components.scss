@@ -457,7 +457,6 @@
 
     .quote-block-text {
         text-indent: 8rem;
-
         @include mediaquery(tablet) {
             text-indent: 4rem;
         }
@@ -1245,12 +1244,10 @@
         .home-intro-column-left {
             width: 66%;
             margin-right: 16px;
-
             @include mediaquery(tablet) {
                 width: 100%;
                 margin-right: 16px;
             }
-
             .quote-block-text {
                 font-family: $font-display;
                 font-size: 2.828rem;
@@ -1260,7 +1257,6 @@
                 font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on;
                 font-style: normal;
                 margin-top: 24px;
-
                 @include mediaquery(tablet) {
                     font-size: 2rem;
                     margin-top: 16px;
