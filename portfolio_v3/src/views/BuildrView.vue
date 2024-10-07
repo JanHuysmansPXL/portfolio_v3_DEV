@@ -212,7 +212,7 @@ export default {
             <h6 class="intro-title txt-ss-h6">Buildr is a digital solution to help construction workers match with their
               dream jobs.</h6>
             <p class="intro-subtitle txt-ss-body1 txt-nt-60">Buildr. is a (fictional) job-matching app for construction,
-              metal and logistics. We did the branding, the interface for mobile and desktop, and developed the website
+              metal and logistics. Our team did the branding, the interface for mobile and desktop, and developed a website
               for the product.</p>
           </div>
           <div class="details-block">
@@ -266,7 +266,7 @@ export default {
           We designed the brand identity first. Our team's aim was to create a fairly simple but recognisable brand,
           which would appeal to a broad crowd of workers.</h5>
         <p class="copy-block-text-half txt-ss-body1 txt-nt-60 mt-sm">For the branding I teamed with Eline Moesen, a very
-          talented classmate. The Buildr logo we defined represents the connection we try to inspire between people.
+          talented classmate. The Buildr logo we defined represents the connection Buildr tries to inspire.
           Find some exerpts of the full brand guide below.</p>
       </section>
 
@@ -285,9 +285,9 @@ export default {
           For our audience, it was essential that our platform be accessible, easy-to-use, and down-to-earth. No
           frills.<br>— ‘You are not your user.’
         </h4>
-        <p class="copy-block-text-half txt-ss-body1 txt-nt-60 mt-sm">We gathered some very useful date from 20
+        <p class="copy-block-text-half txt-ss-body1 txt-nt-60 mt-sm">We gathered some very useful data from 20
           construction workers. Based on their input we managed to define the key priorities for our app. Workers mainly
-          wanted to learn about the employers company culture, to reduce time needed for interviews or to present
+          wanted to learn about the employers company culture, reduce time needed for interviews, or to present
           themselves online in a better way.</p>
       </section>
 
@@ -346,8 +346,7 @@ export default {
           The website.
         </h4>
         <p class="copy-block-text-half txt-ss-body1 txt-nt-100 mt-sm">For the website I teamed with Yoritt Borkelmans.
-          I did a large chunk of the HTML, CSS and Bootstrap 5.
-          Yoritt engineered the interactions and dynamics in JavaScript.</p>
+          I did a large chunk of the HTML, CSS and Bootstrap 5. Yoritt engineered the interactions and dynamics in JavaScript.</p>
         <!-- CTA BUTTONS -->
         <div class="cta-wrapper no-x-padding container-fluid">
           <div class="cta-buttonbar">

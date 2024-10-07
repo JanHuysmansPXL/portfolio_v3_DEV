@@ -210,7 +210,7 @@ const scrollTl = gsap.timeline({
       <div class="container-fluid mockup-triple bg-white mt-sm">
         <div class="textbox">
           <h4 class="copy-block-text-half txt-ss-h5 txt-nt-100 mb-sm">Almost real.</h4>
-          <p class="txt-ss-body2 txt-nt-60">A model was made in Blender to mockup the product in action.I made the actual product based on the prompt draft and animated the
+          <p class="txt-ss-body2 txt-nt-60">A model was made in Blender to mockup the product in action. I made the actual product based on the prompt draft and animated the
             rotating button.</p>
           <p class="txt-ss-body2 txt-nt-60 mt-sm">These images display the process of designing the mockup. The display content was
             animated in Figma and embedded in Blender as a surface modifier. No After Effects.</p>

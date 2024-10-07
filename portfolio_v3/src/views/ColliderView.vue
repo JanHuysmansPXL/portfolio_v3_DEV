@@ -248,7 +248,7 @@ export default {
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Cliënt</p>
-                  <p class="bar-text">Personal Private collections</p>
+                  <p class="bar-text">Personal, private collections</p>
                 </div>
                 <div class="text-wrap">
                   <p class="bar-text">Tools</p>
