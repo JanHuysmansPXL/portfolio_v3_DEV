@@ -9,7 +9,7 @@
                 </div>
                 <div class="socials-col">
                     <a href="https://www.linkedin.com/in/anotherjanhuysmans/" target="_blank" class="social-label txt-ss-sub2 txt-nt-10">LINKEDIN</a>
-                    <a href="https://www.instagram.com/studiowudio/" target="_blank" class="social-label txt-ss-sub2 txt-nt-10">INSTAGRAM</a>
+                    <a href="https://www.instagram.com/j.nhuysm.ns/" target="_blank" class="social-label txt-ss-sub2 txt-nt-10">INSTAGRAM</a>
                 </div>
             </div>
             <div class="footer-right">

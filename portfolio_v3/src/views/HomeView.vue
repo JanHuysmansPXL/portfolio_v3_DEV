@@ -192,8 +192,7 @@ gsap.registerPlugin(ScrollTrigger);
                 <div class="cta-buttonbar">
                     <button class="cta-button">
                         <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
-                        <router-link to="/work" class="link-text">{{ buttonWorkText }}</router-link>
-                    </button>
+ c                    </button>
                     <button class="cta-button">
                         <img class="link-arrow" src="/assets/arrow-right-link.png" alt="arrow">
                         <a href="mailto:jan_huysmans@outlook.com" class="link-text">Get in touch</a>
